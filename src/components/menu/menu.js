@@ -1,7 +1,10 @@
+import "./menu.css";
 export default function Menu() {
   return (
-    <>
-      <h1>menu</h1>
-    </>
+    <div>
+      <h1 className="menu_header">
+        S<span>fE</span>
+      </h1>
+    </div>
   );
 }
