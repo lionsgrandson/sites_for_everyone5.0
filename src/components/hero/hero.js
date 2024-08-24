@@ -6,30 +6,32 @@ import { RxAccessibility } from "react-icons/rx";
 
 export default function Hero() {
   return (
-    <>
+    <div>
       <h1 className="siteTitleHero">
         Sites for <span className="highlight bigTextEv">Everyone</span>
       </h1>
-      <p className="bitTextHero">Innovative solutions for your business needs.</p>
+      <p className="bitTextHero">
+        Innovative solutions for your business needs.
+      </p>
       <div className="feat-hero">
         <div>
           <IoIosEasel
             color="var(--light-blue)"
-            size="10rem"
+            size="7rem"
           />
           <p className="feat-home-text">Professional Design</p>
         </div>
         <div>
           <MdDevicesOther
             color="var(--light-blue)"
-            size="10rem"
+            size="7rem"
           />
           <p className="feat-home-text">Responsivity</p>
         </div>
         <div>
           <FaEarthAfrica
             color="var(--light-blue)"
-            size="10rem"
+            size="7rem"
           />
 
           <p className="feat-home-text">Deployment + SEO</p>
@@ -38,18 +40,18 @@ export default function Hero() {
         <div>
           <RxAccessibility
             color="var(--light-blue)"
-            size="10rem"
+            size="7rem"
           />
           <p className="feat-home-text">Accessibility</p>
         </div>
         <div>
           <MdSupportAgent
             color="var(--light-blue)"
-            size="10rem"
+            size="7rem"
           />
           <p className="feat-home-text">Costumer Support</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
