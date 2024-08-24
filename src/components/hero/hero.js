@@ -10,7 +10,7 @@ export default function Hero() {
       <h1>
         Sites for <span className="highlight">Everyone</span>
       </h1>
-      <p>Innovative solutions for your business needs.</p>
+      <p className="bitTextHero">Innovative solutions for your business needs.</p>
       <div className="feat-hero">
         <div>
           <IoIosEasel
