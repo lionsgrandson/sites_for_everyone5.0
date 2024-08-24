@@ -1,8 +1,9 @@
 .feat-hero {
-  width: 150.6rem;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0 2rem;
 }
 .feat-home-text {
   width: 24.4rem;
