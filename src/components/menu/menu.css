@@ -6,7 +6,41 @@
   letter-spacing: 0.01em;
   text-align: center;
   color: var(--light-blue);
+  width: 107px;
+  height: 112px;
 }
 span {
-    color: var(--gray);
+  color: var(--gray);
+}
+.menu-list {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  width: 708px;
+  height: 34px;
+  color: var(--gray);
+}
+a {
+  text-decoration: none;
+}
+.menu-div {
+  display: flex;
+  width: 1588px;
+  height: 112px;
+}
+.CalltoActionNav {
+  width: 213px;
+  height: 70.15px;
+  border-radius: 52px ;
+  background: linear-gradient(90deg, #214ce7 0%, #5c48ad 99.99%);
+}
+.CalltoActionNav a {
+  font-family: Nunito;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 35.46px;
+  text-align: left;
+  width: 138px;
+  height: 32px;
+  color: rgba(255, 255, 255, 1);
 }
