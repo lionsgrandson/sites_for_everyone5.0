@@ -1,13 +1,13 @@
 .menu_header {
-  font-family: var(--font-primary);
-  font-size: 83px;
+  font-family: "Marcellus";
+  font-size: 8.3rem;
   font-weight: 400;
-  line-height: 112px;
+  line-height: 11.2rem;
   letter-spacing: 0.01em;
   text-align: center;
   color: var(--light-blue);
-  width: 107px;
-  height: 112px;
+  height: 11.2rem;
+  margin: 0;
 }
 span {
   color: var(--gray);
@@ -16,31 +16,40 @@ span {
   list-style: none;
   display: flex;
   gap: 5rem;
-  width: 708px;
-  height: 34px;
+  width: 70.8rem;
+  height: 3.4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
   color: var(--gray);
 }
 a {
+  color: var(--gray);
   text-decoration: none;
 }
 .menu-div {
   display: flex;
-  width: 1588px;
-  height: 112px;
+  justify-content: space-between;
+  height: 11.2rem;
+  align-items: center;
 }
 .CalltoActionNav {
-  width: 213px;
-  height: 70.15px;
-  border-radius: 52px ;
+  width: 21.3rem;
+  height: 7.015rem;
+  border-radius: 5.2rem;
   background: linear-gradient(90deg, #214ce7 0%, #5c48ad 99.99%);
 }
 .CalltoActionNav a {
   font-family: Nunito;
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 400;
-  line-height: 35.46px;
+  line-height: 3.546rem;
   text-align: left;
-  width: 138px;
-  height: 32px;
+  width: 13.8rem;
+  height: 3.2rem;
   color: rgba(255, 255, 255, 1);
+}
+.ilFlagNav {
+  width: 62px;
+  height: 62px;
 }

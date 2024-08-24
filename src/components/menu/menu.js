@@ -3,9 +3,11 @@ import ILflagImg from "../../img/IlFlagIcon.png";
 export default function Menu() {
   return (
     <div className="menu-div">
-      <h1 className="menu_header">
-        S<span>fE</span>
-      </h1>
+      <a href="/">
+        <h1 className="menu_header">
+          S<span>fE</span>
+        </h1>
+      </a>
       <ul className="menu-list">
         <li>
           <a href="./about">About</a>
@@ -24,9 +26,15 @@ export default function Menu() {
         </li>
       </ul>
       <button className="CalltoActionNav">
-        <a>Get Started</a>
+        <a href="#">Get Started</a>
       </button>
-      <img src={ILflagImg} className="ilFlagNav" alt="Israeli Flag Icon"/>
+      <a href="#">
+        <img
+          src={ILflagImg}
+          className="ilFlagNav"
+          alt="Israeli Flag Icon"
+        />
+      </a>
     </div>
   );
 }
