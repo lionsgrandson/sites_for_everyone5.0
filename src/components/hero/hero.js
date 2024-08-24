@@ -7,7 +7,7 @@ import { RxAccessibility } from "react-icons/rx";
 export default function Hero() {
   return (
     <>
-      <h1>
+      <h1 className="siteTitleHero">
         Sites for <span className="highlight">Everyone</span>
       </h1>
       <p className="bitTextHero">Innovative solutions for your business needs.</p>
