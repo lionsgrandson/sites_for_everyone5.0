@@ -1,5 +1,6 @@
 import Menu from './components/menu/menu';
 import Footer from './components/footer/footer';
+import Hero from "./components/hero/hero";
 import './App.css';
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Menu/>
-        <Footer/>
+        <Hero/>
+        {/* <Footer/> */}
       </header>
     </div>
   );
