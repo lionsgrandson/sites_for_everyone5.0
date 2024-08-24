@@ -28,3 +28,8 @@
   line-height: 176px;
   letter-spacing: 0.02em;
 }
+.bigTextEv {
+  transform: rotate(1.66deg);
+  display: block;
+  background: rgba(255, 186, 58, 0.77);
+}
