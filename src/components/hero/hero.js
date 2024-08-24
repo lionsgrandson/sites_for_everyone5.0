@@ -12,32 +12,43 @@ export default function Hero() {
       </h1>
       <p>Innovative solutions for your business needs.</p>
       <div className="feat-hero">
-        <MdSupportAgent
-          color="var(--light-blue)"
-          size="10rem"
-        />
-        <p>Costumer Support</p>
-        <RxAccessibility
-          color="var(--light-blue)"
-          size="10rem"
-        />
-        <p>Accessibility</p>
-        <FaEarthAfrica
-          color="var(--light-blue)"
-          size="10rem"
-        />
+        <div>
+          <IoIosEasel
+            color="var(--light-blue)"
+            size="10rem"
+          />
+          <p className="feat-home-text">Professional Design</p>
+        </div>
+        <div>
+          <MdDevicesOther
+            color="var(--light-blue)"
+            size="10rem"
+          />
+          <p className="feat-home-text">Responsivity</p>
+        </div>
+        <div>
+          <FaEarthAfrica
+            color="var(--light-blue)"
+            size="10rem"
+          />
 
-        <p>Deployment + SEO</p>
-        <MdDevicesOther
-          color="var(--light-blue)"
-          size="10rem"
-        />
-        <p>Responsivity</p>
-        <IoIosEasel
-          color="var(--light-blue)"
-          size="10rem"
-        />
-        <p>Professional Design</p>
+          <p className="feat-home-text">Deployment + SEO</p>
+        </div>
+
+        <div>
+          <RxAccessibility
+            color="var(--light-blue)"
+            size="10rem"
+          />
+          <p className="feat-home-text">Accessibility</p>
+        </div>
+        <div>
+          <MdSupportAgent
+            color="var(--light-blue)"
+            size="10rem"
+          />
+          <p className="feat-home-text">Costumer Support</p>
+        </div>
       </div>
     </>
   );
