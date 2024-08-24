@@ -1,14 +1,16 @@
-import Menu from './components/menu/menu';
-import Footer from './components/footer/footer';
+import Menu from "./components/menu/menu";
+import Footer from "./components/footer/footer";
 import Hero from "./components/hero/hero";
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Menu/>
-        <Hero/>
+        <div className="home-hero">
+          <Menu />
+          <Hero />
+        </div>
         {/* <Footer/> */}
       </header>
     </div>

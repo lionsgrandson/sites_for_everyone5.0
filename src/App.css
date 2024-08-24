@@ -1,3 +1,12 @@
 .App {
   text-align: center;
 }
+.home-hero {
+  background: linear-gradient(
+      113.23deg,
+      #ffffff 0%,
+      #e4edff 48.21%,
+      #ffffff 96.42%
+    ),
+    linear-gradient(0deg, #f7fbff, #f7fbff);
+}
