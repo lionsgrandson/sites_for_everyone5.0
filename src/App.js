@@ -1,6 +1,7 @@
 import Menu from "./components/menu/menu";
 import Footer from "./components/footer/footer";
 import Hero from "./components/hero/hero";
+import AboutHome from "./components/about_home/aboutHome";
 import "./App.css";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <div className="home-hero">
           <Menu />
           <Hero />
+          <AboutHome />
         </div>
         {/* <Footer/> */}
       </header>
