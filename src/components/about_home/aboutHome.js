@@ -1,6 +1,6 @@
 import "./aboutHome.css";
 import { FaArrowRightLong } from "react-icons/fa6";
-import moseHeadshot from "../../img/mosheHeadshot.png" ;
+import moseHeadshot from "../../img/mosheHeadshot.png";
 
 export default function AboutHome() {
   return (
@@ -16,12 +16,16 @@ export default function AboutHome() {
           sophisticated final product and the guidance throughout the building
           process.
         </p>
-        <button className="home-about-btn">
-          Read More <FaArrowRightLong />
-        </button>
+        {/* <div className="home-about-btn-div">
+        </div> */}
+        {/* TODO deal with the elips */}
+          <button className="home-about-btn">
+            Read More <FaArrowRightLong />
+          </button>
       </div>
       <img
         src={moseHeadshot}
+        className="home-about-headshot-img"
         alt="image of the CEO of the company - Moshe"
       />
     </div>

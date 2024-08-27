@@ -7,6 +7,13 @@
   padding-left: 8.9rem;
   display: flex;
   align-items: center;
+  background: linear-gradient(
+    90.08deg,
+    rgba(111, 72, 173, 0.13) 12.61%,
+    rgba(105, 174, 231, 0.2) 41.83%,
+    rgba(105, 174, 231, 0.2) 56.44%,
+    rgba(111, 72, 173, 0.128) 85.66%
+  );
 }
 .home-about-innder-div {
   display: flex;
@@ -15,7 +22,8 @@
 }
 .home-about-h1 {
   font-family: Marcellus;
-  font-size: 76px;
+  /* font-size: 76px; */
+  font-size: 5vw;
   font-weight: 400;
   line-height: 95.3px;
   text-align: left;
@@ -23,7 +31,8 @@
 }
 .home-about-p {
   font-family: Nunito;
-  font-size: 32px;
+  /* font-size: 3.2rem; */
+  font-size: 2vw;
   font-weight: 400;
   line-height: 47px;
   letter-spacing: 0.01em;
@@ -34,10 +43,28 @@
   border-radius: 52px;
   background: linear-gradient(90deg, #214ce7 0%, #5c48ad 100%);
   font-family: Nunito;
-  font-size: 28px;
+  /* font-size: 28px; */
+  font-size: 2vw;
   font-weight: 400;
   line-height: 45px;
   align-items: center;
   display: flex;
   gap: 10px;
+  margin-bottom: 2rem;
 }
+/* .home-about-btn-div {
+    float: left;
+    clip-path: ellipse(closest-side farthest-side);
+  position: absolute;
+  
+  margin: 20px;
+  width: 799px;
+  height: 444px;
+  background: rgba(105, 174, 231, 0.3);
+
+} */
+/* .home-about-headshot-img {
+  width: 100%;
+  padding-left: 5rem;
+  margin-left: 9.5rem;
+} */
