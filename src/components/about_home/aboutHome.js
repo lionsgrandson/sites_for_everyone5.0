@@ -1,5 +1,6 @@
 import "./aboutHome.css";
 import { FaArrowRightLong } from "react-icons/fa6";
+import moseHeadshot from "../../img/mosheHeadshot.png" ;
 
 export default function AboutHome() {
   return (
@@ -20,7 +21,7 @@ export default function AboutHome() {
         </button>
       </div>
       <img
-        src=""
+        src={moseHeadshot}
         alt="image of the CEO of the company - Moshe"
       />
     </div>
