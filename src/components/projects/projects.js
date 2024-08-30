@@ -14,29 +14,36 @@ import omniFood from "../../img/portfolio/Omnifood-neverCookgain.png";
 import shlomo from "../../img/portfolio/ShalomCarmel.jpg";
 import smokin from "../../img/portfolio/SmokinT's.jpg";
 import toraDojo from "../../img/portfolio/ToraDojoIsrael.jpg";
+import "./projects.css"
 export default function Projects(props) {
   const imgArr = [
+      omniFood,
+      ID1Img,
+      DYImg,
+      itaiImg,
     toraDojo,
     smokin,
     shlomo,
-    omniFood,
     maimChaim,
     Mahogony,
     lfzImg,
-    itaiImg,
     ID2Img,
-    ID1Img,
     EPImg,
-    DYImg,
   ];
 
   return (
     <div>
-      <h2>{props.h2Proj}</h2>
-      <h1>{props.h1Proj} </h1>
-      {imgArr.map((arr) => {
-        return <img src={arr} />;
-      })}
+      <h2 className="Projh2">{props.h2Proj}</h2>
+      <h1 className="projh1">{props.h1Proj} </h1>
+      <div className="img-arr-div">
+
+      {imgArr.map((arr, index) => {
+          if (index <= parseInt(props.exitNum)-1) {
+              return <img className="imgProj" src={arr} />;
+            }
+        })}
+        </div>
     </div>
   );
 }
+// TODO edit this so this component is a title card, and you can use it in other places, not as a grid, but as a card with text 

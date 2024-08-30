@@ -28,6 +28,7 @@ function App() {
         <Projects
           h2Proj="Results matter."
           h1Proj="See What We Mean"
+          exitNum="4"
         />
         {/* <Footer/> */}
       </header>
