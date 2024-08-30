@@ -23,6 +23,7 @@ export default function AboutHome() {
             Read More <FaArrowRightLong />
           </button>
       </div>
+      {/* //TODO fix the text width and hight */}
       <img
         src={moseHeadshot}
         className="home-about-headshot-img"
