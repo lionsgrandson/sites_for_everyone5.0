@@ -17,6 +17,7 @@ export default function OurProccess() {
         WbtnQ={false}
         LORImg={false}
       />
+      <div className="middleBoxProc">Let people see the real you.</div>
       <PicXtext
         imgXTextImg={imgXTextImg2}
         picXtexth1="Development"
@@ -24,6 +25,11 @@ export default function OurProccess() {
         WbtnQ={false}
         LORImg={true}
       />
+      <div className="bottomBoxProc">
+        <p className="procFir">const</p>
+        <p className="procsec"> perfection</p>
+        <p className="procLast"> = planning + Meticulousness;</p>
+      </div>
       <PicXtext
         imgXTextImg={imgXTextImg3}
         picXtexth1="Deployment & SEO"

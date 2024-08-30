@@ -48,3 +48,41 @@
   text-align: center;
   color: rgba(92, 72, 173, 1);
 }
+.middleBoxProc {
+  padding: 34px 172px;
+  border-radius: 64px;
+
+  background: linear-gradient(90deg, #214ce7 200%, #5c48ad 100%);
+  font-family: Marcellus;
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 94.04px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.bottomBoxProc {
+  text-align: center;
+  background: linear-gradient(80.08deg, #0f172a 14.62%, #334f90 78.4%);
+  padding: 5rem;
+  border-radius: 64px;
+  font-family: VT323;
+  font-size: 61px;
+  font-weight: 400;
+  line-height: 61px;
+  letter-spacing: 0.01em;
+  text-align: center;
+
+  margin: 0 14rem;
+}
+.procFir {
+  display: inline;
+  color: #c99437;
+}
+.procsec {
+  display: inline;
+  color: var(--purple);
+}
+.procLast {
+  color: white;
+  display: inline;
+}

@@ -7,7 +7,9 @@ export default function PicXtext(props) {
   return (
     // TODO deal with the elips
     <div className={`${classNamePr} ${props.aboutCls ? "about" : ""}`}>
-      <div className="home-picXtext-innder-div">
+      <div
+        className={`home-picXtext-innder-div ${props.aboutCls ? "about" : ""}`}
+      >
         <h1 className={`home-picXtext-h1 ${props.aboutCls ? "about" : ""}`}>
           {props.picXtexth1}
         </h1>
