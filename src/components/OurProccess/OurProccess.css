@@ -1,6 +1,9 @@
-.ourProSection {
+.ourProSection-Title {
   background: rgba(247, 251, 255, 1);
   padding: 0 calc(50vw - 400px);
+}
+.ourProSection {
+  background: rgba(247, 251, 255, 1);
 }
 .title-our {
   width: 722px;
