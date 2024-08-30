@@ -17,7 +17,9 @@ export default function OurProccess() {
         WbtnQ={false}
         LORImg={false}
       />
-      <div className="middleBoxProc">Let people see the real you.</div>
+      <div className="middleBoxProc">
+        Let people see the <span>real</span> you.
+      </div>
       <PicXtext
         imgXTextImg={imgXTextImg2}
         picXtexth1="Development"

@@ -46,15 +46,26 @@
   line-height: 131.66px;
   letter-spacing: 0.2em;
   text-align: center;
+
   color: rgba(92, 72, 173, 1);
 }
+.middleBoxProc span {
+  font-family: Parisienne;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 122.61px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
 .middleBoxProc {
-  padding: 34px 172px;
   border-radius: 64px;
-
   background: linear-gradient(90deg, #214ce7 200%, #5c48ad 100%);
+
+  margin: 0 20rem;
+
   font-family: Marcellus;
-  font-size: 75px;
+  /* font-size: 75px; */
+  font-size: 61px;
   font-weight: 400;
   line-height: 94.04px;
   letter-spacing: 0.01em;
