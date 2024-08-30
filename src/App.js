@@ -5,7 +5,7 @@ import AboutHome from "./components/about_home/aboutHome";
 import OurProccess from "./components/OurProccess/OurProccess";
 import PicXtext from "./components/picXtext/picXtext";
 import moseHeadshot from "./img/mosheHeadshot.png";
-
+import Projects from "./components/projects/projects";
 import "./App.css";
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
           />
           <OurProccess />
         </div>
+        <Projects />
         {/* <Footer/> */}
       </header>
     </div>
