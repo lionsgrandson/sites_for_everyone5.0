@@ -14,13 +14,29 @@ import omniFood from "../../img/portfolio/Omnifood-neverCookgain.png";
 import shlomo from "../../img/portfolio/ShalomCarmel.jpg";
 import smokin from "../../img/portfolio/SmokinT's.jpg";
 import toraDojo from "../../img/portfolio/ToraDojoIsrael.jpg";
-export default function Projects() {
-    
+export default function Projects(props) {
+  const imgArr = [
+    toraDojo,
+    smokin,
+    shlomo,
+    omniFood,
+    maimChaim,
+    Mahogony,
+    lfzImg,
+    itaiImg,
+    ID2Img,
+    ID1Img,
+    EPImg,
+    DYImg,
+  ];
+
   return (
     <div>
-      <h2>Results matter.</h2>
-      <h1>See What We Mean</h1>
-      <img src="" />
+      <h2>{props.h2Proj}</h2>
+      <h1>{props.h1Proj} </h1>
+      {imgArr.map((arr) => {
+        return <img src={arr} />;
+      })}
     </div>
   );
 }

@@ -25,7 +25,10 @@ function App() {
           />
           <OurProccess />
         </div>
-        <Projects />
+        <Projects
+          h2Proj="Results matter."
+          h1Proj="See What We Mean"
+        />
         {/* <Footer/> */}
       </header>
     </div>
