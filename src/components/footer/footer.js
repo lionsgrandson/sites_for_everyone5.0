@@ -13,10 +13,16 @@ export default function Footer() {
             <li>Sites for Everyone</li>
             <li>Tartzav 12</li>
             <li>Holon Israel</li>
-            <li className="socialsLi">
-              <FaInstagram size={40} />
-              <FaLinkedin size={40} />
-              <FaTwitter size={40} />
+            <li className="socialsLi footerSubMenu">
+              <a href="https://www.instagram.com/moshe_blackberg/">
+                <FaInstagram size={40} />
+              </a>
+              <a href="https://www.linkedin.com/in/moshe-schwartzberg-ab54401a7/">
+                <FaLinkedin size={40} />
+              </a>
+              <a href="https://x.com/MosheBlackberg">
+                <FaTwitter size={40} />
+              </a>
             </li>
           </ul>
         </div>
