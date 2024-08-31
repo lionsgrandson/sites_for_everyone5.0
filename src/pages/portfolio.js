@@ -14,6 +14,7 @@ import idfTene1 from "../img/portfolio/idftene.png";
 import idftene2 from "../img/portfolio/idftene2.0.png";
 import Maim from "../img/portfolio/maim-chaim.jpg";
 import "./portoflio.css";
+import CTA from "../components/cta/cta";
 export default function Portfolio() {
   const imgArr = [
     Omnifood,
@@ -61,6 +62,13 @@ export default function Portfolio() {
       <blockquote className="portQuote">
         “It's not who we are underneath, but what we do that defines us.”
       </blockquote>
+      <CTA
+        ctaH1="Ready to Start Your Jorney?"
+        ctaBtn="Contact Us"
+        wAoN={true}
+        btnOnBtn={true}
+        ctaP="Our expert team is eager to collaborate with you on creating a stunning, high-performing website. Whether you need a fresh design, improved functionality, or expert digital marketing strategies, we've got you covered. Contact us today for a free consultation and let's bring your vision to life"
+      />
       <Footer />
     </div>
   );
