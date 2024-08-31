@@ -13,4 +13,6 @@
   line-height: 45px;
   color: rgba(255, 255, 255, 1);
   justify-content: center;
+    grid-column: 2;
+
 }

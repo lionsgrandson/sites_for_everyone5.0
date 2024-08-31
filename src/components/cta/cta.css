@@ -1,12 +1,30 @@
-.cta-div{
-
+.cta-div {
+  background: linear-gradient(263.41deg, #214ce7 0.75%, #5c48ad 97.9%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 10px;
+  align-items: start;
+  padding: 5rem 5rem 0 5rem;
 }
-.cta-h1{
-
+.cta-h1 {
+  font-family: Marcellus;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 100px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  margin: 0 5rem;
 }
-.cta-p{
-
-}
-.cta-btn{
-    
+.cta-p {
+  font-family: Nunito;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38.19px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  grid-column: 2;
 }
