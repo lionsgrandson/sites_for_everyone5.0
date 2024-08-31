@@ -6,6 +6,7 @@ import OurProccess from "./components/OurProccess/OurProccess";
 import PicXtext from "./components/picXtext/picXtext";
 import moseHeadshot from "./img/mosheHeadshot.png";
 import Projects from "./components/projects/projects";
+import CTA from "./components/cta/cta";
 import "./App.css";
 
 function App() {
@@ -29,6 +30,12 @@ function App() {
           h2Proj="Results matter."
           h1Proj="See What We Mean"
           exitNum="4"
+        />
+        <CTA
+          ctaH1="Ready to Start
+Your Jorney?"
+          ctaP="Our expert team is eager to collaborate with you on creating a stunning, high-performing website. Whether you need a fresh design, improved functionality, or expert digital marketing strategies, we've got you covered. Contact us today for a free consultation and let's bring your vision to life"
+          ctaBtn="Contact Us"
         />
         {/* <Footer/> */}
       </header>

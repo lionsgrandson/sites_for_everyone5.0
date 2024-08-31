@@ -1,6 +1,6 @@
 import "./picXtext.css";
 import { FaArrowRightLong } from "react-icons/fa6";
-
+import Btn from "../btn/btn";
 export default function PicXtext(props) {
   const classNamePr = `home-picXtext-div ${props.LORImg ? "left" : ""}`;
   const aboutClsName = `${props.aboutCls ? "about" : ""}`;
@@ -16,11 +16,7 @@ export default function PicXtext(props) {
         <p className={`home-picXtext-p ${props.aboutCls ? "about" : ""}`}>
           {props.textP}
         </p>
-        {props.WbtnQ ? (
-          <button className="home-picXtext-btn">
-            Read More <FaArrowRightLong />
-          </button>
-        ) : null}
+        {props.WbtnQ ? <Btn bntTxt="Read More" /> : null}
       </div>
       <img
         src={props.imgXTextImg}
