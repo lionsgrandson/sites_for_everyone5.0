@@ -5,6 +5,7 @@ import About from "./pages/about";
 import Portfolio from "./pages/portfolio";
 import Blog from "./pages/blog";
 import Contact from "./pages/contact";
+import Thankyou from "./pages/thankyou";
 import "./App.css";
 
 function App() {
@@ -37,10 +38,11 @@ function App() {
           element={<Contact />}
         />
 
-        {/*<Route
+        <Route
           path="/thankyou"
-          element={<ThankYouPage />}
+          element={<Thankyou />}
         />
+        {/*
          <Route
           path="/blog/new"
           element={<CretePost />}

@@ -1,0 +1,105 @@
+.contacth1 {
+  font-family: Marcellus;
+  font-size: 11rem;
+  font-weight: 400;
+  line-height: 137.93px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin: 0 auto;
+}
+.contactH3 {
+  font-family: Nunito;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin: 5rem auto 0 auto;
+  background: linear-gradient(90deg, #5c48ad 0%, #214ce7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 20px; /* Space between grid items */
+  padding: 10rem;
+
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 10rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.namediv,
+.emailDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.messageDiv {
+  grid-column: span 2; /* Message textarea spans across both columns */
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-input,
+.form-textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.Btn {
+  grid-column: span 2; /* Button spans across both columns */
+  padding: 10px 20px;
+  background-color: #5c48ad;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.Btn:hover {
+  background-color: #214ce7;
+}
+
+.form-message {
+  grid-column: span 2; /* Message spans across both columns */
+  text-align: center;
+  font-size: 14px;
+  color: red; /* Adjust color as needed */
+}
+label span {
+  color: red; /* Adjust color as needed */
+  font-family: Nunito;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  /* text-align: center; */
+}
+label {
+  font-family: Nunito;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+}

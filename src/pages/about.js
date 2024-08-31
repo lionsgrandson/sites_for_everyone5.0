@@ -2,12 +2,13 @@ import Menu from "../components/menu/menu";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
 import Team1 from "../img/Schwartzberg_Moshe.jpg";
+import Team2 from "../img/ariHeadshot.png";
 import "./about.css";
 export default function About() {
   return (
     <div className="about-div">
       <Menu />
-      <h1>Meet The Team</h1>
+      <h1 className="aboutH1Team">Meet The Team</h1>
       <div className="imgDivTeam">
         {/* TODO add imgs of the other team mates, and creat a semi circle out of it */}
         <img
@@ -17,7 +18,7 @@ export default function About() {
         />
         <img
           alt="hedshots of the team"
-          src={Team1}
+          src={Team2}
           className="AboutTeamHeadshotImg secondImg"
         />
         <img

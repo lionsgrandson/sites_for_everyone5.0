@@ -19,8 +19,8 @@
   margin-bottom: 0;
   background: linear-gradient(90deg, #5c48ad 0%, #214ce7 100%);
   -webkit-background-clip: text;
-  /* TODO  -Also define the standard property 'background-clip' for compatibility */
   -webkit-text-fill-color: transparent;
+  /* TODO  -Also define the standard property 'background-clip' for compatibility */
 }
 .titlel-h1-our {
   margin-top: 0;
