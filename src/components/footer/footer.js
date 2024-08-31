@@ -3,7 +3,7 @@ import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   const Year = new Date();
-  
+
   return (
     <div className="footerConaintere">
       <div className="fooerDiv">
@@ -20,22 +20,45 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>Blog</li>
-          <li>Contact</li>
+        <ul className="footerSubMenu">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/service">Services</a>
+          </li>
+          <li>
+            <a href="/portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
         </ul>
-        <ul>
-          <li>Support</li>
-          <li>Contact us</li>
-          <li>Open Positions</li>
+        <ul className="footerSubMenu">
+          <li>
+            <a href="/contact">Support</a>
+          </li>
+          <li>
+            <a href="/contact">Contact us</a>
+          </li>
+          <li>
+            {/* TODO add a title to the message with this header (support or contact or open) */}
+            <a href="/contact">Open Positions</a>
+          </li>
         </ul>
-        <ul>
-          <li>Terms and Conditions</li>
-          <li>Privacy Policy</li>
+        <ul className="footerSubMenu">
+          <li>
+            <a href="/Terms"> Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="/privacyLOL">Privacy Policy</a>
+          </li>
         </ul>
       </div>
       <p>© {Year.getFullYear()} Sites for Everyone, all rights reserved. </p>

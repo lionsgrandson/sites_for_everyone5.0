@@ -20,8 +20,10 @@ ul {
   display: flex;
   gap: 28px;
 }
-.footerConaintere{
- background: #0f172a;
+.footerConaintere {
+  background: #0f172a;
   color: white;
- 
+}
+.footerSubMenu a {
+  color: white;
 }
