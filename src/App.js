@@ -1,45 +1,60 @@
-import Menu from "./components/menu/menu";
-import Footer from "./components/footer/footer";
-import Hero from "./components/hero/hero";
-import AboutHome from "./components/about_home/aboutHome";
-import OurProccess from "./components/OurProccess/OurProccess";
-import PicXtext from "./components/picXtext/picXtext";
-import moseHeadshot from "./img/mosheHeadshot.png";
-import Projects from "./components/projects/projects";
-import CTA from "./components/cta/cta";
+import Home from "./pages/home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Service from "./pages/service";
+import About from "./pages/about";
+import Portfolio from "./pages/portfolio";
+import Blog from "./pages/blog";
+import Contact from "./pages/contact";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="home-hero">
-          <Menu />
-          <Hero />
-          <PicXtext
-            imgXTextImg={moseHeadshot}
-            picXtexth1="Hi, I’m Moshe, CEO of Sites for Everyone"
-            textP="Running a business is hard enough... let us help you take the load off. Our team of experiences developers, designers and Dev-Ops engineers is always ready to provide our client with the most sophisticated final product and the guidance throughout the building process.  "
-            WbtnQ={true}
-            LORImg={false}
-            aboutCls={true}
-          />
-          <OurProccess />
-        </div>
-        <Projects
-          h2Proj="Results matter."
-          h1Proj="See What We Mean"
-          exitNum="4"
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={<Home />}
         />
-        <CTA
-          ctaH1="Ready to Start
-Your Jorney?"
-          ctaP="Our expert team is eager to collaborate with you on creating a stunning, high-performing website. Whether you need a fresh design, improved functionality, or expert digital marketing strategies, we've got you covered. Contact us today for a free consultation and let's bring your vision to life"
-          ctaBtn="Contact Us"
+
+        <Route
+          path="/about"
+          element={<About />}
         />
-        <Footer/>
-      </header>
-    </div>
+        <Route
+          path="/service"
+          element={<Service />}
+        />
+        <Route
+          path="/portfolio"
+          element={<Portfolio />}
+        />
+        <Route
+          path="/blog"
+          element={<Blog />}
+        />
+        <Route
+          path="/contact"
+          element={<Contact />}
+        />
+
+        {/*<Route
+          path="/thankyou"
+          element={<ThankYouPage />}
+        />
+         <Route
+          path="/blog/new"
+          element={<CretePost />}
+        />
+        <Route
+          path="/full"
+          element={<FullBlogPostPage />}
+        />
+        <Route
+          path="/deadProj"
+          element={<DeadProject />}
+        /> */}
+      </Routes>
+    </Router>
   );
 }
 
