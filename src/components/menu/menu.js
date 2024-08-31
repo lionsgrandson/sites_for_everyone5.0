@@ -30,6 +30,7 @@ export default function Menu() {
         bntTxt="Get Started"
         WoBcls={false}
         wAoN={false}
+        btnHref="/contact"
       />
       <a href="#">
         <img

@@ -25,6 +25,7 @@ export default function CTA(props) {
           bntTxt={props.ctaBtn}
           WoBcls={true}
           wAoN={true}
+          btnHref="/contact"
         />
       )}
     </div>

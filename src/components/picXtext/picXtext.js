@@ -20,6 +20,7 @@ export default function PicXtext(props) {
           <Btn
             bntTxt="Read More"
             wAoN={true}
+            btnHref="/about"
           />
         ) : null}
       </div>
