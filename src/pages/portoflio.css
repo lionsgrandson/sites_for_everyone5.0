@@ -1,0 +1,26 @@
+.imgArrdiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.protH3 {
+  font-family: Nunito;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  background: linear-gradient(90deg, #5c48ad 0%, #214ce7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 5rem auto 0 auto;
+}
+.protH1 {
+  margin: 0 auto;
+  font-family: Marcellus;
+  font-size: 110px;
+  font-weight: 400;
+  line-height: 137.93px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}

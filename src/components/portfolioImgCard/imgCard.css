@@ -1,0 +1,20 @@
+.imgCardDiv {
+}
+.imgCardImg {
+  width: 369px;
+  height: 361px;
+  top: 602px;
+  left: 62px;
+  gap: 0px;
+  border-radius: 15px 0px 0px 0px;
+  opacity: 0px;
+}
+.imgCardTxt {
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.28px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
