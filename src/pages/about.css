@@ -1,3 +1,28 @@
-.about-div{
-    
+.AboutTeamHeadshotImg {
+  width: 328.52px;
+  height: 428.47px;
+  border-radius: 20px;
 }
+.imgDivTeam {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+/* .firstImg {
+  transform: rotate(337.96deg);
+}
+.secondImg {
+    transform: rotate(354.73deg);
+}
+.ThirdImg {
+    transform: rotate(0);
+}
+.FourthImg {
+    transform: rotate(13.86deg);
+}
+.FifthImg {
+    transform: rotate(21.82deg);
+} */

@@ -1,12 +1,41 @@
 import Menu from "../components/menu/menu";
 import Footer from "../components/footer/footer";
 import CTA from "../components/cta/cta";
+import Team1 from "../img/Schwartzberg_Moshe.jpg";
+import "./about.css";
 export default function About() {
   return (
     <div className="about-div">
       <Menu />
       <h1>Meet The Team</h1>
-      <img alt="hedshots of the team" />
+      <div className="imgDivTeam">
+        {/* TODO add imgs of the other team mates, and creat a semi circle out of it */}
+        <img
+          alt="hedshots of the team"
+          src={Team1}
+          className="AboutTeamHeadshotImg firstImg"
+        />
+        <img
+          alt="hedshots of the team"
+          src={Team1}
+          className="AboutTeamHeadshotImg secondImg"
+        />
+        <img
+          alt="hedshots of the team"
+          src={Team1}
+          className="AboutTeamHeadshotImg ThirdImg"
+        />
+        <img
+          alt="hedshots of the team"
+          src={Team1}
+          className="AboutTeamHeadshotImg FourthImg"
+        />
+        <img
+          alt="hedshots of the team"
+          src={Team1}
+          className="AboutTeamHeadshotImg FifthImg"
+        />
+      </div>
       <CTA
         ctaH1="Our "
         ctaH1Spn="Mission"
