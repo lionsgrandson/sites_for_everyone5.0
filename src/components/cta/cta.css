@@ -1,3 +1,11 @@
+.cta-div.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cta-p.flex {
+  margin: 0 20rem;
+}
 .cta-div {
   background: linear-gradient(263.41deg, #214ce7 0.75%, #5c48ad 97.9%);
   display: grid;
@@ -5,7 +13,37 @@
   column-gap: 20px;
   row-gap: 10px;
   align-items: start;
-  padding: 5rem ;
+  padding: 5rem;
+}
+.cta-div.ourMission {
+  background: var(--off-white);
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cta-div.ourMission.FirstCls {
+  justify-content: space-evenly;
+}
+
+.cta-div.ourMission.SecondCls {
+  margin: 0 18rem 10rem;
+  box-shadow: 0px 0px 40px 0px rgba(105, 174, 231, 1);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 1);
+  padding-bottom: 15rem;
+}
+.cta-h1.ourMission span {
+  color: rgba(255, 186, 58, 0.77);
+}
+.cta-h1.ourMission {
+  color: var(--gray);
+  font-family: Marcellus;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 90.28px;
+  letter-spacing: 0.01em;
+  text-align: left;
 }
 .cta-h1 {
   font-family: Marcellus;
@@ -18,6 +56,22 @@
   grid-column: 1;
   grid-row: 1 / span 2;
   margin: 0 5rem;
+}
+
+.cta-p.ourMission.FirstCls {
+  width: 74.8rem;
+}
+.cta-p.ourMission.SecondCls {
+  width: 1365px;
+}
+.cta-p.ourMission {
+  font-family: Nunito;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38.19px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgba(66, 66, 66, 1);
 }
 .cta-p {
   font-family: Nunito;

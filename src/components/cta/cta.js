@@ -3,14 +3,30 @@ import "./cta.css";
 import Btn from "../btn/btn";
 export default function CTA(props) {
   return (
-    <div className="cta-div">
-      <h1 className="cta-h1">{props.ctaH1}</h1>
-      <p className="cta-p">{props.ctaP}</p>
-      <Btn
-        bntTxt={props.ctaBtn}
-        WoBcls={true}
-        wAoN={true}
-      />
+    <div
+      className={`cta-div ${props.ctaCCls && "ourMission"}   ${
+        props.ctaSndCls ? "FirstCls" : "SecondCls"
+      } ${props.florGr && "flex"}`}
+    >
+      <h1 className={`cta-h1 ${props.ctaCCls && "ourMission"}`}>
+        {props.ctaH1}
+        <span> {props.ctaH1Spn}</span>
+      </h1>
+      <p
+        className={`cta-p ${props.ctaCCls && "ourMission"} 
+        ${props.ctaSndCls ? "FirstCls" : "SecondCls"} ${props.florGr && "flex"}
+     
+        `}
+      >
+        {props.ctaP}
+      </p>
+      {props.btnOnBtn && (
+        <Btn
+          bntTxt={props.ctaBtn}
+          WoBcls={true}
+          wAoN={true}
+        />
+      )}
     </div>
   );
 }
