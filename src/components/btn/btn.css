@@ -6,13 +6,20 @@
   border-radius: 52px;
   background: linear-gradient(90deg, #214ce7 0%, #5c48ad 100%);
   width: 268.65px;
-  /* 
-  height: 40.37px; */
   font-size: 28px;
   font-weight: 400;
   line-height: 45px;
   color: rgba(255, 255, 255, 1);
   justify-content: center;
-    grid-column: 2;
+  grid-column: 2;
+}
+.btn-btn.white {
+  background: rgba(255, 255, 255, 1);
+}
+.aCls.white {
+  color: var(--gray);
+}
+.aCls{
+  color: rgba(255, 255, 255, 1);
 
 }

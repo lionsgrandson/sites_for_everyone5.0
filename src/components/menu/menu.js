@@ -1,5 +1,6 @@
 import "./menu.css";
 import ILflagImg from "../../img/IlFlagIcon.png";
+import Btn from "../btn/btn";
 export default function Menu() {
   return (
     <div className="menu-div">
@@ -25,9 +26,11 @@ export default function Menu() {
           <a href="./contact">Contact</a>
         </li>
       </ul>
-      <button className="CalltoActionNav">
-        <a href="#">Get Started</a>
-      </button>
+      <Btn
+        bntTxt="Get Started"
+        WoBcls={false}
+        wAoN={false}
+      />
       <a href="#">
         <img
           src={ILflagImg}

@@ -16,7 +16,12 @@ export default function PicXtext(props) {
         <p className={`home-picXtext-p ${props.aboutCls ? "about" : ""}`}>
           {props.textP}
         </p>
-        {props.WbtnQ ? <Btn bntTxt="Read More" /> : null}
+        {props.WbtnQ ? (
+          <Btn
+            bntTxt="Read More"
+            wAoN={true}
+          />
+        ) : null}
       </div>
       <img
         src={props.imgXTextImg}

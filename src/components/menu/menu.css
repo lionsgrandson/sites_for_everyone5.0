@@ -27,6 +27,12 @@ a {
   color: var(--gray);
   text-decoration: none;
 }
+.menu-list li a {
+  font-family: Nunito;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 34.1px;
+}
 .menu-div {
   display: flex;
   justify-content: space-between;
