@@ -58,6 +58,9 @@ export default function Portfolio() {
           );
         })}
       </div>
+      <blockquote className="portQuote">
+        “It's not who we are underneath, but what we do that defines us.”
+      </blockquote>
       <Footer />
     </div>
   );
