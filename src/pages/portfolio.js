@@ -29,17 +29,31 @@ export default function Portfolio() {
     Shalom,
     ToraDojo,
   ];
+  const textArr = [
+    "Omnifood",
+    "Daniel Yehuda",
+    "Smokin t's",
+    "AI pro",
+    "Lions for Zion",
+    "Maim Chaim",
+    "IDF Tech & Maintenance corps v2.0",
+    "Mahogony Israel",
+    "IDF Tech & Maintenance corps v1.0",
+    "Enter Plus",
+    "Shalom Carmel",
+    "Tora Dojo Israel",
+  ];
   return (
     <div>
       <Menu />
       <h3 className="protH3">Not convinced yet?</h3>
       <h1 className="protH1">See Our Work</h1>
       <div className="imgArrdiv">
-        {imgArr.map((srcImg) => {
+        {imgArr.map((srcImg, index) => {
           return (
             <ImgCard
               imgSrc={srcImg}
-              imgTitle="OmniFood"
+              imgTitle={textArr[index]}
             />
           );
         })}
