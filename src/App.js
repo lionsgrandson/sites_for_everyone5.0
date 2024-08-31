@@ -37,7 +37,7 @@ Your Jorney?"
           ctaP="Our expert team is eager to collaborate with you on creating a stunning, high-performing website. Whether you need a fresh design, improved functionality, or expert digital marketing strategies, we've got you covered. Contact us today for a free consultation and let's bring your vision to life"
           ctaBtn="Contact Us"
         />
-        {/* <Footer/> */}
+        <Footer/>
       </header>
     </div>
   );
