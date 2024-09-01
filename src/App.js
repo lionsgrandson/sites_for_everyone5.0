@@ -6,6 +6,8 @@ import Portfolio from "./pages/portfolio";
 import Blog from "./pages/blog";
 import Contact from "./pages/contact";
 import Thankyou from "./pages/thankyou";
+import TermnCond from "./pages/termsNConditions";
+import Privacy from "./pages/privacy";
 import "./App.css";
 
 function App() {
@@ -41,6 +43,14 @@ function App() {
         <Route
           path="/thankyou"
           element={<Thankyou />}
+        />
+        <Route
+          path="/terms"
+          element={<TermnCond />}
+        />
+        <Route
+          path="/privacyLOL"
+          element={<Privacy />}
         />
         {/*
          <Route
