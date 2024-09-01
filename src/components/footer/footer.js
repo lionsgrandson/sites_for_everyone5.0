@@ -60,7 +60,7 @@ export default function Footer() {
         </ul>
         <ul className="footerSubMenu">
           <li>
-            <a href="/Terms"> Terms and Conditions</a>
+            <a href="/terms"> Terms and Conditions</a>
           </li>
           <li>
             <a href="/privacyLOL">Privacy Policy</a>
