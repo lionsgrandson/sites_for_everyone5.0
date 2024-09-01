@@ -20,7 +20,7 @@ export default function About() {
             src={Moshe}
             className="AboutTeamHeadshotImg firstImg"
           />
-          <label>Head Developer, Business Owner</label>
+          <label>Head Developer, CEO</label>
         </div>
         <div className="innderDivImg">
           <img
