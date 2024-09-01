@@ -82,7 +82,7 @@ export default function Privacy() {
           please contact us at:
         </p>
         <p class="paragraph-privacy">
-          Email:{" "}
+          Email:
           <a
             href="mailto:mosheschwartzberg@gmail.com"
             class="link-privacy"
@@ -91,7 +91,7 @@ export default function Privacy() {
           </a>
         </p>
         <p class="paragraph-privacy">
-          Website:{" "}
+          Website:
           <a
             href="https://mosheschwartzberg.com/contact"
             class="link-privacy"

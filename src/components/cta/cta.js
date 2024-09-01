@@ -19,6 +19,9 @@ export default function CTA(props) {
         `}
       >
         {props.ctaP}
+        <br />
+        <br />
+        {props.ctaP2}
       </p>
       {props.btnOnBtn && (
         <Btn
