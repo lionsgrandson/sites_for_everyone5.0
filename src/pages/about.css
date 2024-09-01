@@ -18,6 +18,14 @@
   letter-spacing: 0.01em;
   text-align: center;
 }
+.innderDivImg {
+  display: flex;
+  flex-direction: column;
+}
+.innderDivImg label {
+  text-align: center;
+  font-size: 2.3rem;
+}
 /* .firstImg {
   transform: rotate(337.96deg);
 }
