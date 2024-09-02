@@ -13,7 +13,7 @@ export default function Footer() {
           <h3 className="footerH3">Sites for Everyone</h3>
           <ul>
             <li>Sites for Everyone</li>
-            <li>Tartzav 12</li>
+            {/* <li>Tartzav 12</li> */}
             <li>Holon Israel</li>
             <li className="socialsLi">
               <a
