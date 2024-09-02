@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem; /* Changed from 2rem to 1rem */
+  /* padding: 1rem; */
   position: relative;
   flex-wrap: wrap;
   width: 100%;
@@ -10,6 +10,7 @@
 }
 .logo-link {
   text-decoration: none; /* Remove underline from the logo link */
+  padding: 1rem;
 }
 
 .menu_header {

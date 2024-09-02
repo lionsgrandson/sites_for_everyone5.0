@@ -45,7 +45,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 1rem auto;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   width: 100%;
 }
 
