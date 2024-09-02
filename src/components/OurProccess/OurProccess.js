@@ -27,10 +27,12 @@ export default function OurProccess() {
         WbtnQ={false}
         LORImg={true}
       />
-      <div className="bottomBoxProc">
-        <p className="procFir">const</p>
-        <p className="procsec"> perfection</p>
-        <p className="procLast"> = planning + Meticulousness;</p>
+      <div className="bottomBoxOuterBox">
+        <div className="bottomBoxProc">
+          <p className="procFir">const </p>
+          <p className="procsec"> perfection</p>
+          <p className="procLast"> = planning + Meticulousness;</p>
+        </div>
       </div>
       <PicXtext
         imgXTextImg={imgXTextImg3}
