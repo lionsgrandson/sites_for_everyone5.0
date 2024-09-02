@@ -1,21 +1,29 @@
+/* footer.css */
 .footerContainer {
   background: #0f172a;
   color: white;
-  padding: 2rem;
+  padding: 4rem 2rem;
   width: 100%;
 }
 
 .footerDiv {
   display: flex;
-  justify-content: space-around;
-  padding-top: 5rem;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 2.2rem;
-  font-weight: 400;
-  line-height: 4.5rem;
-  text-align: start;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footerSection {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footerH3 {
+  font-size: 2.4rem; /* Full size for desktop */
+  margin-bottom: 1rem;
+  color: var(--white);
 }
 
 ul {
@@ -24,73 +32,73 @@ ul {
   margin: 0;
 }
 
-.footerH3 {
-  margin-top: 0;
-  font-size: 2.4rem;
-  color: var(--white);
-}
-
 .socialsLi {
   display: flex;
-  gap: 2.8rem;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.socialsLi a {
+  color: white;
+  font-size: 2rem; /* Full size for desktop */
 }
 
 .footerSubMenu a {
   color: white;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.8rem; /* Full size for desktop */
+  line-height: 2;
 }
 
 .footerSubMenu a:hover {
   text-decoration: underline;
 }
 
-.footerSubMenu {
-  margin-bottom: 2rem;
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem; /* Full size for desktop */
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .footerDiv {
     flex-direction: column;
     align-items: center;
-    padding-top: 2rem;
   }
 
-  .footerSubMenu {
+  .footerSection {
+    width: 100%;
     text-align: center;
-    padding: 1rem 0;
+    margin-bottom: 2rem;
   }
 
   .socialsLi {
     justify-content: center;
-    gap: 2rem;
   }
 
   .footerH3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2rem; /* Slightly smaller for mobile */
+  }
+
+  .socialsLi a {
+    font-size: 1.5rem; /* Slightly smaller for mobile */
   }
 
   .footerSubMenu a {
-    font-size: 1.6rem;
+    font-size: 1.6rem; /* Slightly smaller for mobile */
   }
 }
 
 @media screen and (max-width: 480px) {
   .footerContainer {
-    padding: 1rem;
-  }
-
-  .footerDiv {
-    padding-top: 1rem;
+    padding: 2rem 1rem;
   }
 
   .footerH3 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Smaller for very small screens */
   }
 
   .footerSubMenu a {
-    font-size: 1.4rem;
+    font-size: 1.4rem; /* Smaller for very small screens */
   }
 }

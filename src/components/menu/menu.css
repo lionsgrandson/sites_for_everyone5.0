@@ -1,13 +1,13 @@
 .menu-div {
   display: flex;
-  justify-content: space-between; /* Align logo to the left and menu to the right */
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem; /* Changed from 2rem to 1rem */
   position: relative;
   flex-wrap: wrap;
   width: 100%;
+  align-content: space-between;
 }
-
 .logo-link {
   text-decoration: none; /* Remove underline from the logo link */
 }
@@ -31,6 +31,8 @@
   align-items: center;
   justify-content: space-evenly; /* Evenly space the menu items */
   flex-grow: 1;
+  width: 80%; /* Reduced width to make the menu narrower */
+  max-width: 1200px; /* Optional: Set a max-width to prevent it from being too wide */
 }
 
 .menu-list {
@@ -56,20 +58,6 @@
   gap: 2rem; /* Increase the gap for more space between elements */
 }
 
-.CalltoActionNav {
-  padding: 0.8rem 1.5rem;
-  border-radius: 5.2rem;
-  background: linear-gradient(90deg, #214ce7 0%, #5c48ad 99.99%);
-}
-
-.CalltoActionNav a {
-  font-family: Nunito, sans-serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #ffffff;
-  text-decoration: none;
-}
-
 .ilFlagNav {
   width: 40px;
   height: 40px;
@@ -84,8 +72,7 @@
     font-size: 3rem;
   }
 
-  .menu-list li a,
-  .CalltoActionNav a {
+  .menu-list li a {
     font-size: 1.6rem;
   }
 }
@@ -93,11 +80,10 @@
 @media (max-width: 768px) {
   .menu-div {
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
+    align-items: center; /* Changed from flex-start to center */
   }
-
   .hamburger {
-    display: flex; /* Show hamburger button on smaller screens */
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
@@ -107,10 +93,10 @@
     cursor: pointer;
     position: absolute;
     top: 1.5rem;
-    right: 2rem;
-    z-index: 10; /* Ensure button is on top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Ensure perfect centering */
+    z-index: 10;
   }
-
   .hamburger-bar {
     width: 100%;
     height: 3px;
@@ -134,7 +120,7 @@
     display: none; /* Hide menu container by default on smaller screens */
     flex-direction: column; /* Stack items vertically when visible */
     align-items: center;
-    width: 100%;
+    width: 100%; /* Full width when open */
   }
 
   .menu-container.open {
@@ -154,11 +140,6 @@
     margin-top: 1rem;
   }
 
-  .CalltoActionNav {
-    width: 100%;
-    text-align: center;
-  }
-
   .flag-link {
     margin-top: 1rem;
   }
@@ -169,8 +150,18 @@
     font-size: 2.5rem;
   }
 
-  .menu-list li a,
-  .CalltoActionNav a {
+  .menu-list li a {
     font-size: 1.4rem;
+  }
+}
+
+/* Styles for Btn component */
+.menu-actions .btn-btn {
+  width: auto; /* Adjust width as needed */
+}
+
+@media (max-width: 768px) {
+  .menu-actions .btn-btn {
+    width: 100%; /* Full width on smaller screens */
   }
 }

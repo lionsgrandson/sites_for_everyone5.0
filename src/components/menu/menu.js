@@ -51,9 +51,12 @@ export default function Menu() {
         </ul>
 
         <div className="menu-actions">
-          <div className="CalltoActionNav">
-            <a href="/contact">Get Started</a>
-          </div>
+          <Btn
+            btnHref="/contact"
+            bntTxt="Get Started"
+            WoBcls={false}
+            wAoN={true}
+          />
           <a
             href="#"
             className="flag-link"
