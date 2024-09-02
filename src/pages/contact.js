@@ -33,6 +33,7 @@ export default function Contact() {
           }, 1000); // hide message after 1 second
         },
         (error) => {
+          
           setStateMessage(t("Something went wrong, please try again later"));
           setIsSubmitting(false);
           setTimeout(() => {

@@ -7,6 +7,7 @@
   text-align: center;
   margin: 0 auto;
 }
+
 .contactH3 {
   font-family: Nunito;
   font-size: 44px;
@@ -19,11 +20,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .contact-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-  gap: 20px; /* Space between grid items */
-  /* padding: 10rem; */
+  gap: 20px;
   padding: 2rem;
   width: fit-content;
   border-radius: 10px;
@@ -87,20 +88,74 @@ label {
   grid-column: span 2; /* Message spans across both columns */
   text-align: center;
   font-size: 14px;
-  color: red; /* Adjust color as needed */
+  color: red;
 }
+
 label span {
-  color: red; /* Adjust color as needed */
+  color: red;
   font-family: Nunito;
   font-size: 30px;
   font-weight: 700;
   line-height: 45px;
-  /* text-align: center; */
 }
+
 label {
   font-family: Nunito;
   font-size: 30px;
   font-weight: 700;
   line-height: 45px;
   text-align: left;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .contacth1 {
+    font-size: 6rem; /* Reduce font size on smaller screens */
+    line-height: 8rem;
+  }
+
+  .contactH3 {
+    font-size: 2.5rem; /* Reduce font size for smaller screens */
+    line-height: 3rem;
+    margin: 3rem auto 1rem auto; /* Adjust spacing for smaller screens */
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    padding: 1rem; /* Reduce padding */
+    width: 90%; /* Make form width responsive */
+    max-width: 100%; /* Allow max width to be full */
+    margin: 1rem auto; /* Reduce bottom margin */
+  }
+
+  .Btn {
+    width: 100%; /* Button spans full width */
+    padding: 15px 0;
+    font-size: 1.6rem; /* Increase button font size for readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .contacth1 {
+    font-size: 4.5rem; /* Further reduce font size for extra small screens */
+    line-height: 6rem;
+  }
+
+  .contactH3 {
+    font-size: 2rem; /* Further reduce font size for smaller screens */
+    line-height: 2.5rem;
+  }
+
+  .contact-form {
+    padding: 1rem; /* Further reduce padding for extra small screens */
+  }
+
+  label {
+    font-size: 1.4rem; /* Reduce label font size */
+    line-height: 2rem;
+  }
+
+  .form-message {
+    font-size: 1.2rem; /* Reduce font size for messages */
+  }
 }
