@@ -1,29 +1,96 @@
-.fooerDiv {
+.footerContainer {
+  background: #0f172a;
+  color: white;
+  padding: 2rem;
+  width: 100%;
+}
+
+.footerDiv {
   display: flex;
   justify-content: space-around;
   padding-top: 5rem;
-
-  font-family: Nunito;
-  font-size: 22px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.2rem;
   font-weight: 400;
-  line-height: 45px;
+  line-height: 4.5rem;
   text-align: start;
+  flex-wrap: wrap;
+  width: 100%;
 }
+
 ul {
   padding-left: 0;
   list-style: none;
+  margin: 0;
 }
+
 .footerH3 {
   margin-top: 0;
+  font-size: 2.4rem;
+  color: var(--white);
 }
+
 .socialsLi {
   display: flex;
-  gap: 28px;
+  gap: 2.8rem;
 }
-.footerConaintere {
-  background: #0f172a;
-  color: white;
-}
+
 .footerSubMenu a {
   color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.footerSubMenu a:hover {
+  text-decoration: underline;
+}
+
+.footerSubMenu {
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footerDiv {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .footerSubMenu {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .socialsLi {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .footerH3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .footerSubMenu a {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footerContainer {
+    padding: 1rem;
+  }
+
+  .footerDiv {
+    padding-top: 1rem;
+  }
+
+  .footerH3 {
+    font-size: 1.8rem;
+  }
+
+  .footerSubMenu a {
+    font-size: 1.4rem;
+  }
 }

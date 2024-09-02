@@ -23,8 +23,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
   gap: 20px; /* Space between grid items */
-  padding: 10rem;
-
+  /* padding: 10rem; */
+  padding: 2rem;
+  width: fit-content;
   border-radius: 10px;
   max-width: 600px;
   margin: auto;

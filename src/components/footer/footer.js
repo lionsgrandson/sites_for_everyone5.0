@@ -5,8 +5,8 @@ export default function Footer() {
   const Year = new Date();
 
   return (
-    <div className="footerConaintere">
-      <div className="fooerDiv">
+    <div className="footerContainer">
+      <div className="footerDiv">
         <div>
           <h3 className="footerH3">Sites for Everyone</h3>
           <ul>
@@ -54,16 +54,15 @@ export default function Footer() {
             <a href="/contact">Contact us</a>
           </li>
           <li>
-            {/* TODO add a title to the message with this header (support or contact or open) */}
             <a href="/contact">Open Positions</a>
           </li>
         </ul>
         <ul className="footerSubMenu">
           <li>
-            <a href="/terms"> Terms and Conditions</a>
+            <a href="/terms">Terms and Conditions</a>
           </li>
           <li>
-            <a href="/privacyLOL">Privacy Policy</a>
+            <a href="/privacy">Privacy Policy</a>
           </li>
         </ul>
       </div>

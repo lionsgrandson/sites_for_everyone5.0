@@ -1,62 +1,153 @@
+.menu-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: auto;
+  flex-wrap: wrap;
+  position: relative; /* Position for absolute elements */
+}
+
 .menu_header {
   font-family: "Marcellus";
-  font-size: 8.3rem;
+  font-size: 6rem;
   font-weight: 400;
-  line-height: 11.2rem;
+  line-height: 8rem;
   letter-spacing: 0.01em;
   text-align: center;
   color: var(--light-blue);
-  height: 11.2rem;
+  height: auto;
   margin: 0;
 }
+
 span {
   color: var(--gray);
 }
+
 .menu-list {
   list-style: none;
   display: flex;
-  gap: 5rem;
-  width: 70.8rem;
-  height: 3.4rem;
-  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
   align-items: center;
   padding-left: 0;
   color: var(--gray);
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  transition: max-height 0.3s ease-out; /* Smooth transition for opening/closing */
 }
+
+.menu-list.open {
+  display: flex; /* Show menu list when open */
+}
+
+.menu-list li a {
+  font-family: Nunito;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
 a {
   color: var(--gray);
   text-decoration: none;
 }
-.menu-list li a {
-  font-family: Nunito;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 34.1px;
-}
-.menu-div {
-  display: flex;
-  justify-content: space-between;
-  height: 11.2rem;
-  align-items: center;
-  padding: 0 2rem;
-}
+
 .CalltoActionNav {
-  width: 21.3rem;
-  height: 7.015rem;
+  width: 15rem;
+  height: 5rem;
   border-radius: 5.2rem;
   background: linear-gradient(90deg, #214ce7 0%, #5c48ad 99.99%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .CalltoActionNav a {
   font-family: Nunito;
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 3.546rem;
-  text-align: left;
-  width: 13.8rem;
-  height: 3.2rem;
+  line-height: 2.5rem;
   color: rgba(255, 255, 255, 1);
+  text-align: center;
 }
+
 .ilFlagNav {
-  width: 62px;
-  height: 62px;
+  width: 50px;
+  height: 50px;
+  margin-left: 1rem;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 10; /* Ensure button is on top */
+}
+
+.hamburger-bar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--gray);
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Animation for the bars */
+}
+
+.hamburger-bar.open:nth-child(1) {
+  transform: translateY(10px) rotate(45deg); /* Rotate the first bar */
+}
+
+.hamburger-bar.open:nth-child(2) {
+  opacity: 0; /* Hide the middle bar */
+}
+
+.hamburger-bar.open:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg); /* Rotate the last bar */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .menu-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu_header {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+
+  .menu-list {
+    display: none; /* Hide menu list by default on smaller screens */
+    flex-direction: column; /* Stack items vertically when visible */
+    align-items: center;
+    gap: 1rem;
+    width: auto;
+  }
+
+  .menu-list.open {
+    display: flex; /* Show menu when open */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger button on smaller screens */
+  }
+
+  .CalltoActionNav {
+    width: 80%;
+    margin-top: 1rem;
+  }
+
+  .ilFlagNav {
+    margin-top: 1rem;
+  }
 }
