@@ -1,84 +1,74 @@
-.cta-div.flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.cta-p.flex {
-  margin: 0 20rem;
-}
+/* CTA Styles */
 .cta-div {
   background: linear-gradient(263.41deg, #214ce7 0.75%, #5c48ad 97.9%);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 10px;
-  align-items: start;
-  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
+
+.cta-h1 {
+  font-family: Marcellus, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+
+.cta-h1.ourMission {
+  color: var(--gray);
+}
+
+.cta-p {
+  font-family: Nunito, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+}
+
+.cta-p.ourMission {
+  color: rgba(66, 66, 66, 1);
+}
+
 .cta-div.ourMission {
   background: var(--off-white);
-
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.cta-div.ourMission.FirstCls {
-  justify-content: space-evenly;
 }
 
 .cta-div.ourMission.SecondCls {
-  margin: 0 18rem 10rem;
-  box-shadow: 0px 0px 40px 0px rgba(105, 174, 231, 1);
-  border-radius: 28px;
+  margin: 0 1rem 1rem;
+  box-shadow: 0px 0px 20px 0px rgba(105, 174, 231, 0.5);
+  border-radius: 14px;
   background: rgba(255, 255, 255, 1);
-  padding-bottom: 15rem;
-}
-.cta-h1.ourMission span {
-  color: rgba(255, 186, 58, 0.77);
-}
-.cta-h1.ourMission {
-  color: var(--gray);
-  font-family: Marcellus;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 90.28px;
-  letter-spacing: 0.01em;
-  text-align: left;
-}
-.cta-h1 {
-  font-family: Marcellus;
-  font-size: 90px;
-  font-weight: 400;
-  line-height: 100px;
-  letter-spacing: 0.01em;
-  text-align: left;
-  color: rgba(255, 255, 255, 1);
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  margin: 0 5rem;
+  padding: 2rem;
+  width: calc(100% - 2rem);
+  box-sizing: border-box;
 }
 
-.cta-p.ourMission.FirstCls {
-  width: 74.8rem;
+/* Responsive Design for CTA */
+@media (min-width: 481px) {
+  .cta-h1 {
+    font-size: 3rem;
+  }
+
+  .cta-p {
+    font-size: 1.8rem;
+  }
 }
-.cta-p.ourMission.SecondCls {
-  width: 1365px;
-}
-.cta-p.ourMission {
-  font-family: Nunito;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 38.19px;
-  letter-spacing: 0.01em;
-  text-align: left;
-  color: rgba(66, 66, 66, 1);
-}
-.cta-p {
-  font-family: Nunito;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 38.19px;
-  text-align: left;
-  color: rgba(255, 255, 255, 1);
-  grid-column: 2;
+
+@media (min-width: 768px) {
+  .cta-h1 {
+    font-size: 3.5rem;
+  }
+
+  .cta-p {
+    font-size: 2rem;
+  }
 }

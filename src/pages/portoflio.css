@@ -1,14 +1,17 @@
+/* Portfolio Styles */
 .imgArrdiv {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem; /* Add gap for spacing between images */
-  padding: 2rem; /* Add padding for better spacing */
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .protH3 {
-  font-family: Nunito;
-  font-size: 2.5rem; /* Adjusted font size for desktop */
+  font-family: Nunito, sans-serif;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.01em;
@@ -16,22 +19,24 @@
   background: linear-gradient(90deg, #5c48ad 0%, #214ce7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 5rem auto 0 auto;
+  margin: 3rem auto 1rem;
+  width: 100%;
 }
 
 .protH1 {
-  margin: 0 auto;
-  font-family: Marcellus;
-  font-size: 4rem; /* Adjusted font size for desktop */
+  margin: 0 auto 1rem;
+  font-family: Marcellus, serif;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.01em;
   text-align: center;
+  width: 100%;
 }
 
 .portQuote {
-  font-family: Nunito;
-  font-size: 2rem; /* Adjusted font size for better scaling */
+  font-family: Nunito, sans-serif;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.01em;
@@ -39,57 +44,36 @@
   background: linear-gradient(90deg, #5c48ad 0%, #214ce7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 2rem auto;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  width: 100%;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 1024px) {
+/* Responsive Design for Portfolio */
+@media (min-width: 481px) {
   .protH3 {
-    font-size: 2.8rem; /* Increased font size for tablet */
+    font-size: 2rem;
   }
 
   .protH1 {
-    font-size: 4.5rem; /* Increased font size for tablet */
-  }
-
-  .portQuote {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .protH3 {
-    font-size: 3rem; /* Increased font size for mobile */
-  }
-
-  .protH1 {
-    font-size: 5rem; /* Increased font size for mobile */
+    font-size: 3rem;
   }
 
   .portQuote {
     font-size: 1.6rem;
   }
-
-  .imgArrdiv {
-    padding: 1rem;
-  }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 768px) {
   .protH3 {
-    font-size: 2.5rem; /* Increased font size for extra small screens */
+    font-size: 2.2rem;
   }
 
   .protH1 {
-    font-size: 4rem; /* Increased font size for extra small screens */
+    font-size: 3.5rem;
   }
 
   .portQuote {
-    font-size: 1.4rem;
-  }
-
-  .imgArrdiv {
-    flex-direction: column; /* Stack images vertically */
-    align-items: center; /* Center images */
+    font-size: 1.8rem;
   }
 }
