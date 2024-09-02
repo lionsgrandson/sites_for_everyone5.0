@@ -1,0 +1,51 @@
+/* ThankYou.css */
+.thankYouContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.thankYouContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(
+    90.08deg,
+    rgba(111, 72, 173, 0.13) 12.61%,
+    rgba(105, 174, 231, 0.2) 41.83%,
+    rgba(105, 174, 231, 0.2) 56.44%,
+    rgba(111, 72, 173, 0.128) 85.66%
+  );
+}
+
+.thankYouTitle {
+  font-family: Marcellus, serif;
+  font-size: clamp(4rem, 8vw, 10rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.thankYouMessage {
+  font-family: Nunito, sans-serif;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--gray);
+  margin-bottom: 3rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .thankYouContent {
+    padding: 1rem;
+  }
+}
