@@ -1,42 +1,77 @@
-.AboutTeamHeadshotImg {
-  width: 25.5rem;
-  border-radius: 20px;
+.about-div {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 0 20px; */
 }
+
+.aboutH1Team {
+  font-family: Marcellus, serif;
+  font-size: clamp(4rem, 8vw, 10rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .imgDivTeam {
   display: flex;
   gap: 2rem;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 4rem;
 }
-.aboutH1Team {
-  font-family: Marcellus;
-  font-size: 10rem;
-  font-weight: 400;
-  line-height: 125.39px;
-  letter-spacing: 0.01em;
-  text-align: center;
-}
+
 .innderDivImg {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: calc(20% - 2rem);
+  min-width: 200px;
+  margin-bottom: 2rem;
 }
+
+.AboutTeamHeadshotImg {
+  width: 100%;
+  max-width: 25.5rem;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
 .innderDivImg label {
   text-align: center;
-  font-size: 2.3rem;
+  font-size: clamp(1.6rem, 2vw, 2.3rem);
+  margin-top: 1rem;
 }
-/* .firstImg {
-  transform: rotate(337.96deg);
+
+/* Hover effect for desktop */
+@media (hover: hover) {
+  .innderDivImg:hover .AboutTeamHeadshotImg {
+    transform: scale(1.05);
+  }
 }
-.secondImg {
-    transform: rotate(354.73deg);
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .innderDivImg {
+    width: calc(33.33% - 2rem);
+  }
 }
-.ThirdImg {
-    transform: rotate(0);
+
+@media screen and (max-width: 768px) {
+  .innderDivImg {
+    width: calc(50% - 2rem);
+  }
 }
-.FourthImg {
-    transform: rotate(13.86deg);
+
+@media screen and (max-width: 480px) {
+  .innderDivImg {
+    width: 100%;
+  }
+
+  .imgDivTeam {
+    gap: 1rem;
+  }
 }
-.FifthImg {
-    transform: rotate(21.82deg);
-} */

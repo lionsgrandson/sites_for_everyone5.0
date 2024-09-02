@@ -8,52 +8,32 @@ import Ofer from "../img/oferHeadshotjpg.jpg";
 import Nitzan from "../img/NitzanHeadshot.jpeg";
 import "./about.css";
 export default function About() {
+  const teamMembers = [
+    { name: "Moshe", role: "Head Developer, CEO", image: Moshe },
+    { name: "Ari", role: "Developer, Designer", image: Ari },
+    { name: "Faina", role: "SEO Manager", image: Faina },
+    { name: "Ofer", role: "Designer", image: Ofer },
+    { name: "Nitzan", role: "Chef", image: Nitzan },
+  ];
   return (
     <div className="about-div">
       <Menu />
       <h1 className="aboutH1Team">Meet The Team</h1>
       <div className="imgDivTeam">
-        {/* TODO  creat a semi circle out of it */}
-        <div className="innderDivImg">
-          <img
-            alt="hedshots of Moshe - Head Dev and business owner"
-            src={Moshe}
-            className="AboutTeamHeadshotImg firstImg"
-          />
-          <label>Head Developer, CEO</label>
-        </div>
-        <div className="innderDivImg">
-          <img
-            alt="hedshots of Ari - Developer and Designer"
-            src={Ari}
-            className="AboutTeamHeadshotImg secondImg"
-          />
-          <label>Developer, Designer</label>
-        </div>
-        <div className="innderDivImg">
-          <img
-            alt="hedshots of Faina - SEO Manager"
-            src={Faina}
-            className="AboutTeamHeadshotImg ThirdImg"
-          />
-          <label>SEO Manager</label>
-        </div>
-        <div className="innderDivImg">
-          <img
-            alt="hedshots of Ofer - Designer"
-            src={Ofer}
-            className="AboutTeamHeadshotImg FourthImg"
-          />
-          <label>Designer</label>
-        </div>
-        <div className="innderDivImg">
-          <img
-            alt="hedshots of the team"
-            src={Nitzan}
-            className="AboutTeamHeadshotImg FifthImg"
-          />
-          <label>Cheff</label>
-        </div>
+        {teamMembers.map((member, index) => (
+          <div
+            key={member.name}
+            className="innderDivImg"
+          >
+            <img
+              alt={`Headshot of ${member.name} - ${member.role}`}
+              src={member.image}
+              className={`AboutTeamHeadshotImg img${index + 1}`}
+              loading="lazy"
+            />
+            <label>{member.role}</label>
+          </div>
+        ))}
       </div>
       <CTA
         ctaH1="Our "
