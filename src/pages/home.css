@@ -6,4 +6,11 @@
     rgba(105, 174, 231, 0.2) 56.44%,
     rgba(111, 72, 173, 0.128) 85.66%
   );
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    padding: 0.5rem;
+  }
 }
