@@ -2,12 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem; /* Add gap for spacing between images */
+  padding: 2rem; /* Add padding for better spacing */
 }
+
 .protH3 {
   font-family: Nunito;
-  font-size: 44px;
+  font-size: 2.5rem; /* Adjusted font size for desktop */
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.2;
   letter-spacing: 0.01em;
   text-align: center;
   background: linear-gradient(90deg, #5c48ad 0%, #214ce7 100%);
@@ -15,23 +18,78 @@
   -webkit-text-fill-color: transparent;
   margin: 5rem auto 0 auto;
 }
+
 .protH1 {
   margin: 0 auto;
   font-family: Marcellus;
-  font-size: 110px;
+  font-size: 4rem; /* Adjusted font size for desktop */
   font-weight: 400;
-  line-height: 137.93px;
+  line-height: 1.25;
   letter-spacing: 0.01em;
   text-align: center;
 }
+
 .portQuote {
   font-family: Nunito;
-  font-size: 42px;
+  font-size: 2rem; /* Adjusted font size for better scaling */
   font-weight: 700;
-  line-height: 57.29px;
+  line-height: 1.4;
   letter-spacing: 0.01em;
   text-align: center;
   background: linear-gradient(90deg, #5c48ad 0%, #214ce7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 2rem auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .protH3 {
+    font-size: 2.8rem; /* Increased font size for tablet */
+  }
+
+  .protH1 {
+    font-size: 4.5rem; /* Increased font size for tablet */
+  }
+
+  .portQuote {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .protH3 {
+    font-size: 3rem; /* Increased font size for mobile */
+  }
+
+  .protH1 {
+    font-size: 5rem; /* Increased font size for mobile */
+  }
+
+  .portQuote {
+    font-size: 1.6rem;
+  }
+
+  .imgArrdiv {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .protH3 {
+    font-size: 2.5rem; /* Increased font size for extra small screens */
+  }
+
+  .protH1 {
+    font-size: 4rem; /* Increased font size for extra small screens */
+  }
+
+  .portQuote {
+    font-size: 1.4rem;
+  }
+
+  .imgArrdiv {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images */
+  }
 }
