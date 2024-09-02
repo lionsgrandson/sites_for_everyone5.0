@@ -45,7 +45,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 1rem auto;
-  /* padding: 0 1rem; */
   width: 100%;
 }
 
@@ -75,5 +74,20 @@
 
   .portQuote {
     font-size: 1.8rem;
+  }
+}
+
+/* Additional Styles for Image Responsiveness */
+.imgArrdiv img {
+  width: 100%;
+  max-width: 300px; /* Set a maximum width for larger screens */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+  .imgArrdiv img {
+    max-width: 90%; /* Reduce max width for smaller screens */
   }
 }
