@@ -5,21 +5,45 @@
   align-items: center;
   border-radius: 52px;
   background: linear-gradient(90deg, #214ce7 0%, #5c48ad 100%);
-  width: 268.65px;
-  font-size: 28px;
+  width: 100%; /* Changed to 100% for better responsiveness */
+  max-width: 268.65px; /* Added max-width to maintain original size on larger screens */
+  padding: 0.8rem 1.2rem;
+  font-size: 2.8rem;
   font-weight: 400;
-  line-height: 45px;
+  line-height: 1.6; /* Changed to a relative unit for better scaling */
   color: rgba(255, 255, 255, 1);
   justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Changed to 'all' for smoother transitions */
   grid-column: 2;
 }
+
 .btn-btn.white {
   background: rgba(255, 255, 255, 1);
-}
-.aCls.white {
   color: var(--gray);
 }
-.aCls{
-  color: rgba(255, 255, 255, 1);
 
+.aCls {
+  color: inherit; /* Use inherited color */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .btn-btn {
+    max-width: 100%; /* Allow full width on smaller screens */
+    padding: 0.7rem 1rem; /* Adjusted padding */
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-btn {
+    font-size: 1.6rem;
+    padding: 0.6rem 0.8rem;
+  }
 }
