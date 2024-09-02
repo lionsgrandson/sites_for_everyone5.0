@@ -1,25 +1,74 @@
 .servicesDiv {
-  width: 86.4rem;
-  height: 61.415rem;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
   border-radius: 52px;
-  padding-left: 5rem;
+  text-align: center;
 }
+
 .servicesDiv h1 {
-  font-family: Marcellus;
-  font-size: 100px;
+  font-family: Marcellus, serif;
+  font-size: clamp(2.5rem, 5vw, 6.25rem); /* Responsive font size */
   font-weight: 400;
-  line-height: 111px;
+  line-height: 1.2;
   letter-spacing: 0.01em;
-  text-align: left;
   color: rgba(0, 0, 0, 1);
+  margin-bottom: 1rem;
 }
 
 .servicesDiv p {
-  font-family: Marcellus;
-  font-size: 30px;
+  font-family: Marcellus, serif;
+  font-size: clamp(1rem, 2vw, 1.875rem); /* Responsive font size */
   font-weight: 400;
-  line-height: 37.62px;
+  line-height: 1.5;
   letter-spacing: 0.01em;
-  text-align: left;
   color: rgba(0, 0, 0, 1);
+  margin-bottom: 2rem;
+}
+
+/* Button styling */
+.Btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #5c48ad;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.Btn:hover {
+  background-color: #214ce7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .servicesDiv {
+    padding: 1.5rem;
+  }
+
+  .servicesDiv h1 {
+    font-size: clamp(2rem, 6vw, 4rem); /* Smaller font size for tablets */
+  }
+
+  .servicesDiv p {
+    font-size: clamp(0.875rem, 3vw, 1.5rem); /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .servicesDiv {
+    padding: 1rem;
+  }
+
+  .servicesDiv h1 {
+    font-size: clamp(1.5rem, 8vw, 3rem); /* Smaller font size for mobile */
+  }
+
+  .servicesDiv p {
+    font-size: clamp(0.75rem, 4vw, 1.25rem); /* Smaller font size for mobile */
+  }
 }
