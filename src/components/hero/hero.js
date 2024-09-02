@@ -14,24 +14,24 @@ export default function Hero() {
         Innovative solutions for your business needs.
       </p>
       <div className="feat-hero">
-        <div>
+        <div className="toBeHidden">
           <IoIosEasel
             color="var(--light-blue)"
-            size="7rem"
+            size="5rem"
           />
           <p className="feat-home-text">Professional Design</p>
         </div>
         <div>
           <MdDevicesOther
             color="var(--light-blue)"
-            size="7rem"
+            size="5rem"
           />
           <p className="feat-home-text">Responsivity</p>
         </div>
         <div>
           <FaEarthAfrica
             color="var(--light-blue)"
-            size="7rem"
+            size="5rem"
           />
 
           <p className="feat-home-text">Deployment + SEO</p>
@@ -40,14 +40,14 @@ export default function Hero() {
         <div>
           <RxAccessibility
             color="var(--light-blue)"
-            size="7rem"
+            size="5rem"
           />
           <p className="feat-home-text">Accessibility</p>
         </div>
-        <div>
+        <div className="toBeHidden">
           <MdSupportAgent
             color="var(--light-blue)"
-            size="7rem"
+            size="5rem"
           />
           <p className="feat-home-text">Costumer Support</p>
         </div>
