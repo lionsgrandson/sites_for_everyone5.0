@@ -1,0 +1,16 @@
+.ilFlagNav,
+.usFlagNav {
+  width: 30px;
+  height: auto;
+}
+body[dir="rtl"] {
+  text-align: right;
+}
+.flag-link {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+body[dir="ltr"] {
+  text-align: left;
+}

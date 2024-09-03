@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./menu.css";
 import ILflagImg from "../../img/IlFlagIcon.png";
 import Btn from "../btn/btn";
-
+import LanguageSwitcher from "../../LanguageSwitcher";
 export default function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -55,18 +55,9 @@ export default function Menu() {
             btnHref="/contact"
             bntTxt="Get Started"
             WoBcls={false}
-            wAoN={true}
+            wAoN={false}
           />
-          <a
-            href="#"
-            className="flag-link"
-          >
-            <img
-              src={ILflagImg}
-              className="ilFlagNav"
-              alt="Israeli Flag Icon"
-            />
-          </a>
+          <LanguageSwitcher />
         </div>
       </div>
     </nav>

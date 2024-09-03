@@ -25,8 +25,15 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  /* direction: rtl;
+  text-align: right; */
 }
 .highlight {
   color: var(--light-blue);
 }
 
+/* For when English is selected */
+body[dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+}
