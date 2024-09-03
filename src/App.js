@@ -8,7 +8,10 @@ import Contact from "./pages/contact";
 import Thankyou from "./pages/thankyou";
 import TermnCond from "./pages/termsNConditions";
 import Privacy from "./pages/privacy";
-import AboutProject from "./pages/aboutProject";
+import Omnifood from "./pages/projects/omnifood";
+import DY from "./pages/projects/danielYehuda";
+import Smokin from "./pages/projects/smokin";
+import AIpro from "./pages/projects/aiPro";
 import "./App.css";
 
 function App() {
@@ -67,8 +70,20 @@ function App() {
           element={<DeadProject />}
         /> */}
         <Route
-          path="FullProj"
-          element={<AboutProject />}
+          path="/omnifood"
+          element={<Omnifood />}
+        />
+        <Route
+          path="/dy"
+          element={<DY />}
+        />
+        <Route
+          path="/smokin"
+          element={<Smokin />}
+        />
+        <Route
+          path="/aiPro"
+          element={<AIpro />}
         />
       </Routes>
     </Router>
