@@ -3,10 +3,7 @@ import "./imgCard.css";
 export default function ImgCard(props) {
   return (
     <div className="imgCardDiv">
-      <a
-        href={props.linkHref}
-        target="_blank"
-      >
+      <a href={props.linkHref}>
         <img
           src={props.imgSrc}
           className="imgCardImg"
