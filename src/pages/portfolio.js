@@ -46,18 +46,18 @@ export default function Portfolio() {
     "Tora Dojo Israel",
   ];
   const linkArr = [
-    "https://Omnifood.dev",
-    "https://www.danielyehuda.co.il/",
-    "https://smokin-t.com/",
-    "https://ai-pro.co.il/",
-    "https://web.archive.org/web/20230308123826/https://lionsforzion.com/",
-    "https://maimchaim.org.il/",
-    "https://web.archive.org/web/20240123052855/https://idftene.com/",
-    "https://mahagonyisrael.netlify.app",
-    "https://web.archive.org/web/20221213173104/https://idftene.com",
-    "https://enterplusco.com",
-    "https://shalom1.ussl.co/",
-    "https://toradojo.co.il",
+    "/omnifood",
+    "/dy",
+    "/smokin",
+    "/aiPro",
+    "/lfz",
+    "/maim",
+    "/tene2",
+    "/mahogony",
+    "/tene1",
+    "/ep",
+    "/shalom",
+    "/toradojo",
   ];
   return (
     <div>
