@@ -48,6 +48,6 @@ grid-template-columns: 2;
 }
 @media (max-width: 520px) {
   .imgProj {
-    width: 90%;
+    width: 85%;
   }
 }
