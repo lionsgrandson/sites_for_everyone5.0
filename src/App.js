@@ -8,6 +8,7 @@ import Contact from "./pages/contact";
 import Thankyou from "./pages/thankyou";
 import TermnCond from "./pages/termsNConditions";
 import Privacy from "./pages/privacy";
+import AboutProject from "./pages/aboutProject";
 import "./App.css";
 
 function App() {
@@ -65,6 +66,10 @@ function App() {
           path="/deadProj"
           element={<DeadProject />}
         /> */}
+        <Route
+          path="FullProj"
+          element={<AboutProject />}
+        />
       </Routes>
     </Router>
   );
