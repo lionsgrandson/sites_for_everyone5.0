@@ -12,6 +12,14 @@ import Omnifood from "./pages/projects/omnifood";
 import DY from "./pages/projects/danielYehuda";
 import Smokin from "./pages/projects/smokin";
 import AIpro from "./pages/projects/aiPro";
+import LFZ from "./pages/projects/lfz";
+import Maim from "./pages/projects/maim";
+import TENE2 from "./pages/projects/idf2";
+import TENE from "./pages/projects/idf";
+import Mahogony from "./pages/projects/mahogony";
+import EnterPlus from "./pages/projects/enterPlus";
+import Shalom from "./pages/projects/shalom";
+import ToraDojo from "./pages/projects/ToraDojo";
 import "./App.css";
 
 function App() {
@@ -84,6 +92,38 @@ function App() {
         <Route
           path="/aiPro"
           element={<AIpro />}
+        />
+        <Route
+          path="/lfz"
+          element={<LFZ />}
+        />
+        <Route
+          path="/maim"
+          element={<Maim />}
+        />
+        <Route
+          path="/tene2"
+          element={<TENE2 />}
+        />
+        <Route
+          path="/tene1"
+          element={<TENE />}
+        />
+        <Route
+          path="/mahogony"
+          element={<Mahogony />}
+        />
+        <Route
+          path="/ep"
+          element={<EnterPlus />}
+        />
+        <Route
+          path="/shalom"
+          element={<Shalom />}
+        />
+        <Route
+          path="/toradojo"
+          element={<ToraDojo />}
         />
       </Routes>
     </Router>

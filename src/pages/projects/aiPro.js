@@ -15,7 +15,7 @@ export default function AiPro() {
         projimg1={screen1}
         projimg2={screen2}
         projLogo={projLogo}
-        projText="Smokin T's is a barbecue and grill-style restaurant that offers a unique blend of delicious dishes, including house-made pastrami and corned beef sandwiches. With a focus on quality, their menu features mouthwatering appetizers, fresh desserts, and exemplary service in a relaxed atmosphere. The restaurant has evolved through various kitchens to perfect its recipes, ensuring a memorable dining experience."
+        projText="AI Pro is a technology company specializing in artificial intelligence solutions for businesses. They offer a range of services, including AI consulting, custom software development, and data analysis, aimed at enhancing operational efficiency and decision-making. AI Pro focuses on delivering innovative solutions tailored to meet the specific needs of their clients across various industries."
       />
     </div>
   );
