@@ -1,6 +1,8 @@
 .ourProSection-Title {
   background: rgba(247, 251, 255, 1);
   padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .title-our {
@@ -10,36 +12,36 @@
 }
 
 .titlel-h3-our {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 2.75rem);
   line-height: 1.2;
   padding-top: 2rem;
 }
 
 .titlel-h1-our {
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 5vw, 6.875rem);
   line-height: 1.2;
 }
 
 .titlel-p-our {
-  font-size: 1rem;
+  font-size: clamp(1.25rem, 2vw, 2.5rem); /* Increased font size */
   line-height: 1.5;
 }
 
 .p-dots {
-  font-size: 3rem;
+  font-size: clamp(3rem, 4vw, 6.5625rem);
   letter-spacing: 0.1em;
 }
 
 .middleBoxProc {
   border-radius: 20px;
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 3vw, 3.8125rem);
   line-height: 1.2;
   padding: 1rem;
 }
 
 .middleBoxProc span {
-  font-size: 2rem;
+  font-size: clamp(2rem, 4vw, 5.625rem);
 }
 
 .bottomBoxProc {
@@ -52,71 +54,78 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
+  max-width: 1200px;
+  margin: 1rem auto;
 }
+
 .bottomBoxOuterBox {
   display: flex;
   justify-content: center;
 }
+
 .procFir,
 .procsec,
 .procLast {
   font-family: VT323;
-  font-size: 40px;
+  font-size: clamp(2.5rem, 5vw, 40px);
   font-weight: 400;
   line-height: 61px;
   letter-spacing: 0.01em;
   margin: 0;
 }
+
 .procFir {
   color: rgba(255, 186, 58, 0.77);
 }
+
 .procsec {
   color: rgba(123, 98, 222, 1);
 }
+
 .procLast {
   color: rgba(255, 255, 255, 1);
 }
-@media (min-width: 768px) {
+
+@media (max-width: 768px) {
   .ourProSection-Title {
-    padding: 0 calc(50vw - 400px);
+    padding: 0 1rem; /* Adjust padding for smaller screens */
   }
 
   .titlel-h3-our {
-    font-size: 2.75rem;
-    padding-top: 5rem;
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    padding-top: 1rem; /* Adjust padding for smaller screens */
   }
 
   .titlel-h1-our {
-    font-size: 6.875rem;
-    line-height: 1.25;
+    font-size: 3rem; /* Adjust font size for smaller screens */
   }
 
   .titlel-p-our {
-    font-size: 2.25rem;
+    font-size: 1.5rem; /* Increased font size for smaller screens */
   }
 
   .p-dots {
-    font-size: 6.5625rem;
+    font-size: 4rem; /* Adjust font size for smaller screens */
   }
 
   .middleBoxProc {
-    margin: 0 10rem;
-    font-size: 3.8125rem;
-    padding: 2rem;
+    margin: 0 2rem; /* Adjust margins for smaller screens */
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
   }
 
   .middleBoxProc span {
-    font-size: 5.625rem;
+    font-size: 3rem; /* Adjust font size for smaller screens */
   }
-}
-@media (max-width: 768px) {
+
   .procFir,
   .procsec,
   .procLast {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Adjust font size for smaller screens */
   }
+
   .bottomBoxProc,
   .middleBoxProc {
-    display: none !important;
+    display: none !important; /* Hide these elements on smaller screens */
   }
 }

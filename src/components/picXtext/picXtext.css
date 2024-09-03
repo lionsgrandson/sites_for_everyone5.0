@@ -4,10 +4,12 @@
   background: rgba(255, 255, 255, 1);
   display: flex;
   align-items: center;
-  margin: 2rem 1rem;
-  padding: 2rem;
+  margin: 2rem auto;
+  padding: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 1200px;
+  width: 90%;
 }
 
 .home-picXtext-div.left {
@@ -16,23 +18,24 @@
 
 .home-picXtext-div.about {
   border-radius: 20px;
-  margin: 1rem;
+  margin: 1rem auto;
   box-shadow: 0px 8px 8px 0px rgba(166, 198, 211, 0.25);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .home-picXtext-innder-div {
   width: 100%;
+  max-width: 600px;
 }
 
 .home-picXtext-h1 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 4rem);
   line-height: 1.2;
   text-align: left;
 }
 
 .home-picXtext-p {
-  font-size: 1rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   line-height: 1.5;
   margin-bottom: 2rem;
   width: 100%;
@@ -48,7 +51,7 @@
 @media (min-width: 768px) {
   .home-picXtext-div {
     flex-direction: row;
-    margin: 5rem;
+    margin: 5rem auto;
     padding: 5rem;
   }
 
@@ -60,16 +63,23 @@
     width: 50%;
   }
 
-  .home-picXtext-h1 {
-    font-size: 4rem;
-  }
-
   .home-picXtext-p {
-    font-size: 1.5rem;
+    text-align: left;
   }
 
   .home-picXtext-img {
     width: 40%;
+    max-width: 400px;
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-picXtext-div {
+    padding: 5rem;
+  }
+
+  .home-picXtext-innder-div {
     padding: 0 2rem;
   }
 }
