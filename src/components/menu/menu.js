@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./menu.css";
-import ILflagImg from "../../img/IlFlagIcon.png";
 import Btn from "../btn/btn";
 import LanguageSwitcher from "../../LanguageSwitcher";
+
 export default function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -11,25 +11,27 @@ export default function Menu() {
   };
 
   return (
-    <nav className="menu-div">
-      <a
-        href="/"
-        className="logo-link"
-      >
-        <h1 className="menu_header">
-          S<span>fE</span>
-        </h1>
-      </a>
+    <nav className={`menu-div ${isMenuOpen ? "open" : ""}`}>
+      <div className="outerDiv-Menu">
+        <a
+          href="/"
+          className="logo-link"
+        >
+          <h1 className="menu_header">
+            S<span>fE</span>
+          </h1>
+        </a>
 
-      <button
-        className="hamburger"
-        onClick={toggleMenu}
-        aria-label="Toggle menu"
-      >
-        <span className={`hamburger-bar ${isMenuOpen ? "open" : ""}`}></span>
-        <span className={`hamburger-bar ${isMenuOpen ? "open" : ""}`}></span>
-        <span className={`hamburger-bar ${isMenuOpen ? "open" : ""}`}></span>
-      </button>
+        <button
+          className="hamburger"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          <span className={`hamburger-bar ${isMenuOpen ? "open" : ""}`}></span>
+          <span className={`hamburger-bar ${isMenuOpen ? "open" : ""}`}></span>
+          <span className={`hamburger-bar ${isMenuOpen ? "open" : ""}`}></span>
+        </button>
+      </div>
 
       <div className={`menu-container ${isMenuOpen ? "open" : ""}`}>
         <ul className="menu-list">

@@ -1,21 +1,28 @@
+/* menu.css */
+.menu-div.open {
+  background-color: #fff;
+}
+
 .menu-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem; */
   position: relative;
-  flex-wrap: wrap;
   width: 100%;
-  align-content: space-between;
-}
-.logo-link {
-  text-decoration: none; /* Remove underline from the logo link */
   padding: 1rem;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.logo-link {
+  text-decoration: none;
+  z-index: 1002; /* Ensure logo stays above the menu overlay */
+  position: relative; /* Add this to maintain logo position */
 }
 
 .menu_header {
   font-family: "Marcellus", serif;
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: 0.01em;
@@ -30,10 +37,8 @@
 .menu-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly; /* Evenly space the menu items */
+  justify-content: flex-end; /* Align items to the right */
   flex-grow: 1;
-  width: 80%; /* Reduced width to make the menu narrower */
-  max-width: 1200px; /* Optional: Set a max-width to prevent it from being too wide */
 }
 
 .menu-list {
@@ -46,86 +51,83 @@
 
 .menu-list li a {
   font-family: Nunito, sans-serif;
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
   font-weight: 400;
   line-height: 1.5;
   color: var(--gray);
-  text-decoration: none; /* Ensure no underline on menu links */
+  text-decoration: none;
 }
 
 .menu-actions {
   display: flex;
   align-items: center;
-  gap: 2rem; /* Increase the gap for more space between elements */
-}
-
-.ilFlagNav {
-  width: 40px;
-  height: 40px;
+  gap: 2rem;
 }
 
 .hamburger {
-  display: none; /* Hidden on larger screens */
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
 }
 
-@media (max-width: 1024px) {
-  .menu_header {
-    font-size: 3rem;
-  }
-
-  .menu-list li a {
-    font-size: 1.6rem;
-  }
+.hamburger-bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--gray);
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 768px) {
-  .menu-div {
-    flex-direction: column;
-    align-items: center; /* Changed from flex-start to center */
+  .outerDiv-Menu {
+    margin: auto;
   }
+  .menu-div {
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+
+  .logo-link {
+    flex: 0 0 auto; /* Prevent logo from shrinking */
+  }
+
   .hamburger {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 1.5rem;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Ensure perfect centering */
-    z-index: 10;
-  }
-  .hamburger-bar {
-    width: 100%;
-    height: 3px;
-    background-color: var(--gray);
-    transition: all 0.3s linear; /* Animation for the bars */
+    margin-left: auto; /* Push to the right */
   }
 
   .hamburger-bar.open:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px); /* Rotate the first bar */
+    transform: rotate(45deg) translate(5px, 5px);
   }
 
   .hamburger-bar.open:nth-child(2) {
-    opacity: 0; /* Hide the middle bar */
+    opacity: 0;
   }
 
   .hamburger-bar.open:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px); /* Rotate the last bar */
+    transform: rotate(-45deg) translate(7px, -6px);
   }
 
   .menu-container {
-    display: none; /* Hide menu container by default on smaller screens */
-    flex-direction: column; /* Stack items vertically when visible */
+    display: none;
+    flex-direction: column;
     align-items: center;
-    width: 100%; /* Full width when open */
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .menu-container.open {
-    display: flex; /* Show menu when open */
+    display: flex;
   }
 
   .menu-list {
@@ -141,12 +143,17 @@
     margin-top: 1rem;
   }
 
-  .flag-link {
+  .menu-actions .btn-btn {
+    width: 100%;
     margin-top: 1rem;
   }
 }
 
 @media (max-width: 480px) {
+  .menu-div {
+    padding: 0.5rem;
+  }
+
   .menu_header {
     font-size: 2.5rem;
   }
@@ -158,11 +165,11 @@
 
 /* Styles for Btn component */
 .menu-actions .btn-btn {
-  width: auto; /* Adjust width as needed */
+  width: auto;
 }
 
 @media (max-width: 768px) {
   .menu-actions .btn-btn {
-    width: 100%; /* Full width on smaller screens */
+    width: 100%;
   }
 }
