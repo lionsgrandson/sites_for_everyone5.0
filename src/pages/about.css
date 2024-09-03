@@ -44,12 +44,13 @@
   font-size: clamp(1.2rem, 1.5vw, 1.8rem);
   margin-top: 1rem;
 }
-/* .ourMissionAboutDiv {
-  margin: 0 20rem;
+.ourMissionAboutDiv {
+  padding: 0 10%;
+  margin: 0 auto;
 }
 .ourStoryAboutDiv {
   margin: 0 30rem;
-} */
+}
 @media (hover: hover) {
   .innderDivImg:hover .AboutTeamHeadshotImg {
     transform: scale(1.05);
@@ -59,6 +60,11 @@
 @media screen and (max-width: 1024px) {
   .innderDivImg {
     max-width: calc(33.33% - 1rem);
+  }
+  .ourMissionAboutDiv,
+  .ourStoryAboutDiv {
+    padding: 5%;
+    margin: 0;
   }
 }
 

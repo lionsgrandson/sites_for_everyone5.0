@@ -13,7 +13,7 @@
 }
 
 .home-picXtext-div.left {
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .home-picXtext-div.about {
@@ -39,6 +39,7 @@
   line-height: 1.5;
   margin-bottom: 2rem;
   width: 100%;
+  text-align: left;
 }
 
 .home-picXtext-img {
