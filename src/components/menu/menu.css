@@ -37,7 +37,7 @@
 .menu-container {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Align items to the right */
+  justify-content: space-around; /* Align items to the right */
   flex-grow: 1;
 }
 
@@ -47,6 +47,8 @@
   gap: 2rem;
   padding: 0;
   margin: 0;
+  width: 80%;
+  justify-content: space-evenly;
 }
 
 .menu-list li a {
@@ -84,6 +86,11 @@
   transition: all 0.3s linear;
 }
 
+@media (max-width: 1400px) {
+  .menu-list {
+    width: 60%;
+  }
+}
 @media (max-width: 768px) {
   .outerDiv-Menu {
     margin: auto;

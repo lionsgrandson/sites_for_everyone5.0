@@ -1,12 +1,12 @@
 .about-div {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  /* padding: 0 20px; */
+  padding: 0 10px;
 }
 
 .aboutH1Team {
   font-family: Marcellus, serif;
-  font-size: clamp(4rem, 8vw, 10rem);
+  font-size: clamp(3rem, 6vw, 6rem);
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.01em;
@@ -16,19 +16,18 @@
 
 .imgDivTeam {
   display: flex;
-  gap: 2rem;
-  flex-direction: row;
-  justify-content: center;
+  gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 4rem;
 }
 
 .innderDivImg {
+  flex: 1 1 200px;
+  max-width: calc(20% - 1rem);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(20% - 2rem);
-  min-width: 200px;
   margin-bottom: 2rem;
 }
 
@@ -42,36 +41,39 @@
 
 .innderDivImg label {
   text-align: center;
-  font-size: clamp(1.6rem, 2vw, 2.3rem);
+  font-size: clamp(1.2rem, 1.5vw, 1.8rem);
   margin-top: 1rem;
 }
-
-/* Hover effect for desktop */
+/* .ourMissionAboutDiv {
+  margin: 0 20rem;
+}
+.ourStoryAboutDiv {
+  margin: 0 30rem;
+} */
 @media (hover: hover) {
   .innderDivImg:hover .AboutTeamHeadshotImg {
     transform: scale(1.05);
   }
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 1024px) {
   .innderDivImg {
-    width: calc(33.33% - 2rem);
+    max-width: calc(33.33% - 1rem);
   }
 }
 
 @media screen and (max-width: 768px) {
   .innderDivImg {
-    width: calc(50% - 2rem);
+    max-width: calc(50% - 1rem);
   }
 }
 
 @media screen and (max-width: 480px) {
   .innderDivImg {
-    width: 100%;
+    max-width: 100%;
   }
 
   .imgDivTeam {
-    gap: 1rem;
+    gap: 0.5rem;
   }
 }
