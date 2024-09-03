@@ -20,6 +20,9 @@
   width: 100%;
 }
 
+.cta-h1.ourMission span {
+  color: rgba(255, 186, 58, 1);
+}
 .cta-h1.ourMission {
   color: var(--gray);
 }

@@ -1,17 +1,38 @@
 .imgCardDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  max-width: 100%;
 }
+
 .imgCardImg {
-  width: 369px;
-  height: 361px;
-  margin: 0 5rem;
+  width: 100%;
+  max-width: 369px;
+  height: auto;
+  aspect-ratio: 369 / 361;
   border-radius: 15px;
+  object-fit: cover;
 }
+
 .imgCardTxt {
-  font-family: Nunito;
-  font-size: 20px;
+  font-family: Nunito, sans-serif;
+  font-size: clamp(16px, 2vw, 20px);
   font-weight: 700;
-  line-height: 27.28px;
+  line-height: 1.4;
   letter-spacing: 0.01em;
   text-align: center;
   color: rgba(0, 0, 0, 1);
+  margin-top: 1rem;
+  max-width: 300px;
+}
+
+@media (max-width: 480px) {
+  .imgCardDiv {
+    margin: 0.5rem;
+  }
+
+  .imgCardImg {
+    max-width: 90vw;
+  }
 }
