@@ -14,7 +14,7 @@ export default function EnterPlus() {
         projimg1={screen1}
         projimg2={screen2}
         projLogo={projLogo}
-        projText="EnterPlus is a digital marketing agency that specializes in providing comprehensive online solutions for businesses. They offer services such as search engine optimization (SEO), social media marketing, and content creation to enhance brand visibility and drive customer engagement. EnterPlus focuses on delivering tailored strategies to help clients achieve their marketing goals effectively."
+        projText="Enter Plus has created a life-saving bracelet that detects drowning by monitoring vital signs. When a drowning incident occurs, it automatically alerts lifeguards, parents, and emergency services like 911. This innovative device enhances pool safety and provides peace of mind for families."
       />
     </div>
   );

@@ -15,7 +15,7 @@ export default function AiPro() {
         projimg1={screen1}
         projimg2={screen2}
         projLogo={projLogo}
-        projText="AI Pro is a technology company specializing in artificial intelligence solutions for businesses. They offer a range of services, including AI consulting, custom software development, and data analysis, aimed at enhancing operational efficiency and decision-making. AI Pro focuses on delivering innovative solutions tailored to meet the specific needs of their clients across various industries."
+        projText="AI Pro delivers comprehensive calibration, engineering, and validation services that prioritize customer needs in a holistic manner. By providing optimal, budget-compliant solutions, they eliminate the burden of additional tasks for clients. Utilizing a `Turn Key` method, they ensure that products and services are ready for immediate use, streamlining the process for a seamless experience."
       />
     </div>
   );

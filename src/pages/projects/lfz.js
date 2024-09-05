@@ -15,7 +15,7 @@ export default function LFZ() {
         projimg1={screen1}
         projimg2={screen2}
         projLogo={projLogo}
-        projText="Lions for Zion is a non-profit organization dedicated to supporting Israel and combating antisemitism. They focus on educating and empowering young adults to become advocates for Israel through leadership training, campus activism, and community engagement[1]. The organization aims to strengthen the connection between Jewish youth and their heritage while promoting a positive image of Israel."
+        projText="Lions for Zion is a non-profit organization dedicated to supporting Israel and combating antisemitism. They focus on educating and empowering young adults to become advocates for Israel through leadership training, campus activism, and community engagement. The organization aims to strengthen the connection between Jewish youth and their heritage while promoting a positive image of Israel."
       />
     </div>
   );

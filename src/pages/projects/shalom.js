@@ -14,7 +14,7 @@ export default function ShalomCarmel() {
         projimg1={screen1}
         projimg2={screen2}
         projLogo={projLogo}
-        projText="‘Shalom Carmel’ was established to showcase the rich ethnic and cultural diversity of Haifa and Mount Carmel. Our tours provide groups with the opportunity to engage with various communities in the area and learn how they collaborate to foster a more unified society."
+        projText="‘Shalom Carmel’ was established to showcase the rich ethnic and cultural diversity of Haifa and Mount Carmel. Their tours provide groups with the opportunity to engage with various communities in the area and learn how they collaborate to foster a more unified society."
       />
     </div>
   );

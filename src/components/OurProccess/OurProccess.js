@@ -37,7 +37,7 @@ export default function OurProccess() {
       <PicXtext
         imgXTextImg={imgXTextImg3}
         picXtexth1="Deployment & SEO"
-        textP="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu nibh ut sapien bibendum pretium vitae eu arcu."
+        textP="Launch your site with confidence. Our team ensures smooth deployment and optimizes your online presence. We implement cutting-edge SEO strategies to boost your visibility, driving traffic and engagement. Watch your digital footprint grow as we fine-tune your site for search engines and users alike."
         WbtnQ={false}
         LORImg={false}
       />
