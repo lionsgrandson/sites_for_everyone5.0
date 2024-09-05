@@ -79,54 +79,70 @@ export default function TermnCond() {
         </p>
         <h2 class="section-title-terms">4. {t("Client Content")}</h2>
         <p class="paragraph-terms">
-          <span class="bold-terms">4.1.</span> By submitting any content,
-          materials, or information to us for use in your website development
-          project, you grant us ownership of such content. This allows us to
-          incorporate it into your website and make necessary modifications.
+          <span class="bold-terms">4.1.</span>
+          {t(
+            "By submitting any content, materials, or information to us for use in your website development project, you grant us ownership of such content. This allows us to incorporate it into your website and make necessary modifications"
+          )}
+          .
         </p>
         <p class="paragraph-terms">
-          <span class="bold-terms">4.2.</span> You represent and warrant that
-          you have the right to grant us ownership of any content you provide
-          and that it does not infringe on any third-party rights.
+          <span class="bold-terms">4.2.</span>
+          {t(
+            "You represent and warrant that you have the right to grant us ownership of any content you provide and that it does not infringe on any third-party rights."
+          )}
         </p>
         <p class="paragraph-terms">
-          <span class="bold-terms">4.3.</span> While we own the content you
-          provide, you retain the right to use this content for your own
-          purposes outside of the website we develop for you.
+          <span class="bold-terms">4.3.</span>
+          {t(
+            "While we own the content you provide, you retain the right to use this content for your own purposes outside of the website we develop for you"
+          )}
+          .
         </p>
-        <h2 class="section-title-terms">5. Limitation of Liability</h2>
+        <h2 class="section-title-terms">5. {t("Limitation of Liability")}</h2>
         <p class="paragraph-terms">
-          <span class="bold-terms">5.1.</span> We provide our services "as is"
-          without any warranties, express or implied.
-        </p>
-        <p class="paragraph-terms">
-          <span class="bold-terms">5.2.</span> We shall not be liable for any
-          indirect, incidental, special, or consequential damages arising from
-          your use of our services.
-        </p>
-        <h2 class="section-title-terms">6. Termination</h2>
-        <p class="paragraph-terms">
-          We reserve the right to terminate or suspend our services at our sole
-          discretion, without notice, for any reason, including breach of these
-          Terms.
-        </p>
-        <h2 class="section-title-terms">7. Governing Law</h2>
-        <p class="paragraph-terms">
-          These Terms shall be governed by and construed in accordance with the
-          laws of Israel, without regard to its conflict of law provisions.
-        </p>
-        <h2 class="section-title-terms">8. Changes to Terms</h2>
-        <p class="paragraph-terms">
-          We may modify these Terms at any time. Your continued use of our
-          services after any changes indicates your acceptance of the modified
-          Terms.
-        </p>
-        <h2 class="section-title-terms">9. Contact Information</h2>
-        <p class="paragraph-terms">
-          If you have any questions about these Terms, please contact us at:
+          <span class="bold-terms">5.1.</span>
+          {t(
+            "We provide our services `as is` without any warranties, express or implied"
+          )}
+          .
         </p>
         <p class="paragraph-terms">
-          Email:
+          <span class="bold-terms">5.2.</span>
+          {t(
+            "We shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our services"
+          )}
+          .
+        </p>
+        <h2 class="section-title-terms">6. {t("Termination")}</h2>
+        <p class="paragraph-terms">
+          {t(
+            "We reserve the right to terminate or suspend our services at our sole discretion, without notice, for any reason, including breach of these Terms"
+          )}
+          .
+        </p>
+        <h2 class="section-title-terms">7. {t("Governing Law")}</h2>
+        <p class="paragraph-terms">
+          {t(
+            "These Terms shall be governed by and construed in accordance with the laws of Israel, without regard to its conflict of law provisions"
+          )}
+          .
+        </p>
+        <h2 class="section-title-terms">8. {t("Changes to Terms")}</h2>
+        <p class="paragraph-terms">
+          {t(
+            "We may modify these Terms at any time. Your continued use of our services after any changes indicates your acceptance of the modified Terms"
+          )}
+          .
+        </p>
+        <h2 class="section-title-terms">9. {t("Contact Information")}</h2>
+        <p class="paragraph-terms">
+          {t(
+            "If you have any questions about these Terms, please contact us at"
+          )}
+          :
+        </p>
+        <p class="paragraph-terms">
+          {t("Email")}:
           <a
             href="mailto:mosheschwartzberg@gmail.com"
             class="link-terms"
@@ -135,7 +151,7 @@ export default function TermnCond() {
           </a>
         </p>
         <p class="paragraph-terms">
-          Website:
+          {t("Website")}:
           <a
             href="https://mosheschwartzberg.com/contact"
             class="link-terms"
@@ -144,8 +160,10 @@ export default function TermnCond() {
           </a>
         </p>
         <p class="paragraph-terms">
-          By using our website and services, you acknowledge that you have read,
-          understood, and agree to be bound by these Terms and Conditions.
+          {t(
+            "By using our website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions"
+          )}
+          .
         </p>
       </div>
       <Footer />
