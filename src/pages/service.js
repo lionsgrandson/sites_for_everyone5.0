@@ -2,7 +2,9 @@ import Menu from "../components/menu/menu";
 import Footer from "../components/footer/footer";
 import Btn from "../components/btn/btn";
 import "./service.css";
-export default function services() {
+import { useTranslation } from "react-i18next";
+export default function Services() {
+  const { t } = useTranslation();
   return (
     <>
       <Menu />

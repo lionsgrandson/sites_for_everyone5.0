@@ -1,66 +1,83 @@
 import Menu from "../components/menu/menu";
 import Footer from "../components/footer/footer";
 import "./terms.css";
+import { useTranslation } from "react-i18next";
 export default function TermnCond() {
+  const { t } = useTranslation();
   return (
     <div>
       <Menu />
       <div class="container-terms">
-        {" "}
         <h1 class="main-title-terms">
-          Terms and Conditions for Sites for Everyone
+          {t("Terms and Conditions for Sites for Everyone")}
         </h1>
         <p class="paragraph-terms">
-          <span class="bold-terms">Effective Date:</span> September 1, 2024
+          <span class="bold-terms">{t("Effective Date")}:</span>
+          {t("September")} 1, 2024
         </p>
-        <h2 class="section-title-terms">1. Introduction</h2>
+        <h2 class="section-title-terms">1. {t("Introduction")}</h2>
         <p class="paragraph-terms">
-          Welcome to Sites for Everyone ("we," "our," or "us"). By accessing or
-          using our website (
+          {t(
+            "Welcome to Sites for Everyone (`we,` `our,` or `us`). By accessing or using our website"
+          )}
+          (
           <a
             href="https://mosheschwartzberg.com"
             class="link-terms"
           >
             https://mosheschwartzberg.com
           </a>
-          ) or engaging our website development services, you agree to be bound
-          by these Terms and Conditions. If you disagree with any part of these
-          terms, please do not use our website or services.
+          )
+          {t(
+            "or engaging our website development services, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, please do not use our website or services"
+          )}
+          .
         </p>
-        <h2 class="section-title-terms">2. Use of Our Services</h2>
+        <h2 class="section-title-terms">2. {t("Use of Our Services")}</h2>
         <p class="paragraph-terms">
-          <span class="bold-terms">2.1.</span> You agree to provide accurate and
-          complete information when using our services.
-        </p>
-        <p class="paragraph-terms">
-          <span class="bold-terms">2.2.</span> You are responsible for
-          maintaining the confidentiality of your account information and any
-          login credentials provided for your website.
-        </p>
-        <h2 class="section-title-terms">3. Intellectual Property</h2>
-        <p class="paragraph-terms">
-          <span class="bold-terms">3.1.</span> All content on our website,
-          including text, graphics, logos, and software, is our property and
-          protected by copyright laws.
+          <span class="bold-terms">2.1.</span>
+          {t(
+            "You agree to provide accurate and complete information when using our services"
+          )}
+          .
         </p>
         <p class="paragraph-terms">
-          <span class="bold-terms">3.2.</span> You may not use, reproduce, or
-          distribute our content without our express written permission.
+          <span class="bold-terms">2.2.</span>
+          {t(
+            "You are responsible for maintaining the confidentiality of your account information and any login credentials provided for your website"
+          )}
+          .
+        </p>
+        <h2 class="section-title-terms">3. {t("Intellectual Property")}</h2>
+        <p class="paragraph-terms">
+          <span class="bold-terms">3.1.</span>
+          {t(
+            "All content on our website, including text, graphics, logos, and software, is our property and protected by copyright laws"
+          )}
+          .
         </p>
         <p class="paragraph-terms">
-          <span class="bold-terms">3.3.</span> Upon full payment for our
-          services, you will own the website we develop for you, except for any
-          third-party elements, plugins, or themes that may be subject to their
-          own licenses.
+          <span class="bold-terms">3.2.</span>
+          {t(
+            "You may not use, reproduce, or distribute our content without our express written permission"
+          )}
+          .
         </p>
         <p class="paragraph-terms">
-          <span class="bold-terms">3.4.</span> By engaging our services, you
-          grant us permission to use the website we create for you as part of
-          our portfolio. This includes displaying screenshots, descriptions, and
-          links to your website for promotional purposes. If you wish to opt out
-          of this, please inform us in writing.
+          <span class="bold-terms">3.3.</span>
+          {t(
+            "Upon full payment for our services, you will own the website we develop for you, except for any third-party elements, plugins, or themes that may be subject to their own licenses"
+          )}
+          .
         </p>
-        <h2 class="section-title-terms">4. Client Content</h2>
+        <p class="paragraph-terms">
+          <span class="bold-terms">3.4.</span>
+          {t(
+            "By engaging our services, you grant us permission to use the website we create for you as part of our portfolio. This includes displaying screenshots, descriptions, and links to your website for promotional purposes. If you wish to opt out of this, please inform us in writing"
+          )}
+          .
+        </p>
+        <h2 class="section-title-terms">4. {t("Client Content")}</h2>
         <p class="paragraph-terms">
           <span class="bold-terms">4.1.</span> By submitting any content,
           materials, or information to us for use in your website development
@@ -109,7 +126,7 @@ export default function TermnCond() {
           If you have any questions about these Terms, please contact us at:
         </p>
         <p class="paragraph-terms">
-          Email:{" "}
+          Email:
           <a
             href="mailto:mosheschwartzberg@gmail.com"
             class="link-terms"
@@ -118,7 +135,7 @@ export default function TermnCond() {
           </a>
         </p>
         <p class="paragraph-terms">
-          Website:{" "}
+          Website:
           <a
             href="https://mosheschwartzberg.com/contact"
             class="link-terms"

@@ -1,7 +1,10 @@
 import Menu from "../components/menu/menu";
 import Footer from "../components/footer/footer";
 import "./privacy.css";
+import { useTranslation } from "react-i18next";
 export default function Privacy() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Menu />
@@ -108,8 +111,8 @@ export default function Privacy() {
           </a>
         </p>
         <p class="paragraph-privacy">
-          <span class="bold-privacy">{t("Last updated")}:</span> September 1,
-          2024
+          <span class="bold-privacy">{t("Last updated")}:</span>{" "}
+          {t("September")} 1, 2024
         </p>
       </div>
       <Footer />
