@@ -20,7 +20,7 @@ i18n
     },
     lng: "en", // Set the default language to Hebrew
     // fallbackLng: "he", // Also set the fallback language to Hebrew
-    fallbackLng: "en", // Also set the fallback language to Hebrew
+    fallbackLng: "he", // Also set the fallback language to Hebrew
     supportedLngs: ["en", "he"],
     interpolation: {
       escapeValue: false,

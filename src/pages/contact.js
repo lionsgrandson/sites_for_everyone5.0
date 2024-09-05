@@ -48,8 +48,8 @@ export default function Contact() {
   return (
     <div className="contactContainer">
       <Menu />
-      <h3 className="contactH3">Let us know how we can help</h3>
-      <h1 className="contacth1">Contact Us</h1>
+      <h3 className="contactH3">{t("Let us know how we can help")}</h3>
+      <h1 className="contacth1">{t("Contact Us")}</h1>
       <form
         onSubmit={sendEmail}
         className="contact-form"

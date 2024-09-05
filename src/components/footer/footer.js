@@ -1,10 +1,12 @@
 // Footer.jsx
 import React from "react";
 import "./footer.css";
+import { useTranslation } from "react-i18next";
 import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   const Year = new Date().getFullYear();
+  const { t } = useTranslation();
 
   return (
     <footer className="footerContainer">
