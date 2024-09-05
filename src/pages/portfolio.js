@@ -15,7 +15,11 @@ import idftene2 from "../img/portfolio/idftene2.0.png";
 import Maim from "../img/portfolio/maim-chaim.jpg";
 import "./portoflio.css";
 import CTA from "../components/cta/cta";
+import { useTranslation } from "react-i18next";
+
 export default function Portfolio() {
+  const { t } = useTranslation();
+
   const imgArr = [
     Omnifood,
     DY,
@@ -62,8 +66,8 @@ export default function Portfolio() {
   return (
     <div>
       <Menu />
-      <h3 className="protH3">Not convinced yet?</h3>
-      <h1 className="protH1">See Our Work</h1>
+      <h3 className="protH3">{t("Not convinced yet?")}</h3>
+      <h1 className="protH1">{t("See Our Work")}</h1>
       <div className="imgArrdiv">
         {imgArr.map((srcImg, index) => {
           return (
@@ -76,14 +80,16 @@ export default function Portfolio() {
         })}
       </div>
       <blockquote className="portQuote">
-        “It's not who we are underneath, but what we do that defines us.”
+        {t("“It's not who we are underneath, but what we do that defines us.”")}
       </blockquote>
       <CTA
-        ctaH1="Ready to Start Your Jorney?"
-        ctaBtn="Contact Us"
+        ctaH1={t("Ready to Start Your Jorney?")}
+        ctaBtn={t("Contact Us")}
         wAoN={true}
         btnOnBtn={true}
-        ctaP="Our expert team is eager to collaborate with you on creating a stunning, high-performing website. Whether you need a fresh design, improved functionality, or expert digital marketing strategies, we've got you covered. Contact us today for a free consultation and let's bring your vision to life"
+        ctaP={t(
+          "Our expert team is eager to collaborate with you on creating a stunning, high-performing website. Whether you need a fresh design, improved functionality, or expert digital marketing strategies, we've got you covered. Contact us today for a free consultation and let's bring your vision to life"
+        )}
       />
       <Footer />
     </div>
