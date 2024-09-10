@@ -22,6 +22,7 @@ function Home() {
             textP={t(
               "Running a business is hard enough... let us help you take the load off. Our team of experiences developers, designers and Dev-Ops engineers is always ready to provide our client with the most sophisticated final product and the guidance throughout the building process."
             )}
+            imgAlt="image of the CEO of the company - Moshe"
             WbtnQ={true}
             LORImg={false}
             aboutCls={true}

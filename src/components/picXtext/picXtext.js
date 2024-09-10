@@ -27,7 +27,7 @@ export default function PicXtext(props) {
       <img
         src={props.imgXTextImg}
         className="home-picXtext-img"
-        alt="image of the CEO of the company - Moshe"
+        alt={props.imgAlt}
       />
     </div>
   );
