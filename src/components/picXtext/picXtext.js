@@ -24,11 +24,13 @@ export default function PicXtext(props) {
           />
         ) : null}
       </div>
-      <img
-        src={props.imgXTextImg}
-        className="home-picXtext-img"
-        alt={props.imgAlt}
-      />
+      {props.wIoN ? null : (
+        <img
+          src={props.imgXTextImg}
+          className="home-picXtext-img"
+          alt={props.imgAlt}
+        />
+      )}
     </div>
   );
 }
