@@ -1,9 +1,13 @@
 import "./picXtext.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Btn from "../btn/btn";
+import { useTranslation } from "react-i18next";
+
 export default function PicXtext(props) {
   const classNamePr = `home-picXtext-div ${props.LORImg ? "left" : ""}`;
   const aboutClsName = `${props.aboutCls ? "about" : ""}`;
+  const { t } = useTranslation();
+
   return (
     // TODO deal with the elips
     <div className={`${classNamePr} ${props.aboutCls ? "about" : ""}`}>
@@ -18,7 +22,7 @@ export default function PicXtext(props) {
         </p>
         {props.WbtnQ ? (
           <Btn
-            bntTxt="Read More"
+            bntTxt={t("Read More")}
             wAoN={true}
             btnHref="/about"
           />
