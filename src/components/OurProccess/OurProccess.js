@@ -4,6 +4,7 @@ import imgXTextImg1 from "../../img/stepOneImg.png";
 import imgXTextImg2 from "../../img/stepTwoImg.png";
 import imgXTextImg3 from "../../img/stepThreeImg.png";
 import OurProTitle from "./OurProTitle";
+
 export default function OurProccess() {
   return (
     <div className="ourProSection">
