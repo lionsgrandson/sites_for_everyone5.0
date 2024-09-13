@@ -22,18 +22,7 @@ export default function Services() {
           bntTxt={t("Get Started")}
         />
       </div>
-      <div>
-        <PicXtext
-          picXtexth1={t("Hi, I’m Moshe, CEO of Sites for Everyone")}
-          wIoN={true}
-          textP={t(
-            "Running a business is hard enough... let us help you take the load off. Our team of experiences developers, designers and Dev-Ops engineers is always ready to provide our client with the most sophisticated final product and the guidance throughout the building process."
-          )}
-          WbtnQ={true}
-          LORImg={false}
-          aboutCls={true}
-        />
-      </div>
+      <div></div>
       <CTA
         ctaH1={t("Ready to Start Your Jorney?")}
         ctaBtn={t("Contact Us")}
