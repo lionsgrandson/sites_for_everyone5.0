@@ -57,7 +57,7 @@ export default function Menu() {
         <div className="menu-actions">
           <Btn
             btnHref="/contact"
-            bntTxt="Get Started"
+            bntTxt={t("Get Started")}
             WoBcls={false}
             wAoN={false}
           />
