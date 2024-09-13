@@ -6,6 +6,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import translationEN from "./locales/en.json";
 import translationHE from "./locales/he.json";
 
+// Initialize i18next
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -18,19 +19,33 @@ i18n
         translation: translationHE,
       },
     },
-    lng: "en", // Set the default language to Hebrew
-    // fallbackLng: "he", // Also set the fallback language to Hebrew
-    fallbackLng: "he", // Also set the fallback language to Hebrew
+    lng: localStorage.getItem("i18nextLng") || "en", // Set the default language from localStorage or English
+    fallbackLng: "he", // Set the fallback language to Hebrew
     supportedLngs: ["en", "he"],
     interpolation: {
-      escapeValue: false,
+      escapeValue: false, // React already escapes values
     },
     detection: {
-      order: ["navigator", "htmlTag", "path", "subdomain"],
+      order: ["localStorage", "navigator", "htmlTag", "path", "subdomain"],
+      caches: ["localStorage"], // Store the language in localStorage
     },
     react: {
-      useSuspense: false,
+      useSuspense: false, // Disable suspense for React
     },
   });
+
+// Function to print out all settings
+const printSettings = () => {
+  console.log("i18next Settings:");
+  console.log("Current Language:", i18n.language);
+  console.log("Fallback Language:", i18n.options.fallbackLng);
+  console.log("Supported Languages:", i18n.options.supportedLngs);
+  console.log("Detection Order:", i18n.options.detection.order);
+  console.log("Caches:", i18n.options.detection.caches);
+  console.log("Resources:", i18n.options.resources);
+};
+
+// Call the printSettings function to log the settings
+printSettings();
 
 export default i18n;

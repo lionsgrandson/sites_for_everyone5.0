@@ -92,7 +92,7 @@ export default function Contact() {
             required
           />
         </div>
-        <Btn bntTxt="Submit">
+        <Btn bntTxt={t("Submit")}>
           {t(isSubmitting ? "Sending..." : "Send")}
           {messageWorked ? (
             <Navigate
