@@ -12,11 +12,11 @@ export default function Footer() {
     <footer className="footerContainer">
       <div className="footerDiv">
         <div className="footerSection">
-          <h3 className="footerH3">Sites for Everyone</h3>
+          <h3 className="footerH3">{t("Sites for Everyone")}</h3>
           <ul>
-            <li>Sites for Everyone</li>
+            <li>{t("Sites for Everyone")}</li>
             {/* <li>Tartzav 12</li> */}
-            <li>Holon Israel</li>
+            <li>{t("Holon Israel")}</li>
             <li className="socialsLi">
               <a
                 href="https://www.instagram.com/moshe_blackberg/"
@@ -40,56 +40,56 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footerSection">
-          <h3 className="footerH3">Navigation</h3>
+          <h3 className="footerH3">{t("Navigation")}</h3>
           <ul className="footerSubMenu">
             <li>
-              <a href="/">Home</a>
+              <a href="/">{t("Home")}</a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="/about">{t("About")}</a>
             </li>
             <li>
-              <a href="/service">Services</a>
+              <a href="/service">{t("Services")}</a>
             </li>
             <li>
-              <a href="/portfolio">Portfolio</a>
+              <a href="/portfolio">{t("Portfolio")}</a>
             </li>
             <li>
-              <a href="/blog">Blog</a>
+              <a href="/blog">{t("Blog")}</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a href="/contact">{t("Contact")}</a>
             </li>
           </ul>
         </div>
         <div className="footerSection">
-          <h3 className="footerH3">Support</h3>
+          <h3 className="footerH3">{t("Support")}</h3>
           <ul className="footerSubMenu">
             <li>
-              <a href="/contact">Support</a>
+              <a href="/contact">{t("Support")}</a>
             </li>
             <li>
-              <a href="/contact">Contact us</a>
+              <a href="/contact">{t("Contact us")}</a>
             </li>
             <li>
-              <a href="/contact">Open Positions</a>
+              <a href="/contact">{t("Open Positions")}</a>
             </li>
           </ul>
         </div>
         <div className="footerSection">
-          <h3 className="footerH3">Legal</h3>
+          <h3 className="footerH3">{t("Legal")}</h3>
           <ul className="footerSubMenu">
             <li>
-              <a href="/terms">Terms and Conditions</a>
+              <a href="/terms">{t("Terms and Conditions")}</a>
             </li>
             <li>
-              <a href="/privacylol">Privacy Policy</a>
+              <a href="/privacylol">{t("Privacy Policy")}</a>
             </li>
           </ul>
         </div>
       </div>
       <p className="copyright">
-        © {Year} Sites for Everyone, all rights reserved.
+        © {Year} {t("Sites for Everyone, all rights reserved.")}
       </p>
     </footer>
   );
