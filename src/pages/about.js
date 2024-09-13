@@ -12,13 +12,12 @@ import "./about.css";
 
 export default function About() {
   const { t } = useTranslation();
-
   const teamMembers = [
-    { name: "Moshe", role: "Head Developer, CEO", image: Moshe },
-    { name: "Ari", role: "Developer, Designer", image: Ari },
-    { name: "Faina", role: "SEO Manager", image: Faina },
-    { name: "Ofer", role: "Designer", image: Ofer },
-    { name: "Nitzan", role: "Chef", image: Nitzan },
+    { name: "Moshe", role: t("Head Developer, CEO"), image: Moshe },
+    { name: "Ari", role: t("Developer, Designer"), image: Ari },
+    { name: "Faina", role: t("SEO Manager"), image: Faina },
+    { name: "Ofer", role: t("Designer"), image: Ofer },
+    { name: "Nitzan", role: t("Chef"), image: Nitzan },
   ];
 
   return (
