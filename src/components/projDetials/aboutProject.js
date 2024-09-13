@@ -1,8 +1,11 @@
 import "./aboutProject.css";
 import Menu from "../menu/menu";
 import Footer from "../footer/footer";
+import { useTranslation } from "react-i18next";
 
 export default function AboutProject(props) {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Menu />
@@ -34,12 +37,18 @@ export default function AboutProject(props) {
             href={props.linkHref}
             target="_blank"
           >
-            Visit the website
+            {t("Visit the website")}
           </a>
           <ul>
-            <li>Client: {props.client}</li>
-            <li>Year: {props.year}</li>
-            <li>Services: {props.services}</li>
+            <li>
+              {t("Client")}: {props.client}
+            </li>
+            <li>
+              {t("Year")}: {props.year}
+            </li>
+            <li>
+              {t("Services")}: {props.services}
+            </li>
           </ul>
         </div>
       </div>
