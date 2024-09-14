@@ -9,6 +9,7 @@
   width: 100%;
   max-width: 722px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .titlel-h3-our {
@@ -38,6 +39,7 @@
   font-size: clamp(1.5rem, 3vw, 3.8125rem);
   line-height: 1.2;
   padding: 1rem;
+  text-align: center;
 }
 
 .middleBoxProc span {

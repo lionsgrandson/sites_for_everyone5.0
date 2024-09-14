@@ -26,7 +26,7 @@ export default function OurProccess() {
       />
       <div className="middleBoxProc">
         {t("Let people see the")} <span>{t("real")}</span>
-        {t("you.")}
+        {t(" you.")}
       </div>
       <PicXtext
         imgXTextImg={imgXTextImg2}
