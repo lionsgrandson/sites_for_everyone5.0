@@ -35,15 +35,26 @@
 
 .middleBoxProc {
   border-radius: 20px;
-  margin: 1rem;
+  margin: 2rem 15rem;
   font-size: clamp(1.5rem, 3vw, 3.8125rem);
-  line-height: 1.2;
-  padding: 1rem;
+  /* padding: 1rem; */
   text-align: center;
+  background: linear-gradient(90deg, #214ce7 0%, #5c48ad 100%);
+  font-family: Marcellus;
+  font-weight: 400;
+  line-height: 94.04px;
+  letter-spacing: 0.01em;
+  border-radius: 6.4rem;
 }
 
 .middleBoxProc span {
   font-size: clamp(2rem, 4vw, 5.625rem);
+  font-family: Parisienne;
+  /* font-size: 90px; */
+  font-weight: 400;
+  line-height: 122.61px;
+  letter-spacing: 0.01em;
+  text-align: center;
 }
 
 .bottomBoxProc {
