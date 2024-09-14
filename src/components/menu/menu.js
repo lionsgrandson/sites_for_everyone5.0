@@ -38,15 +38,12 @@ export default function Menu() {
       <div className={`menu-container ${isMenuOpen ? "open" : ""}`}>
         <ul className="menu-list">
           <li>
-            <a href="./service">Services</a>
-          </li>
-          <li>
-            <a href="./about">About</a>
-            <a href="./about">{t("About")}</a>
-          </li>
-          <li>
             <a href="./service">{t("Services")}</a>
           </li>
+          <li>
+            <a href="./about">{t("About")}</a>
+          </li>
+
           <li>
             <a href="./portfolio">{t("Portfolio")}</a>
           </li>
