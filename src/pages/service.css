@@ -1,9 +1,15 @@
 .servicesDiv {
-  max-width: 90%;
+  max-width: 55%;
   margin: 0 auto;
   padding: 2rem;
   border-radius: 52px;
-  /* text-align: center; */
+  text-align: center;
+}
+.heroSection {
+  background-image: url(../img/service-Hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .servicesDiv h1 {
@@ -12,36 +18,24 @@
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  color: rgba(0, 0, 0, 1);
+  color: aliceblue;
   margin-bottom: 1rem;
 }
 
 .servicesDiv p {
   font-family: Marcellus, serif;
-  font-size: clamp(1rem, 2vw, 1.875rem); /* Responsive font size */
+  font-size: clamp(2.3rem, 2vw, 1.875rem); /* Responsive font size */
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  color: rgba(0, 0, 0, 1);
+  color: aliceblue;
   margin-bottom: 2rem;
 }
 
 /* Button styling */
-.Btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #5c48ad;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  transition: background-color 0.3s;
-}
-
-.Btn:hover {
-  background-color: #214ce7;
+.btn-div {
+  display: flex;
+  justify-content: center;
 }
 
 /* Responsive adjustments */
