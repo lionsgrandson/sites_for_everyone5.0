@@ -5,6 +5,10 @@
   border-radius: 52px;
   text-align: center;
 }
+.heroSection .menu_header span,
+.heroSection .menu-list li a {
+  color: aliceblue !important;
+}
 .heroSection {
   background-image: url(../img/service-Hero.png);
   background-size: cover;
@@ -37,7 +41,7 @@
   display: flex;
   justify-content: center;
 }
-
+/* TODO menu text color changed on service page  */
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .servicesDiv {
