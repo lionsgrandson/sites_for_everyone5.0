@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 import PicXtext from "../components/picXtext/picXtext";
 import heroimg from "../img/service-Hero.png";
 import CTA from "../components/cta/cta";
+import ServiceCard from "../components/serviceCard/serviceCard";
+import textOnScreen from "../img/service/text program on computer screen.png";
 export default function Services() {
   const { t } = useTranslation();
   return (
@@ -27,7 +29,38 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="serviceCardsSection">
+        <ServiceCard
+          h1ServiceCard="Website Development & Maintenance"
+          pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
+          imgServiceAlt="text program on computer screen"
+          imgServiceSrc={textOnScreen}
+        />
+        <ServiceCard
+          h1ServiceCard="Website Development & Maintenance"
+          pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
+          imgServiceAlt="text program on computer screen"
+          imgServiceSrc={textOnScreen}
+        />
+        <ServiceCard
+          h1ServiceCard="Website Development & Maintenance"
+          pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
+          imgServiceAlt="text program on computer screen"
+          imgServiceSrc={textOnScreen}
+        />
+        <ServiceCard
+          h1ServiceCard="Website Development & Maintenance"
+          pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
+          imgServiceAlt="text program on computer screen"
+          imgServiceSrc={textOnScreen}
+        />
+        <ServiceCard
+          h1ServiceCard="Website Development & Maintenance"
+          pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
+          imgServiceAlt="text program on computer screen"
+          imgServiceSrc={textOnScreen}
+        />
+      </div>
       <CTA
         ctaH1={t("Ready to Start Your Jorney?")}
         ctaBtn={t("Contact Us")}
