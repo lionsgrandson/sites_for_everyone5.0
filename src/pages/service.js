@@ -40,6 +40,7 @@ export default function Services() {
           pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
           imgServiceAlt="text program on computer screen"
           imgServiceSrc={textOnScreen}
+          classCard="purp"
         />
         <ServiceCard
           h1ServiceCard="WordPress Development"
@@ -49,6 +50,7 @@ export default function Services() {
         <ServiceCard
           imgServiceAlt="group of devs working"
           imgServiceSrc={teamworking}
+          classCard="groupWorking"
         />
         <ServiceCard
           h1ServiceCard="Accessibility"
@@ -63,12 +65,14 @@ navigate and interact with your content."
           pServiceCard="Don't let your website get lost in the digital crowd. Our SEO services will help you rank higher in search engine results, making it easier for people to discover your business."
           imgServiceAlt="a rectangle with the text search"
           imgServiceSrc={searchBox}
+          classCard="seoCard"
         />
         <ServiceCard
           h1ServiceCard="Professional Logo & Website Design"
           pServiceCard="Make a statement with a professional website and logo that showcase your best self. Our designers will craft a cohesive brand identity that resonates with your target audience."
           imgServiceAlt="text program on computer screen"
           imgServiceSrc={omnifood}
+          classCard="purp"
         />
         <ServiceCard
           h1ServiceCard="Cloud Hosting"

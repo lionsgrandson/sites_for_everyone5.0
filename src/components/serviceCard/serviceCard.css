@@ -2,10 +2,14 @@
   border-radius: 25px;
   box-shadow: 0px 0px 30px 0px rgba(105, 174, 231, 0.2);
   /* width: 50rem; */
-  width: 30%;
+  width: 90%;
   height: fit-content;
+  padding: 2rem;
 }
-.section .purp {
+.section.seoCard {
+  background: linear-gradient(115.49deg, #000000 2.53%, #545454 99.18%);
+}
+.section.purp {
   background: conic-gradient(
     from 135deg at 50% 50%,
     #889be1 0deg,
@@ -13,18 +17,33 @@
     #889be1 360deg
   );
 }
+section.groupWorking {
+}
 .serviceCardsSection {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2rem;
 }
 
+.section.purp h1,
+.section.seoCard h1 {
+  background: linear-gradient(270deg, #ffffff 27.94%, #ffffff 97.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .section h1 {
   font-family: Nunito;
   font-size: 45px;
   font-weight: 800;
   line-height: 61.38px;
   /* text-align: left; */
+  background: linear-gradient(270deg, #873de1 27.94%, #ab7ce4 97.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section.seoCard p {
+  color: white;
 }
 .section p {
   font-family: Nunito;
