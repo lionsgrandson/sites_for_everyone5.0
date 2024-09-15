@@ -1,18 +1,23 @@
 .section {
   border-radius: 25px;
+  box-shadow: 0px 0px 30px 0px rgba(105, 174, 231, 0.2);
+  /* width: 50rem; */
+  width: 33%;
+}
+.section .purp {
   background: conic-gradient(
     from 135deg at 50% 50%,
     #889be1 0deg,
     #a26ce4 180deg,
     #889be1 360deg
   );
-  box-shadow: 0px 0px 30px 0px rgba(105, 174, 231, 0.2);
-  width: 500px;
 }
 .serviceCardsSection {
   display: flex;
   flex-wrap: wrap;
+  gap: 5rem;
 }
+
 .section h1 {
   font-family: Nunito;
   font-size: 45px;
@@ -26,4 +31,8 @@
   font-weight: 500;
   line-height: 28.64px;
   /* text-align: left; */
+}
+
+.section img {
+  width: fit-content;
 }

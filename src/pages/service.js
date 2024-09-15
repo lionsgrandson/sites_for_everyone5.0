@@ -8,6 +8,11 @@ import heroimg from "../img/service-Hero.png";
 import CTA from "../components/cta/cta";
 import ServiceCard from "../components/serviceCard/serviceCard";
 import textOnScreen from "../img/service/text program on computer screen.png";
+import gearPerson from "../img/service/Accessibility Tools.png";
+import searchBox from "../img/service/Rectangle 23.png";
+import omnifood from "../img/omnifood/omnigoofScreenshot1.png";
+import cloud from "../img/service/image 28.png";
+import teamworking from "../img/service/Dev team working on a project.png";
 export default function Services() {
   const { t } = useTranslation();
   return (
@@ -37,28 +42,39 @@ export default function Services() {
           imgServiceSrc={textOnScreen}
         />
         <ServiceCard
-          h1ServiceCard="Website Development & Maintenance"
-          pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
-          imgServiceAlt="text program on computer screen"
-          imgServiceSrc={textOnScreen}
+          h1ServiceCard="WordPress Development"
+          pServiceCard="Sometimes there’s not need to overcomplicate. Get the right package according to your budget."
+        />
+        <ServiceCard h1ServiceCard="16 / 6 Support" />
+        <ServiceCard
+          imgServiceAlt="group of devs working"
+          imgServiceSrc={teamworking}
         />
         <ServiceCard
-          h1ServiceCard="Website Development & Maintenance"
-          pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
-          imgServiceAlt="text program on computer screen"
-          imgServiceSrc={textOnScreen}
+          h1ServiceCard="Accessibility"
+          pServiceCard="Everyone deserves to see you website. 
+we ensure that all users can
+navigate and interact with your content."
+          imgServiceAlt="a small person that a gear next to them"
+          imgServiceSrc={gearPerson}
         />
         <ServiceCard
-          h1ServiceCard="Website Development & Maintenance"
-          pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
-          imgServiceAlt="text program on computer screen"
-          imgServiceSrc={textOnScreen}
+          h1ServiceCard="SEO Optimization "
+          pServiceCard="Don't let your website get lost in the digital crowd. Our SEO services will help you rank higher in search engine results, making it easier for people to discover your business."
+          imgServiceAlt="a rectangle with the text search"
+          imgServiceSrc={searchBox}
         />
         <ServiceCard
-          h1ServiceCard="Website Development & Maintenance"
-          pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
+          h1ServiceCard="Professional Logo & Website Design"
+          pServiceCard="Make a statement with a professional website and logo that showcase your best self. Our designers will craft a cohesive brand identity that resonates with your target audience."
           imgServiceAlt="text program on computer screen"
-          imgServiceSrc={textOnScreen}
+          imgServiceSrc={omnifood}
+        />
+        <ServiceCard
+          h1ServiceCard="Cloud Hosting"
+          pServiceCard="Deploy your websites securely and reliably on the cloud."
+          imgServiceAlt="a picture of a cloud"
+          imgServiceSrc={cloud}
         />
       </div>
       <CTA
