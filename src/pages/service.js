@@ -13,6 +13,7 @@ import searchBox from "../img/service/Rectangle 23.png";
 import omnifood from "../img/omnifood/omnigoofScreenshot1.png";
 import cloud from "../img/service/image 28.png";
 import teamworking from "../img/service/Dev team working on a project.png";
+
 export default function Services() {
   const { t } = useTranslation();
   return (
@@ -41,6 +42,7 @@ export default function Services() {
           imgServiceAlt="text program on computer screen"
           imgServiceSrc={textOnScreen}
           classCard="purp"
+          classCard2="webdev"
         />
         <ServiceCard
           h1ServiceCard="WordPress Development"
@@ -52,14 +54,7 @@ export default function Services() {
           imgServiceSrc={teamworking}
           classCard="groupWorking"
         />
-        <ServiceCard
-          h1ServiceCard="Accessibility"
-          pServiceCard="Everyone deserves to see you website. 
-we ensure that all users can
-navigate and interact with your content."
-          imgServiceAlt="a small person that a gear next to them"
-          imgServiceSrc={gearPerson}
-        />
+
         <ServiceCard
           h1ServiceCard="SEO Optimization "
           pServiceCard="Don't let your website get lost in the digital crowd. Our SEO services will help you rank higher in search engine results, making it easier for people to discover your business."
@@ -68,17 +63,28 @@ navigate and interact with your content."
           classCard="seoCard"
         />
         <ServiceCard
-          h1ServiceCard="Professional Logo & Website Design"
-          pServiceCard="Make a statement with a professional website and logo that showcase your best self. Our designers will craft a cohesive brand identity that resonates with your target audience."
-          imgServiceAlt="text program on computer screen"
-          imgServiceSrc={omnifood}
-          classCard="purp"
+          h1ServiceCard="Accessibility"
+          pServiceCard="Everyone deserves to see you website. 
+we ensure that all users can
+navigate and interact with your content."
+          imgServiceAlt="a small person that a gear next to them"
+          imgServiceSrc={gearPerson}
+          classCard="access"
         />
         <ServiceCard
           h1ServiceCard="Cloud Hosting"
           pServiceCard="Deploy your websites securely and reliably on the cloud."
           imgServiceAlt="a picture of a cloud"
           imgServiceSrc={cloud}
+          classCard="cloud"
+        />
+        <ServiceCard
+          h1ServiceCard="Professional Logo & Website Design"
+          pServiceCard="Make a statement with a professional website and logo that showcase your best self. Our designers will craft a cohesive brand identity that resonates with your target audience."
+          imgServiceAlt="text program on computer screen"
+          imgServiceSrc={omnifood}
+          classCard="purp"
+          classCard2="desLog"
         />
       </div>
       <CTA
