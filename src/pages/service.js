@@ -13,7 +13,8 @@ import searchBox from "../img/service/Rectangle 23.png";
 import omnifood from "../img/omnifood/omnigoofScreenshot1.png";
 import cloud from "../img/service/image 28.png";
 import teamworking from "../img/service/Dev team working on a project.png";
-
+import { Masonry } from "@mui/lab";
+import { Paper } from "@mui/material";
 export default function Services() {
   const { t } = useTranslation();
   return (
@@ -35,7 +36,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className="serviceCardsSection">
+      {/* <div className="serviceCardsSection">
         <ServiceCard
           h1ServiceCard="Website Development & Maintenance"
           pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
@@ -86,7 +87,19 @@ navigate and interact with your content."
           classCard="purp"
           classCard2="desLog"
         />
-      </div>
+      </div> */}
+      <Masonry
+        columns={2}
+        spacing={2}
+      >
+        <Paper sx={{ height: "100px", backgroundColor: "primary.main" }} />
+        <Paper
+          sx={{
+            height: "calc(200px + 16px)",
+            backgroundColor: "secondary.main",
+          }}
+        />
+      </Masonry>
       <CTA
         ctaH1={t("Ready to Start Your Jorney?")}
         ctaBtn={t("Contact Us")}
