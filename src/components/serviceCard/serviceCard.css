@@ -168,7 +168,7 @@
   }
 
   .heroSection {
-    height: 60vh;
+    /* height: 60vh; */
   }
 }
 /* TODO around 1500px the cloud text starts getting messed up , move it around. */

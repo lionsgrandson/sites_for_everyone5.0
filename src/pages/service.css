@@ -1,6 +1,6 @@
 .servicesDiv {
   max-width: 55%;
-  margin: 0 auto;
+  margin: auto;
   padding: 2rem;
   border-radius: 52px;
   text-align: center;
@@ -14,23 +14,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  background-position: center; /* Ensure the background is centered on all screens */
-  background-attachment: fixed; /* Keeps background fixed when scrolling */
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
 }
 
 .servicesDiv h1 {
+  color: rgba(255, 255, 255, 1);
   font-family: Marcellus, serif;
-  font-size: clamp(2.5rem, 5vw, 6.25rem); /* Responsive font size */
+  font-size: clamp(2.5rem, 5vw, 8.2rem);
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 102.82px;
   letter-spacing: 0.01em;
-  color: aliceblue;
-  margin-bottom: 1rem;
 }
 
 .servicesDiv p {
   font-family: Marcellus, serif;
-  font-size: clamp(2.3rem, 2vw, 1.875rem); /* Responsive font size */
+  font-size: clamp(2.3rem, 2vw, 2.6rem);
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.01em;
@@ -44,18 +45,23 @@
   justify-content: center;
 }
 /* TODO menu text color changed on service page  */
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .servicesDiv {
     padding: 1.5rem;
   }
 
   .servicesDiv h1 {
-    font-size: clamp(2rem, 6vw, 4rem); /* Smaller font size for tablets */
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 75.23px;
   }
 
   .servicesDiv p {
-    font-size: clamp(0.875rem, 3vw, 1.5rem); /* Smaller font size for tablets */
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 25.08px;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -65,10 +71,10 @@
   }
 
   .servicesDiv h1 {
-    font-size: clamp(1.5rem, 8vw, 3rem); /* Smaller font size for mobile */
+    /* font-size: clamp(1.5rem, 8vw, 3rem);   */
   }
 
   .servicesDiv p {
-    font-size: clamp(0.75rem, 4vw, 1.25rem); /* Smaller font size for mobile */
+    /* font-size: clamp(0.75rem, 4vw, 1.25rem); / */
   }
 }
