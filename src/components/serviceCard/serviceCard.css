@@ -142,7 +142,7 @@
 @media (max-width: 1024px) {
   /* Reduce height of hero section */
   .heroSection {
-    height: 80vh;
+    /* height: 80vh; */
   }
 
   .serviceCardsSection {
@@ -168,7 +168,7 @@
   }
 
   .heroSection {
-    /* height: 60vh; */
+    height: 75vh;
   }
 }
 /* TODO around 1500px the cloud text starts getting messed up , move it around. */
