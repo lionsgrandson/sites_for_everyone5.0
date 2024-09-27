@@ -47,12 +47,13 @@
   );
 }
 .section.cloud img {
-  width: 40rem;
+  width: 85%;
 }
 .section.cloud {
   position: relative;
   text-align: center;
   color: #ffffff;
+  padding: 0;
 }
 .section.cloud h1 {
   background: linear-gradient(270deg, #fff 27.94%, #fff 97.73%);
@@ -61,7 +62,7 @@
   z-index: 1;
   position: absolute;
   top: 25%;
-  right: 20%;
+  right: 25%;
 }
 .section.cloud p {
   position: absolute;

@@ -194,6 +194,9 @@ navigate and interact with your content."
             borderRadius: "25px",
             height: "35rem",
             boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
+            // backgroundImage: `url("${cloud}")`,
+            // backgroundRepeat: "no-repeat",
+            // backgroundSize: "cover",
           }}
         >
           <ServiceCard
