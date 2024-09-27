@@ -128,7 +128,13 @@ navigate and interact with your content."
             classCard="groupWorking"
           />
         </Paper>
-        <Paper sx={{ borderRadius: "25px", height: "55rem", overflow: "clip" }}>
+        <Paper
+          sx={{
+            borderRadius: "25px",
+            height: "55rem",
+            overflow: "clip",
+          }}
+        >
           <ServiceCard
             h1ServiceCard="Professional Logo & Website Design"
             pServiceCard="Make a statement with a professional website and logo that showcase your best self. Our designers will craft a cohesive brand identity that resonates with your target audience."
