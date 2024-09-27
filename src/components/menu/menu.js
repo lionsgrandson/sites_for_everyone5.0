@@ -4,7 +4,7 @@ import Btn from "../btn/btn";
 import LanguageSwitcher from "../../LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
-export default function Menu() {
+export default function Menu(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useTranslation();
 
@@ -13,7 +13,7 @@ export default function Menu() {
   };
 
   return (
-    <nav className={`menu-div ${isMenuOpen ? "open" : ""}`}>
+    <nav className={`menu-div ${isMenuOpen ? "open" : ""} ${props.ser}`}>
       <div className="outerDiv-Menu">
         <a
           href="/"

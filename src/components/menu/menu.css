@@ -2,7 +2,9 @@
 .menu-div.open {
   background-color: #fff;
 }
-
+.menu-div.open.whitebg {
+  background-color: black;
+}
 .menu-div {
   display: flex;
   justify-content: space-between;
@@ -102,7 +104,9 @@
   .logo-link {
     flex: 0 0 auto; /* Prevent logo from shrinking */
   }
-
+  .menu-div.whitebg .hamburger-bar {
+    background-color: white;
+  }
   .hamburger {
     display: flex;
     margin-left: auto; /* Push to the right */
@@ -119,7 +123,9 @@
   .hamburger-bar.open:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
   }
-
+  .menu-div.open.whitebg .menu-container {
+    background-color: black;
+  }
   .menu-container {
     display: none;
     flex-direction: column;

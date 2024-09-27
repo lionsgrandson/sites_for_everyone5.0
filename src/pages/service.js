@@ -20,7 +20,7 @@ export default function Services() {
   return (
     <>
       <div className="heroSection">
-        <Menu />
+        <Menu ser={"whitebg"} />
         <div className="servicesDiv">
           <h1>{t("Your one stop solution for web needs")}.</h1>
           <p>
