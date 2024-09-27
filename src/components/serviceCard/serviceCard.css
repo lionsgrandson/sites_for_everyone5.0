@@ -1,28 +1,27 @@
 .section {
   border-radius: 25px;
   box-shadow: 0px 0px 30px 0px rgba(105, 174, 231, 0.2);
-  /* width: 50rem; */
-  width: 90%;
-  height: fit-content;
+  background: linear-gradient(135.53deg, #e4edff 24.77%, #dae4f9 99.06%);
+  height: 100%;
   padding: 2rem;
 }
+
 .section.access {
   text-align: center;
 }
+
 .section.access img {
   width: 25%;
 }
-.section.purp.webdev {
-  grid-column: 1;
-  grid-row: 1 / -2;
-}
+
 .section.seoCard {
   background: linear-gradient(115.49deg, #000000 2.53%, #545454 99.18%);
 }
+
 .section.purp.desLog {
-  overflow-y: clip;
-  height: 70%;
+  overflow: clip;
 }
+
 .section.purp {
   background: conic-gradient(
     from 135deg at 50% 50%,
@@ -31,14 +30,17 @@
     #889be1 360deg
   );
 }
+
 .section.cloud img {
   width: 40rem;
 }
+
 .section.cloud {
   position: relative;
   text-align: center;
   color: #ffffff;
 }
+
 .section.cloud h1 {
   background: linear-gradient(270deg, #fff 27.94%, #fff 97.73%);
   -webkit-background-clip: text;
@@ -48,6 +50,7 @@
   top: 25%;
   right: 20%;
 }
+
 .section.cloud p {
   position: absolute;
   z-index: 1;
@@ -56,14 +59,6 @@
   left: 10%;
   text-align: center;
 }
-.section.groupWorking {
-}
-.serviceCardsSection {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 1fr 1fr 2fr;
-  grid-gap: 2rem;
-}
 
 .section.purp h1,
 .section.seoCard h1 {
@@ -71,25 +66,26 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .section h1 {
   font-family: Nunito;
   font-size: 45px;
   font-weight: 800;
   line-height: 61.38px;
-  /* text-align: left; */
   background: linear-gradient(270deg, #873de1 27.94%, #ab7ce4 97.73%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .section.seoCard p {
   color: white;
 }
+
 .section p {
   font-family: Nunito;
   font-size: 21px;
   font-weight: 500;
   line-height: 28.64px;
-  /* text-align: left; */
 }
 
 .section img {
