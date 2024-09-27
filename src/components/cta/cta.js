@@ -12,25 +12,27 @@ export default function CTA(props) {
         {props.ctaH1}
         <span> {props.ctaH1Spn}</span>
       </h1>
-      <p
-        className={`cta-p ${props.ctaCCls && "ourMission"} 
+      <div>
+        <p
+          className={`cta-p ${props.ctaCCls && "ourMission"} 
         ${props.ctaSndCls ? "FirstCls" : "SecondCls"} ${props.florGr && "flex"}
-     
+        
         `}
-      >
-        {props.ctaP}
-        <br />
-        <br />
-        {props.ctaP2}
-      </p>
-      {props.btnOnBtn && (
-        <Btn
-          bntTxt={props.ctaBtn}
-          WoBcls={true}
-          wAoN={true}
-          btnHref="/contact"
-        />
-      )}
+        >
+          {props.ctaP}
+          <br />
+          <br />
+          {props.ctaP2}
+        </p>
+        {props.btnOnBtn && (
+          <Btn
+            bntTxt={props.ctaBtn}
+            WoBcls={true}
+            wAoN={true}
+            btnHref="/contact"
+          />
+        )}
+      </div>
     </div>
   );
 }

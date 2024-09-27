@@ -3,7 +3,7 @@
   background: linear-gradient(263.41deg, #214ce7 0.75%, #5c48ad 97.9%);
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
+  flex-direction: column;
   padding: 2rem;
   width: 100%;
   box-sizing: border-box;
@@ -67,6 +67,13 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .cta-div {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 @media (min-width: 768px) {
   .cta-h1 {
     font-size: 3.5rem;
