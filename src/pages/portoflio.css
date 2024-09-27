@@ -6,14 +6,13 @@
   gap: 1rem;
   padding: 1rem;
   width: 100%;
-  max-width: 1200px; /* Ensures the container doesn't stretch too wide */
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 .protH3 {
   font-family: Nunito, sans-serif;
-  font-size: clamp(1.8rem, 2vw, 2.2rem); /* Responsive font size */
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.01em;
@@ -23,13 +22,12 @@
   -webkit-text-fill-color: transparent;
   margin: 3rem auto 1rem;
   width: 100%;
-  max-width: 800px; /* Limits the width for larger screens */
 }
 
 .protH1 {
   margin: 0 auto 1rem;
   font-family: Marcellus, serif;
-  font-size: clamp(2.5rem, 3vw, 3.5rem); /* Responsive font size */
+  font-size: 9rem;
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.01em;
@@ -56,20 +54,23 @@
 /* Additional Styles for Image Responsiveness */
 .imgArrdiv img {
   width: 100%;
-  max-width: 300px; /* Set a maximum width for larger screens */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 480px) {
-  .imgArrdiv img {
-    max-width: 90%; /* Reduce max width for smaller screens */
+  .protH3 {
+    font-size: 23px;
+    line-height: 40px;
   }
-
+  .protH1 {
+    font-size: 60px;
+    line-height: 75.23px;
+  }
   .protH3,
   .protH1,
   .portQuote {
-    max-width: 90%; /* Ensure text elements don't stretch too wide */
+    max-width: 90%;
   }
 }
