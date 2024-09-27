@@ -1,29 +1,30 @@
+.heroSectionHome {
+  height: 100vh;
+}
 .siteTitleHero {
   margin: 0 auto;
-  width: 50%;
-  max-width: 72.7rem;
   font-family: Marcellus, serif;
-  font-size: clamp(3rem, 8vw, 15.5rem); /* Responsive font size */
+  font-size: 15rem;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
 }
-
 .bigTextEv {
-  transform: rotate(1.66deg);
+  transform: rotate(-1.66deg);
   display: block;
+  width: fit-content;
   background: rgba(255, 186, 58, 0.77);
+  margin: 0 auto;
 }
 
 .bitTextHero {
   font-family: Nunito, sans-serif;
-  font-size: clamp(1.5rem, 3vw, 3.6rem); /* Responsive font size */
+  font-size: 3.6rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--gray);
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .feat-hero {
@@ -31,10 +32,9 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3.5rem;
   margin: 0 auto;
   padding: 0 1rem;
-  max-width: 1200px;
 }
 
 .feat-hero > div {
@@ -42,36 +42,56 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* width: 100%; */
-  max-width: 240px;
 }
 
 .feat-home-text {
-  font-family: var(--font-secondary), sans-serif;
-  font-size: clamp(1rem, 2vw, 2.8rem); /* Responsive font size */
+  font-family: Nunito, sans-serif;
+  font-size: 2.8rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 38.19px;
+  text-align: center;
+
   color: var(--dark-blue);
   margin-top: 1rem;
 }
+.toBeshown {
+  display: none;
+}
 
 /* Media Queries for Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .siteTitleHero {
+    font-size: 13rem;
+  }
+
   .toBeHidden {
     /* visibility: hidden; */
     display: none !important;
   }
-  .feat-hero {
-    gap: 1.5rem;
-  }
-
-  .feat-home-text {
-    font-size: 1.8rem;
-  }
 }
-
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .siteTitleHero {
+    font-size: 7.5rem;
+    line-height: 94.04px;
+  }
+  .bitTextHero {
+    font-size: 2rem;
+    line-height: 27.28px;
+  }
+  .feat-hero {
+    gap: 2.5rem;
+  }
+  .heroSectionHome {
+    /* height: 70vh; */
+  }
   .feat-home-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 16.37px;
+  }
+  .toBeshown {
+    /* visibility: hidden; */
+    display: block !important;
+    width: 50%;
+    margin: 5rem auto;
   }
 }
