@@ -36,7 +36,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className="serviceCardsSection">
+      {/* <div className="serviceCardsSection">
         <ServiceCard
           h1ServiceCard="Website Development & Maintenance"
           pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
@@ -87,13 +87,23 @@ navigate and interact with your content."
           classCard="purp"
           classCard2="desLog"
         />
-      </div>
-      {/* <Masonry
+      </div> */}
+      <Masonry
         columns={3}
         spacing={5}
-        sx={{ margin: "2rem 0rem" }}
+        sx={{
+          margin: "2rem 0rem",
+        }}
       >
-        <Paper sx={{ borderRadius: "25px", height: "75rem" }}>
+        <Paper
+          sx={{
+            borderRadius: "25px",
+            height: "75rem",
+            boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
+            background:
+              "conic-gradient( from 135deg at 50% 50%,    #889be1 0deg,    #a26ce4 180deg,    #889be1 360deg)",
+          }}
+        >
           <ServiceCard
             h1ServiceCard="Website Development & Maintenance"
             pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
@@ -103,16 +113,35 @@ navigate and interact with your content."
             classCard2="webdev"
           />
         </Paper>
-        <Paper sx={{ borderRadius: "25px", height: "35rem" }}>
+        <Paper
+          sx={{
+            borderRadius: "25px",
+            height: "35rem",
+            boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
+          }}
+        >
           <ServiceCard
             h1ServiceCard="WordPress Development"
             pServiceCard="Sometimes there's not need to overcomplicate. Get the right package according to your budget."
+            classCard="wpdev"
           />
         </Paper>
-        <Paper sx={{ borderRadius: "25px", height: "15rem" }}>
+        <Paper
+          sx={{
+            borderRadius: "25px",
+            height: "15rem",
+            boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
+          }}
+        >
           <ServiceCard h1ServiceCard="16 / 6 Support" />
         </Paper>
-        <Paper sx={{ borderRadius: "25px", height: "35rem" }}>
+        <Paper
+          sx={{
+            borderRadius: "25px",
+            height: "35rem",
+            boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
+          }}
+        >
           <ServiceCard
             h1ServiceCard="SEO Optimization "
             pServiceCard="Don't let your website get lost in the digital crowd. Our SEO services will help you rank higher in search engine results, making it easier for people to discover your business."
@@ -121,7 +150,13 @@ navigate and interact with your content."
             classCard="seoCard"
           />
         </Paper>
-        <Paper sx={{ borderRadius: "25px", height: "35rem" }}>
+        <Paper
+          sx={{
+            borderRadius: "25px",
+            height: "35rem",
+            boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
+          }}
+        >
           <ServiceCard
             imgServiceAlt="group of devs working"
             imgServiceSrc={teamworking}
@@ -133,6 +168,9 @@ navigate and interact with your content."
             borderRadius: "25px",
             height: "55rem",
             overflow: "clip",
+            boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
+            background:
+              "conic-gradient( from 135deg at 50% 50%,    #889be1 0deg,    #a26ce4 180deg,    #889be1 360deg)",
           }}
         >
           <ServiceCard
@@ -144,7 +182,13 @@ navigate and interact with your content."
             classCard2="desLog"
           />
         </Paper>
-        <Paper sx={{ borderRadius: "25px", height: "35rem" }}>
+        <Paper
+          sx={{
+            borderRadius: "25px",
+            height: "35rem",
+            boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
+          }}
+        >
           <ServiceCard
             h1ServiceCard="Cloud Hosting"
             pServiceCard="Deploy your websites securely and reliably on the cloud."
@@ -153,7 +197,13 @@ navigate and interact with your content."
             classCard="cloud"
           />
         </Paper>
-        <Paper sx={{ borderRadius: "25px", height: "35rem" }}>
+        <Paper
+          sx={{
+            borderRadius: "25px",
+            height: "35rem",
+            boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
+          }}
+        >
           <ServiceCard
             h1ServiceCard="Accessibility"
             pServiceCard="Everyone deserves to see you website. We ensure that all users can navigate and interact with your content."
@@ -162,7 +212,7 @@ navigate and interact with your content."
             classCard="access"
           />
         </Paper>
-      </Masonry> */}
+      </Masonry>
       <CTA
         ctaH1={t("Ready to Start Your Jorney?")}
         ctaBtn={t("Contact Us")}
