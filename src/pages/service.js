@@ -131,9 +131,13 @@ navigate and interact with your content."
             borderRadius: "25px",
             height: "15rem",
             boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
+            display: "flex",
           }}
         >
-          <ServiceCard h1ServiceCard="16 / 6 Support" />
+          <ServiceCard
+            h1ServiceCard="16 / 6 Support"
+            classCard="six16"
+          />
         </Paper>
         <Paper
           sx={{
