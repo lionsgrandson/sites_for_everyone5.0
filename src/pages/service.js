@@ -89,16 +89,22 @@ navigate and interact with your content."
         />
       </div> */}
       <Masonry
-        columns={2}
+        columns={3}
         spacing={2}
       >
-        <Paper sx={{ height: "100px", backgroundColor: "primary.main" }} />
         <Paper
           sx={{
-            height: "calc(200px + 16px)",
+            height: "715px",
             backgroundColor: "secondary.main",
           }}
         />
+        <Paper sx={{ height: "350px", backgroundColor: "primary.main" }} />
+        <Paper sx={{ height: "150px", backgroundColor: "primary.main" }} />
+        <Paper sx={{ height: "350px", backgroundColor: "primary.main" }} />
+        <Paper sx={{ height: "350px", backgroundColor: "primary.main" }} />
+        <Paper sx={{ height: "550px", backgroundColor: "secondary.main" }} />
+        <Paper sx={{ height: "350px", backgroundColor: "primary.main" }} />
+        <Paper sx={{ height: "350px", backgroundColor: "primary.main" }} />
       </Masonry>
       <CTA
         ctaH1={t("Ready to Start Your Jorney?")}
