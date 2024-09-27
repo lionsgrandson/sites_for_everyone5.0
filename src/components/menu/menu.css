@@ -55,9 +55,9 @@
 
 .menu-list li a {
   font-family: Nunito, sans-serif;
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-size: 2.5rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 34.1px;
   color: var(--gray);
   text-decoration: none;
 }
