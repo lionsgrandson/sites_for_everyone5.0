@@ -1,7 +1,5 @@
 .section {
   border-radius: 25px;
-  /* width: 50rem; */
-  /* width: 90%; */
   height: fit-content;
   padding: 2rem;
 }
@@ -37,6 +35,11 @@
 .section.purp.desLog img {
   align-self: flex-end;
   border-radius: 15px;
+}
+.section.purp.desLog,
+.section.groupWorking {
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .section.purp {
   background: conic-gradient(
@@ -85,8 +88,7 @@
 }
 .serviceCardsSection {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
 }
 
@@ -123,3 +125,50 @@
 .section img {
   width: 70%;
 }
+@media (max-width: 1500px) {
+  .section h1 {
+    font-family: Nunito;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 47.74px;
+  }
+  .section p {
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.82px;
+  }
+}
+@media (max-width: 1024px) {
+  /* Reduce height of hero section */
+  .heroSection {
+    height: 80vh;
+  }
+
+  .serviceCardsSection {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .serviceCardsSection {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  .servicesDiv {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Handle extremely small screens */
+  .servicesDiv {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .heroSection {
+    height: 60vh;
+  }
+}
+/* TODO around 1500px the cloud text starts getting messed up , move it around. */

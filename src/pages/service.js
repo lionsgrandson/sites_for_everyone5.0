@@ -89,7 +89,7 @@ navigate and interact with your content."
         />
       </div> */}
       <Masonry
-        columns={3}
+        columns={{ xs: 1, sm: 2, md: 3 }} // Adjust number of columns based on screen size
         spacing={5}
         sx={{
           margin: "2rem 0rem",
@@ -98,7 +98,7 @@ navigate and interact with your content."
         <Paper
           sx={{
             borderRadius: "25px",
-            height: "75rem",
+            height: { xs: "auto", md: "75rem" },
             boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
             background:
               "conic-gradient( from 135deg at 50% 50%,    #889be1 0deg,    #a26ce4 180deg,    #889be1 360deg)",
@@ -116,7 +116,7 @@ navigate and interact with your content."
         <Paper
           sx={{
             borderRadius: "25px",
-            height: "35rem",
+            height: { xs: "auto", md: "35rem" },
             boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
           }}
         >
@@ -129,7 +129,7 @@ navigate and interact with your content."
         <Paper
           sx={{
             borderRadius: "25px",
-            height: "15rem",
+            height: { xs: "auto", md: "15rem" },
             boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
           }}
         >
@@ -141,7 +141,7 @@ navigate and interact with your content."
         <Paper
           sx={{
             borderRadius: "25px",
-            height: "35rem",
+            height: { xs: "auto", md: "35rem" },
             boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
             background:
               "linear-gradient(115.49deg, #000000 2.53%, #545454 99.18%)",
@@ -158,7 +158,7 @@ navigate and interact with your content."
         <Paper
           sx={{
             borderRadius: "25px",
-            height: "35rem",
+            height: { xs: "auto", md: "35rem" },
             boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
             display: "flex",
             alignItems: "center",
@@ -173,7 +173,7 @@ navigate and interact with your content."
         <Paper
           sx={{
             borderRadius: "25px",
-            height: "55rem",
+            height: { xs: "auto", md: "55rem" },
             overflow: "clip",
             boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
             background:
@@ -192,7 +192,7 @@ navigate and interact with your content."
         <Paper
           sx={{
             borderRadius: "25px",
-            height: "35rem",
+            height: { xs: "auto", md: "35rem" },
             boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
             // backgroundImage: `url("${cloud}")`,
             // backgroundRepeat: "no-repeat",
@@ -210,7 +210,7 @@ navigate and interact with your content."
         <Paper
           sx={{
             borderRadius: "25px",
-            height: "35rem",
+            height: { xs: "auto", md: "35rem" },
             boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
           }}
         >

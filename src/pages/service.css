@@ -14,6 +14,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  background-position: center; /* Ensure the background is centered on all screens */
+  background-attachment: fixed; /* Keeps background fixed when scrolling */
 }
 
 .servicesDiv h1 {
