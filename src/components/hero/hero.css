@@ -80,9 +80,7 @@
   .feat-hero {
     gap: 2.5rem;
   }
-  .heroSectionHome {
-    /* height: 70vh; */
-  }
+
   .feat-home-text {
     font-size: 1.2rem;
     line-height: 16.37px;
@@ -92,5 +90,14 @@
     display: block !important;
     width: 50%;
     margin: 5rem auto;
+  }
+}
+@media (max-width: 320px) {
+  .siteTitleHero {
+    font-size: 5.5rem;
+    line-height: 75px;
+  }
+  .heroSectionHome {
+    height: 70vh;
   }
 }

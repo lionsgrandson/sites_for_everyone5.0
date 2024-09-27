@@ -1,18 +1,19 @@
 .home-picXtext-div {
-  border-radius: 20px;
+  border-radius: 151px;
   border: 2px solid rgba(92, 72, 173, 1);
   background: rgba(255, 255, 255, 1);
   display: flex;
   align-items: center;
   margin: 2rem auto;
-  padding: 1rem;
+  padding: 8rem;
   flex-wrap: nowrap;
   width: 90%;
-  justify-content: center;
+  overflow: clip;
 }
 
 .home-picXtext-div.left {
-  flex-direction: column;
+  flex-direction: row-reverse;
+  gap: 3rem;
 }
 
 .home-picXtext-div.about {
@@ -27,6 +28,14 @@
 }
 
 .home-picXtext-h1 {
+  font-family: Marcellus;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 125px;
+  letter-spacing: 0.01em;
+  /* text-align: left; */
+}
+.home-picXtext-h1.about {
   /* font-size: clamp(2rem, 5vw, 4rem); */
   font-family: Marcellus;
   font-size: 76px;
@@ -35,6 +44,14 @@
 }
 
 .home-picXtext-p {
+  font-family: Nunito;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 47px;
+  letter-spacing: 0.01em;
+  /* width: 60%; */
+}
+.home-picXtext-p.about {
   /* font-size: clamp(1.5rem, 3vw, 2rem); */
   font-family: Nunito;
   font-size: 3.2rem;
@@ -47,8 +64,9 @@
 }
 
 .home-picXtext-img {
-  /* width: 100%; */
-  /* max-width: 300px; */
+  width: 40%;
+}
+.home-picXtext-img.about {
   height: auto;
   padding: 1rem 0;
 }
@@ -57,8 +75,9 @@
   .home-picXtext-div {
     flex-direction: row;
     margin: 5rem auto;
-    padding: 2rem;
+    padding: 1rem;
     flex-wrap: wrap;
+    border-radius: 75px;
   }
 
   .home-picXtext-div.left {
@@ -66,26 +85,45 @@
   }
 
   .home-picXtext-h1 {
+    font-size: 5rem;
+    line-height: 62.7px;
+    /* text-align: center; */
+  }
+  .home-picXtext-h1.about {
+    font-size: 4.6rem;
+    line-height: 57.68px;
+  }
+
+  .home-picXtext-p {
+    font-size: 2rem;
+    line-height: 27.28px;
+  }
+  .home-picXtext-p.about {
+    font-size: 1.8rem;
+    line-height: 24.55px;
+  }
+
+  .home-picXtext-img {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 320px) {
+  .home-picXtext-h1 {
+    font-size: 4.5rem;
+    line-height: 60px;
+  }
+  .home-picXtext-h1.about {
     font-size: 4.6rem;
     line-height: 57.68px;
   }
 
   .home-picXtext-p {
     font-size: 1.8rem;
+    line-height: 25px;
+  }
+  .home-picXtext-p.about {
+    font-size: 1.8rem;
     line-height: 24.55px;
-  }
-
-  .home-picXtext-img {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .home-picXtext-div {
-    padding: 5rem;
-  }
-
-  .home-picXtext-innder-div {
-    padding: 0 2rem;
   }
 }

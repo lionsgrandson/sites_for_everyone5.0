@@ -31,7 +31,7 @@ export default function PicXtext(props) {
       {props.wIoN ? null : (
         <img
           src={props.imgXTextImg}
-          className="home-picXtext-img"
+          className={`home-picXtext-img ${props.aboutCls ? "about" : ""}`}
           alt={props.imgAlt}
         />
       )}

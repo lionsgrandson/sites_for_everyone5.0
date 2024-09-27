@@ -1,8 +1,8 @@
-.ourProSection-Title {
+.ourProSection {
   background: rgba(247, 251, 255, 1);
-  padding: 1rem;
+  /* padding: 1rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 
 .title-our {
@@ -13,24 +13,46 @@
 }
 
 .titlel-h3-our {
-  font-size: clamp(1.5rem, 2.5vw, 2.75rem);
+  /* font-size: clamp(1.5rem, 2.5vw, 2.75rem); */
   line-height: 1.2;
   padding-top: 2rem;
+  font-family: Nunito;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  background: linear-gradient(90deg, #5c48ad -1.69%, #214ce7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .titlel-h1-our {
-  font-size: clamp(2.5rem, 5vw, 6.875rem);
-  line-height: 1.2;
+  /* font-size: clamp(2.5rem, 5vw, 6.875rem); */
+  font-family: Marcellus;
+  font-size: 11rem;
+  font-weight: 400;
+  line-height: 137.93px;
+  letter-spacing: 0.01em;
+  text-align: center;
 }
 
 .titlel-p-our {
-  font-size: clamp(1.25rem, 2vw, 2.5rem); /* Increased font size */
-  line-height: 1.5;
+  /* font-size: clamp(1.25rem, 2vw, 2.5rem);  */
+  font-family: Nunito;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 47px;
+  letter-spacing: 0.01em;
+  text-align: center;
 }
 
 .p-dots {
-  font-size: clamp(3rem, 4vw, 6.5625rem);
-  letter-spacing: 0.1em;
+  font-family: Marcellus;
+  font-size: 10.5rem;
+  font-weight: 400;
+  line-height: 131.66px;
+  letter-spacing: 0.2em;
+  text-align: center;
 }
 
 .middleBoxProc {
@@ -105,20 +127,21 @@
   }
 
   .titlel-h3-our {
-    font-size: 2rem; /* Adjust font size for smaller screens */
-    padding-top: 1rem; /* Adjust padding for smaller screens */
+    font-size: 2.3rem;
   }
 
   .titlel-h1-our {
-    font-size: 3rem; /* Adjust font size for smaller screens */
+    font-size: 7rem;
+    line-height: 87.77px;
   }
 
   .titlel-p-our {
-    font-size: 1.5rem; /* Increased font size for smaller screens */
+    font-size: 1.9rem;
+    line-height: 30px;
   }
 
   .p-dots {
-    font-size: 4rem; /* Adjust font size for smaller screens */
+    font-size: 6rem;
   }
 
   .middleBoxProc {
