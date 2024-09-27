@@ -36,7 +36,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-      {/* <div className="serviceCardsSection">
+      <div className="serviceCardsSection">
         <ServiceCard
           h1ServiceCard="Website Development & Maintenance"
           pServiceCard="No matter how big or small your website project, we have the expertise to deliver exceptional results. From a single landing page to complex web apps, from initial concept to ongoing maintenance, we provide comprehensive website development and support services."
@@ -87,8 +87,8 @@ navigate and interact with your content."
           classCard="purp"
           classCard2="desLog"
         />
-      </div> */}
-      <Masonry
+      </div>
+      {/* <Masonry
         columns={3}
         spacing={5}
         sx={{ margin: "2rem 0rem" }}
@@ -162,7 +162,7 @@ navigate and interact with your content."
             classCard="access"
           />
         </Paper>
-      </Masonry>
+      </Masonry> */}
       <CTA
         ctaH1={t("Ready to Start Your Jorney?")}
         ctaBtn={t("Contact Us")}
