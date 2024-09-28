@@ -2,7 +2,7 @@
 import AboutProject from "../../components/projDetials/aboutProject";
 import projLogo from "../../img/danielYehuda/dyLogo.png";
 import OmnifoodScreen1 from "../../img/portfolio/DanielYehuda.jpg";
-import OmnifoodScreen2 from "../../img/danielYehuda/DanielYehuda2.png";
+import OmnifoodScreen2 from "../../img/danielYehuda/DanielYehuda2.jpg";
 import { useTranslation } from "react-i18next";
 
 export default function DanielYehuda() {

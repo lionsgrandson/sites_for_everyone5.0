@@ -1,5 +1,5 @@
 import AboutProject from "../../components/projDetials/aboutProject";
-import projLogo from "../../img/toraDojo/toradojoLogo.png";
+import projLogo from "../../img/toraDojo/toradojoLogo.jpg";
 import screen1 from "../../img/portfolio/ToraDojoIsrael.jpg";
 import screen2 from "../../img/toraDojo/screen2.png";
 import { useTranslation } from "react-i18next";

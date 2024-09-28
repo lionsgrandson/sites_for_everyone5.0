@@ -2,7 +2,7 @@
 import AboutProject from "../../components/projDetials/aboutProject";
 import projLogo from "../../img/smokin/smokinLogo.png";
 import screen1 from "../../img/portfolio/SmokinT's.jpg";
-import screen2 from "../../img/smokin/smokin.png";
+import screen2 from "../../img/smokin/smokin.jpg";
 import { useTranslation } from "react-i18next";
 
 export default function Smokin() {

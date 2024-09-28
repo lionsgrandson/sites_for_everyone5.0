@@ -1,7 +1,7 @@
 import AboutProject from "../../components/projDetials/aboutProject";
 import projLogo from "../../img/enterplus/enterplusLogo.png";
 import screen1 from "../../img/portfolio/EnterPlus.png";
-import screen2 from "../../img/enterplus/screen2.png";
+import screen2 from "../../img/enterplus/screen2.jpg";
 import { useTranslation } from "react-i18next";
 
 export default function EnterPlus() {

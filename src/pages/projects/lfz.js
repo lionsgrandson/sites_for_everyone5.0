@@ -2,7 +2,7 @@
 import AboutProject from "../../components/projDetials/aboutProject";
 import projLogo from "../../img/lfz/lfzLogo.png";
 import screen1 from "../../img/portfolio/LionsforZion.jpg";
-import screen2 from "../../img/lfz/screen2.png";
+import screen2 from "../../img/lfz/screen2.jpg";
 import { useTranslation } from "react-i18next";
 
 export default function LFZ() {

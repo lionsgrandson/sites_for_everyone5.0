@@ -8,6 +8,8 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 0;
 }
 .bigTextEv {
   transform: rotate(-1.66deg);

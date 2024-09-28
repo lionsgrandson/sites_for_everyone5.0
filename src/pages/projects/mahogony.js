@@ -1,7 +1,7 @@
 import AboutProject from "../../components/projDetials/aboutProject";
 import projLogo from "../../img/mahogony/mahogonyLogo.png";
 import screen1 from "../../img/portfolio/MahogonyIsrael.png";
-import screen2 from "../../img/mahogony/screen2.png";
+import screen2 from "../../img/mahogony/screen2.jpg";
 import { useTranslation } from "react-i18next";
 
 export default function Mahogony() {

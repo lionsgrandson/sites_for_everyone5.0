@@ -1,7 +1,7 @@
 import AboutProject from "../../components/projDetials/aboutProject";
 import projLogo from "../../img/maim/maimLogo.png";
 import screen1 from "../../img/portfolio/maim-chaim.jpg";
-import screen2 from "../../img/maim/screen2.png";
+import screen2 from "../../img/maim/screen2.jpg";
 import { useTranslation } from "react-i18next";
 
 export default function LFZ() {

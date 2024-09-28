@@ -4,7 +4,7 @@ import Btn from "../components/btn/btn";
 import "./service.css";
 import { useTranslation } from "react-i18next";
 import PicXtext from "../components/picXtext/picXtext";
-import heroimg from "../img/service-Hero.png";
+import heroimg from "../img/service-Hero.jpg";
 import CTA from "../components/cta/cta";
 import ServiceCard from "../components/serviceCard/serviceCard";
 import textOnScreen from "../img/service/text program on computer screen.png";

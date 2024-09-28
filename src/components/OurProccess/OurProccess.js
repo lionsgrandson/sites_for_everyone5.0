@@ -1,8 +1,8 @@
 import "./OurProccess.css";
 import PicXtext from "../picXtext/picXtext";
-import imgXTextImg1 from "../../img/stepOneImg.png";
-import imgXTextImg2 from "../../img/stepTwoImg.png";
-import imgXTextImg3 from "../../img/stepThreeImg.png";
+import imgXTextImg1 from "../../img/stepOneImg.jpg";
+import imgXTextImg2 from "../../img/stepTwoImg.jpg";
+import imgXTextImg3 from "../../img/stepThreeImg.jpg";
 import OurProTitle from "./OurProTitle";
 import { useTranslation } from "react-i18next";
 
