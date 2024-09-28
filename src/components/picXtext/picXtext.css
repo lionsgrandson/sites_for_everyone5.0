@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   margin: 2rem auto;
-  padding: 8rem;
+  padding: 5rem;
   flex-wrap: nowrap;
   width: 90%;
   overflow: clip;
@@ -29,7 +29,7 @@
 
 .home-picXtext-h1 {
   font-family: Marcellus;
-  font-size: 80px;
+  font-size: 6rem;
   font-weight: 400;
   line-height: 125px;
   letter-spacing: 0.01em;
@@ -45,11 +45,8 @@
 
 .home-picXtext-p {
   font-family: Nunito;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 47px;
-  letter-spacing: 0.01em;
-  /* width: 60%; */
+  font-size: 2.5rem;
+  line-height: 35px;
 }
 .home-picXtext-p.about {
   /* font-size: clamp(1.5rem, 3vw, 2rem); */
@@ -65,6 +62,7 @@
 
 .home-picXtext-img {
   width: 40%;
+  border-radius: 75px;
 }
 .home-picXtext-img.about {
   height: auto;
