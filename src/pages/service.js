@@ -101,7 +101,7 @@ export default function Services() {
           }}
         >
           <ServiceCard
-            h1ServiceCard={t("SEO Optimization ")}
+            h1ServiceCard={t("SEO Optimization")}
             pServiceCard={t(
               "Don't let your website get lost in the digital crowd. Our SEO services will help you rank higher in search engine results, making it easier for people to discover your business."
             )}
