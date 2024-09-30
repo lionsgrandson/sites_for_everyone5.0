@@ -1,8 +1,11 @@
 import React from "react";
 import "./btn.css";
-import { FaArrowRightLong } from "react-icons/fa6";
-
+import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
 export default function Btn({ btnHref, bntTxt, WoBcls, wAoN }) {
+  const { t } = useTranslation();
+  console.log(i18n.language);
   return (
     <button className={`btn-btn ${WoBcls ? "white" : ""}`}>
       <a
@@ -10,7 +13,9 @@ export default function Btn({ btnHref, bntTxt, WoBcls, wAoN }) {
         className="aCls"
       >
         {bntTxt}
-        {wAoN && <FaArrowRightLong style={{ marginLeft: "10px" }} />}
+        {i18n.language == "en"
+          ? wAoN && <FaArrowRightLong style={{ marginLeft: "10px" }} />
+          : wAoN && <FaArrowLeftLong style={{ marginRight: "10px" }} />}
       </a>
     </button>
   );
