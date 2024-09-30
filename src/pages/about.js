@@ -42,7 +42,7 @@ export default function About() {
       </div>
       <div className="ourMissionAboutDiv">
         <CTA
-          ctaH1={t("Our ")}
+          ctaH1={t("OurMis ")}
           ctaH1Spn={t("Mission")}
           ctaP={t(
             "Our mission is to empower small and medium-sized businesses with custom web solutions that enhance their online presence. We prioritize integrity and personalized service, aiming to be the go-to choice for unique digital experiences and innovative mobile app development."
@@ -53,7 +53,7 @@ export default function About() {
       </div>
       <div className="ourStoryAboutDiv">
         <CTA
-          ctaH1={t("Our ")}
+          ctaH1={t("OurSt ")}
           ctaH1Spn={t("Story")}
           ctaP={t(
             "Our web development company was born from a high school passion project that blossomed into a full-fledged enterprise. What started as a one-man operation during my teenage years has evolved into a dynamic team of skilled professionals, many of whom I met during my military service in various software development units."
