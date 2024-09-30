@@ -57,7 +57,7 @@ export default function Contact() {
         <div className="namediv">
           <label htmlFor="name">
             {t("Name")}
-            <span>*</span>
+            <span> *</span>
           </label>
           <input
             id="name"
@@ -70,7 +70,7 @@ export default function Contact() {
         <div className="emailDiv">
           <label htmlFor="email">
             {t("Email")}
-            <span>*</span>
+            <span> *</span>
           </label>
           <input
             id="email"
@@ -83,7 +83,7 @@ export default function Contact() {
         <div className="messageDiv">
           <label htmlFor="message">
             {t("Message")}
-            <span>*</span>
+            <span> *</span>
           </label>
           <textarea
             id="message"

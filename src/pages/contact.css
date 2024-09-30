@@ -20,7 +20,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .contact-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
