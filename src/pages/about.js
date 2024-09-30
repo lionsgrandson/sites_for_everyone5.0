@@ -17,7 +17,7 @@ export default function About() {
     { name: "Ari", role: t("Developer, Designer"), image: Ari },
     { name: "Faina", role: t("SEO Manager"), image: Faina },
     { name: "Ofer", role: t("Designer"), image: Ofer },
-    { name: "Nitzan", role: t("Chef"), image: Nitzan },
+    // { name: "Nitzan", role: t("Chef"), image: Nitzan },
   ];
 
   return (
