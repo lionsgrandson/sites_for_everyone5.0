@@ -47,9 +47,9 @@ export default function Menu(props) {
           <li>
             <a href="./portfolio">{t("Portfolio")}</a>
           </li>
-          <li>
+          {/* <li>
             <a href="./blog">{t("Blog")}</a>
-          </li>
+          </li> */}
           <li>
             <a href="./contact">{t("Contact")}</a>
           </li>

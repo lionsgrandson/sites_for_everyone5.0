@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 export default function Btn({ btnHref, bntTxt, WoBcls, wAoN }) {
   const { t } = useTranslation();
-  console.log(i18n.language);
   return (
     <button className={`btn-btn ${WoBcls ? "white" : ""}`}>
       <a
