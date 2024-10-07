@@ -138,8 +138,22 @@
     font-weight: 500;
     line-height: 21.82px;
   }
+  .section.cloud h1 {
+    right: 20%;
+  }
 }
 @media (max-width: 1024px) {
+  .section.cloud h1 {
+    right: 15%;
+    font-size: 3rem;
+  }
+  .section.cloud img {
+    width: 100%;
+  }
+  .section.cloud p {
+    word-spacing: 3px;
+    font-size: 1.5rem;
+  }
   /* Reduce height of hero section */
   .heroSection {
     /* height: 80vh; */
@@ -150,7 +164,22 @@
   }
 }
 
+@media (max-width: 900px) {
+  .section.cloud h1 {
+    font-size: 4rem;
+    right: 20%;
+  }
+  .section.cloud p {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 768px) {
+  .section.cloud h1 {
+    font-size: 3rem;
+  }
+  .section.cloud p {
+    font-size: 1.5rem;
+  }
   .serviceCardsSection {
     grid-template-columns: 1fr; /* Single column for mobile */
   }
@@ -160,6 +189,17 @@
   }
 }
 
+@media (max-width: 600px) {
+  .section.cloud h1 {
+    font-size: 5rem;
+    right: 21%;
+    top: 28%;
+  }
+  .section.cloud p {
+    font-size: 3rem;
+    line-height: 30px;
+  }
+}
 @media (max-width: 480px) {
   /* Handle extremely small screens */
   .servicesDiv {
@@ -168,7 +208,28 @@
   }
 
   .heroSection {
-    height: 75vh;
+    height: 100vh;
+  }
+  .section.cloud h1 {
+    font-size: 3rem;
+    right: 27%;
+    top: 28%;
+  }
+  .section.cloud p {
+    font-size: 1.8rem;
+    line-height: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .section.cloud h1 {
+    font-size: 2.5rem;
+    right: 25%;
+    top: 28%;
+  }
+  .section.cloud p {
+    word-spacing: 2px;
+    font-size: 1.4rem;
+    line-height: 15px;
   }
 }
 /* TODO around 1500px the cloud text starts getting messed up , move it around. */
