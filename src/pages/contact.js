@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import Menu from "../components/menu/menu";
 import Footer from "../components/footer/footer";
 import "./contact.css";
+import "../components/btn/btn.css";
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -107,10 +108,11 @@ export default function Contact() {
         <button
           type="submit"
           // disabled={isSubmitting}
+          className="btn-btn  aCls"
         >
           {t(isSubmitting ? "Sending..." : "Send")}
         </button>
-        {stateMessage && <p className="form-message">{t(stateMessage)}</p>}
+        {stateMessage && <p className="form-message">{stateMessage}</p>}
       </form>
       {messageWorked && (
         <Navigate
