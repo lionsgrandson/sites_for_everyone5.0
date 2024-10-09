@@ -1,29 +1,39 @@
-import Menu from "../components/menu/menu";
-import Footer from "../components/footer/footer";
-import "./contact.css";
+import React, { useState, useRef } from "react";
 import { Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
-import React, { useState } from "react";
-import Btn from "../components/btn/btn";
+import Menu from "../components/menu/menu";
+import Footer from "../components/footer/footer";
+import "./contact.css";
+
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState(null);
   const [messageWorked, setMessageWorked] = useState(false);
   const { t } = useTranslation();
+  const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent default form submission
     setIsSubmitting(true);
+
+    console.log("Sending email with:", {
+      serviceId: process.env.REACT_APP_SERVICE_ID,
+      templateId: process.env.REACT_APP_TEMPLATE_ID,
+      publicKey: process.env.REACT_APP_PUBLIC_KEY,
+      form: form.current,
+    });
+
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
-        e.target,
+        form.current,
         process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         (result) => {
+          console.log("SUCCESS!", result.text);
           setStateMessage(t("Message sent!"));
           setIsSubmitting(false);
 
@@ -33,7 +43,8 @@ export default function Contact() {
           }, 1000); // hide message after 1 second
         },
         (error) => {
-          setStateMessage(t("Something went wrong, please try again later"));
+          console.error("FAILED...", error.text);
+          setStateMessage(t("Something went wrong, please try again later!"));
           setIsSubmitting(false);
           setTimeout(() => {
             setStateMessage(null);
@@ -42,7 +53,7 @@ export default function Contact() {
       );
 
     // Clears the form after sending the email
-    e.target.reset();
+    form.current.reset();
   };
 
   return (
@@ -51,6 +62,7 @@ export default function Contact() {
       <h3 className="contactH3">{t("Let us know how we can help")}</h3>
       <h1 className="contacth1">{t("Contact Us")}</h1>
       <form
+        ref={form}
         onSubmit={sendEmail}
         className="contact-form"
       >
@@ -62,7 +74,7 @@ export default function Contact() {
           <input
             id="name"
             type="text"
-            name="name"
+            name="user_name"
             className="form-input nameIn"
             required
           />
@@ -75,8 +87,8 @@ export default function Contact() {
           <input
             id="email"
             type="email"
-            name="Your Email"
-            className="form-input  emailIn"
+            name="user_email"
+            className="form-input emailIn"
             required
           />
         </div>
@@ -87,22 +99,25 @@ export default function Contact() {
           </label>
           <textarea
             id="message"
-            name="Your Message"
+            name="message"
             className="form-textarea messgaeIn"
             required
           />
         </div>
-        <Btn bntTxt={t("Submit")}>
+        <button
+          type="submit"
+          // disabled={isSubmitting}
+        >
           {t(isSubmitting ? "Sending..." : "Send")}
-          {messageWorked ? (
-            <Navigate
-              to="../thankyou"
-              replace={true}
-            />
-          ) : null}
-        </Btn>
+        </button>
         {stateMessage && <p className="form-message">{t(stateMessage)}</p>}
       </form>
+      {messageWorked && (
+        <Navigate
+          to="../thankyou"
+          replace={true}
+        />
+      )}
       <Footer />
     </div>
   );
