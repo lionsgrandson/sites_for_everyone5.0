@@ -8,7 +8,9 @@
   width: 100%;
   box-sizing: border-box;
 }
-
+.bigdiv {
+  background: linear-gradient(263.41deg, #214ce7 0.75%, #5c48ad 97.9%);
+}
 .cta-h1 {
   font-family: Marcellus, serif;
   font-size: 3rem;

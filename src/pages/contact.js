@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react";
-import { Navigate } from "react-router-dom";
+// import React, { useState, useRef } from "react";
+// import { Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import Menu from "../components/menu/menu";
 import Footer from "../components/footer/footer";
 import "./contact.css";

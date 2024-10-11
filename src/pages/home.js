@@ -6,6 +6,10 @@ import PicXtext from "../components/picXtext/picXtext";
 import moseHeadshot from "../img/mosheHeadshot.png";
 import Projects from "../components/projects/projects";
 import CTA from "../components/cta/cta";
+import "./contact.css";
+// import ContactForm from "..//contactForm/contactForm";
+import ContactForm from "../components/contactForm/contactForm";
+
 import "./home.css";
 import { useTranslation } from "react-i18next";
 function Home() {
@@ -34,6 +38,7 @@ function Home() {
           h1Proj={t("See What We Mean")}
           exitNum="4"
         />
+
         <CTA
           ctaH1={t("Ready to Start Your Jorney?")}
           ctaP={t(
@@ -42,6 +47,9 @@ function Home() {
           ctaBtn={t("Contact Us")}
           btnOnBtn={true}
         />
+        <div className="ctaContactForm">
+          <ContactForm />
+        </div>
         <Footer />
       </header>
     </div>

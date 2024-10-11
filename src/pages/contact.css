@@ -7,7 +7,16 @@
   text-align: center;
   margin: 0 auto;
 }
-
+.ctaContactForm {
+  background: linear-gradient(90deg, #5c48ad 0%, #214ce7 100%);
+}
+.ctaContactForm label {
+  color: white;
+}
+.ctaContactForm .btn-btn {
+  background: rgba(255, 255, 255, 1);
+  color: var(--gray);
+}
 .contactH3 {
   font-family: Nunito;
   font-size: 44px;
@@ -25,11 +34,11 @@
   grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
   gap: 20px;
   padding: 2rem;
-  width: fit-content;
+  /* width: fit-content; */
   border-radius: 10px;
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: auto;
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -103,7 +112,7 @@ label {
   font-size: 30px;
   font-weight: 700;
   line-height: 45px;
-  text-align: left;
+  /* text-align: left; */
 }
 
 /* Media queries for responsiveness */
