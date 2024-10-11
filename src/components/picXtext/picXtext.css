@@ -61,8 +61,8 @@
 }
 
 .home-picXtext-img {
-  width: 40%;
-  border-radius: 75px;
+  width: 35%;
+  /* border-radius: 75px; */
 }
 .home-picXtext-img.about {
   height: auto;
@@ -104,6 +104,7 @@
   .home-picXtext-img {
     width: 70%;
     margin: 0 auto;
+    border-radius: 0;
   }
 }
 @media (max-width: 320px) {
