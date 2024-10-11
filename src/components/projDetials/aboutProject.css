@@ -11,7 +11,21 @@ body {
   margin: auto;
   padding: 2rem;
 }
-
+.projDetails {
+  /* creat the blob */
+}
+.aboutTag {
+  font-family: Nunito;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 28.64px;
+  letter-spacing: 0.01em;
+  color: rgba(92, 72, 173, 1);
+  width: fit-content;
+  background: rgba(92, 72, 173, 0.25);
+  border-radius: 6rem;
+  padding: 0.5rem;
+}
 .projHeader {
   text-align: center;
   margin-bottom: 3rem;
@@ -95,7 +109,13 @@ body {
   list-style: none;
   padding: 0;
 }
-
+.projDetialsA {
+  font-family: "Marcellus", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38.19px;
+  letter-spacing: 0.01em;
+}
 .projDetails a {
   /* text-decoration: none;
   color: #0f172a; */

@@ -16,6 +16,7 @@ export default function AboutProject(props) {
             src={props.projLogo}
             alt={`${props.projName} logo`}
           />
+          <h3 className="aboutTag">/ {t("About The Project")}</h3>
           <p className="projTagline">{props.projText}</p>
         </div>
 
@@ -31,14 +32,15 @@ export default function AboutProject(props) {
             alt={`A screenshot from the ${props.projName} website`}
           />
         </div>
-
-        <div className="projDetails">
+        <div className="projDetialsA">
           <a
             href={props.linkHref}
             target="_blank"
           >
             {t("Visit the website")}
           </a>
+        </div>
+        <div className="projDetails">
           <ul>
             <li>
               {t("Client")}:<div>{props.client}</div>
