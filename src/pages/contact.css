@@ -128,12 +128,15 @@ label {
     margin: 3rem auto 1rem auto; /* Adjust spacing for smaller screens */
   }
 
+  .ctaContactForm .contact-form {
+    margin: 0 auto;
+  }
   .contact-form {
     grid-template-columns: 1fr; /* Single column on smaller screens */
     padding: 1rem; /* Reduce padding */
     width: 90%; /* Make form width responsive */
     max-width: 100%; /* Allow max width to be full */
-    margin: 1rem auto; /* Reduce bottom margin */
+    margin: 1rem auto;
   }
 
   .Btn {
