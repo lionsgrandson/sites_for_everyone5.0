@@ -1,3 +1,6 @@
 .App {
   /* text-align: center; */
 }
+.forceLeft h1 {
+  text-align: left;
+}

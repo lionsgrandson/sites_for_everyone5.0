@@ -45,16 +45,18 @@ export default function OurProccess() {
           <p className="procLast"> {t("= planning + Meticulousness;")}</p>
         </div>
       </div>
-      <PicXtext
-        imgXTextImg={imgXTextImg3}
-        imgAlt="A picture taken from the side of a screen of google analytics"
-        picXtexth1={t("Deployment & SEO")}
-        textP={t(
-          "Launch your site with confidence. Our team ensures smooth deployment and optimizes your online presence. We implement cutting-edge SEO strategies to boost your visibility, driving traffic and engagement. Watch your digital footprint grow as we fine-tune your site for search engines and users alike."
-        )}
-        WbtnQ={false}
-        LORImg={false}
-      />
+      <div className="forceLeft">
+        <PicXtext
+          imgXTextImg={imgXTextImg3}
+          imgAlt="A picture taken from the side of a screen of google analytics"
+          picXtexth1={t("Deployment & SEO")}
+          textP={t(
+            "Launch your site with confidence. Our team ensures smooth deployment and optimizes your online presence. We implement cutting-edge SEO strategies to boost your visibility, driving traffic and engagement. Watch your digital footprint grow as we fine-tune your site for search engines and users alike."
+          )}
+          WbtnQ={false}
+          LORImg={false}
+        />
+      </div>
     </div>
   );
 }
