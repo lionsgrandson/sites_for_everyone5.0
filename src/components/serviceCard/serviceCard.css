@@ -203,7 +203,7 @@
 @media (max-width: 480px) {
   /* Handle extremely small screens */
   .servicesDiv {
-    max-width: 100%;
+    /* max-width: 100%; */
     padding: 1rem;
   }
 
