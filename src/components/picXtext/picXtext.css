@@ -72,7 +72,7 @@
 @media (max-width: 768px) {
   .home-picXtext-div {
     flex-direction: row;
-    margin: 5rem auto;
+    margin: 0 auto 5rem auto;
     padding: 1rem;
     flex-wrap: wrap;
     border-radius: 75px;

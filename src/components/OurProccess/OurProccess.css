@@ -165,3 +165,11 @@
     display: none !important; /* Hide these elements on smaller screens */
   }
 }
+@media (max-width: 400px) {
+  .titlel-h1-our {
+    font-size: 6rem;
+  }
+  .p-dots {
+    margin: 0;
+  }
+}
