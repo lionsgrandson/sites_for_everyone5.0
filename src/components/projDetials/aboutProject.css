@@ -17,6 +17,11 @@ body {
   margin-bottom: 3rem;
 }
 
+.projDetails li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .projLogo {
   width: 100%;
   margin: 1rem 0;

@@ -41,13 +41,13 @@ export default function AboutProject(props) {
           </a>
           <ul>
             <li>
-              {t("Client")}: {props.client}
+              {t("Client")}:<div>{props.client}</div>
             </li>
             <li>
-              {t("Year")}: {props.year}
+              {t("Year")}: <div>{props.year}</div>
             </li>
             <li>
-              {t("Services")}: {props.services}
+              {t("Services")}: <div>{props.services}</div>
             </li>
           </ul>
         </div>
