@@ -102,7 +102,7 @@ export default function ContactForm() {
         <button
           type="submit"
           // disabled={isSubmitting}
-          className="btn-btn  aCls"
+          className="btn-btn "
         >
           {t(isSubmitting ? "Sending..." : "Send")}
         </button>

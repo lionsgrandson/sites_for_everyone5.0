@@ -39,7 +39,7 @@
   /* max-width: 600px; */
   margin: auto;
   /* margin-bottom: 10rem; */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .namediv,
@@ -101,14 +101,14 @@ label {
 
 label span {
   color: red;
-  font-family: Nunito;
-  font-size: 30px;
+  font-family: Marcellus;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 45px;
 }
 
 label {
-  font-family: Nunito;
+  font-family: Marcellus;
   font-size: 30px;
   font-weight: 700;
   line-height: 45px;
