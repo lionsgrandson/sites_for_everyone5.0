@@ -94,7 +94,9 @@
   justify-content: center;
   max-width: 1200px;
   margin: 1rem auto;
-  text-align: left;
+  position: absolute;
+  top: 40%;
+  right: 26%;
 }
 
 .bottomBoxOuterBox {
@@ -130,15 +132,28 @@
     top: 36%;
     right: 5%;
   }
+  .bottomBoxProc {
+    top: 34%;
+    right: 12%;
+  }
+}
+@media (max-width: 1000px) {
+  .bottomBoxProc {
+    right: 5%;
+  }
 }
 @media (max-width: 900px) {
   .middleBoxProc {
-    /* display: none !important;  */
     margin: 0;
     font-size: 2.5rem;
     right: 17%;
     top: 34%;
     padding: 0px 10rem;
+  }
+  .bottomBoxProc {
+    display: none !important;
+    top: 34%;
+    right: 3%;
   }
 }
 @media (max-width: 768px) {
