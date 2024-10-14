@@ -59,7 +59,7 @@
   border-radius: 20px;
   margin: 2rem 15rem;
   font-size: clamp(1.5rem, 3vw, 3.8125rem);
-  /* padding: 1rem; */
+  padding: 0 10rem;
   text-align: center;
   background: linear-gradient(90deg, #214ce7 0%, #5c48ad 100%);
   font-family: Marcellus;
@@ -68,9 +68,8 @@
   letter-spacing: 0.01em;
   border-radius: 6.4rem;
   position: absolute;
-  top: 25rem;
-  width: 100rem;
-  right: 12rem;
+  top: 40%;
+  right: 15%;
 }
 
 .middleBoxProc span {
@@ -126,6 +125,22 @@
   color: rgba(255, 255, 255, 1);
 }
 
+@media (max-width: 1240px) {
+  .middleBoxProc {
+    top: 36%;
+    right: 5%;
+  }
+}
+@media (max-width: 900px) {
+  .middleBoxProc {
+    /* display: none !important;  */
+    margin: 0;
+    font-size: 2.5rem;
+    right: 17%;
+    top: 34%;
+    padding: 0px 10rem;
+  }
+}
 @media (max-width: 768px) {
   .ourProSection-Title {
     padding: 0 1rem; /* Adjust padding for smaller screens */
