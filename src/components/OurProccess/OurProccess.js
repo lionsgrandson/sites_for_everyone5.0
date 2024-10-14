@@ -8,7 +8,8 @@ import { useTranslation } from "react-i18next";
 
 export default function OurProccess() {
   const { t } = useTranslation();
-
+  const { i18n } = useTranslation();
+  console.log(i18n.language);
   return (
     <div className="ourProSection">
       <div className="ourProSection-Title">
@@ -38,13 +39,16 @@ export default function OurProccess() {
         WbtnQ={false}
         LORImg={true}
       />
-      <div className="bottomBoxOuterBox">
-        <div className="bottomBoxProc">
-          <p className="procFir">{t("const")} </p>
-          <p className="procsec"> {t("perfection")}</p>
-          <p className="procLast"> {t("= planning + Meticulousness;")}</p>
+      {i18n.language === "en" && (
+        <div className="bottomBoxOuterBox">
+          <div className="bottomBoxProc">
+            <p className="procFir">{t("const")}</p>
+            <p className="procsec">{t("perfection")}</p>
+            <p className="procLast">{t("= planning + Meticulousness;")}</p>
+          </div>
         </div>
-      </div>
+      )}
+
       <div className="forceLeft">
         <PicXtext
           imgXTextImg={imgXTextImg3}
