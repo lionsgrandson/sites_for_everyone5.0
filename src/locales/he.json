@@ -39,9 +39,9 @@
   "const": "const",
   "Development": "שלב הפיתוח ",
   "Your dream website is within reach. Our skilled developers will expertly transform your ideas into a tangible, impressive online presence.": "נכנסים לעבודה! צוות המפתחים שלנו בונה לך את האתר עם המערכות שתמיד רצית, עד לעליה לאוויר אנחנו מלווים אתכם בכל שלב ושלב..",
-  "Let people see the": "תן לאנשים לראות את ",
-  "real": "האתה ",
-  " you.": "האמיתי.",
+  "Let people see the": "תן לאנשים את  לראות ",
+  "real": "העסק שלך ",
+  " you.": "באמת.",
   "Design": "עיצוב ראשוני",
   "Great design starts with you. transform your vision into captivating digital experiences. We craft stunning layouts that not only look great but also connect with your audience.": "העיצוב הראשוני של האתר, הכל בהתאמה לספר מותג ולחזון של הלקוח. בנוסף בשלב העיצוב אנחנו כותבים את הקופי שימשוך את האנשים הנכונים ויגרום להם לרצות להישאר באתר.",
   "From start to finish": "",
@@ -187,5 +187,6 @@
   "Thank You!": "תודה רבה!",
   "Your message has been sent successfully.": "ההודעה נשלחה בהצלחה! נחזור אליכם בקרוב",
   "Go Back": "חזור",
-  "About The Project": "מידע על הפוריקט"
+  "About The Project": "מידע על הפוריקט",
+  "Hello, how can i help?": "שלום, איך אוכל לעזור?"
 }

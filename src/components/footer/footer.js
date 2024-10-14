@@ -3,13 +3,21 @@ import React from "react";
 import "./footer.css";
 import { useTranslation } from "react-i18next";
 import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
-
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import mosheFace from "../../img/Schwartzberg_Moshe.jpg";
 export default function Footer() {
   const Year = new Date().getFullYear();
   const { t } = useTranslation();
 
   return (
     <footer className="footerContainer">
+      <FloatingWhatsApp
+        phoneNumber="972587076077"
+        accountName="Moshe"
+        avatar={mosheFace}
+        chatMessage={t("Hello, how can i help?")}
+      />
+
       <div className="footerDiv">
         <div className="footerSection">
           <h3 className="footerH3">{t("Sites for Everyone")}</h3>
