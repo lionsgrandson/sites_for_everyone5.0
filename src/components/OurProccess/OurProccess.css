@@ -67,6 +67,10 @@
   line-height: 94.04px;
   letter-spacing: 0.01em;
   border-radius: 6.4rem;
+  position: absolute;
+  top: 25rem;
+  width: 100rem;
+  right: 12rem;
 }
 
 .middleBoxProc span {
