@@ -62,14 +62,27 @@
 
 .home-picXtext-img {
   width: 35%;
-  /* border-radius: 75px; */
+  border-radius: 75px;
 }
 .home-picXtext-img.about {
   height: auto;
   padding: 1rem 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
+  .home-picXtext-img {
+    border-radius: 50px;
+    width: 50%;
+  }
+  .home-picXtext-h1 {
+    font-size: 4rem;
+  }
+  .home-picXtext-p {
+    font-size: 1.8rem;
+    width: 90%;
+  }
+}
+@media (max-width: 786px) {
   .home-picXtext-div {
     flex-direction: row;
     margin: 0 auto;
