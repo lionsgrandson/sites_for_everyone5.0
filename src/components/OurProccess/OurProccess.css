@@ -71,7 +71,9 @@
   top: 40%;
   right: 15%;
 }
-
+.heStyle {
+  flex-direction: row-reverse;
+}
 .middleBoxProc span {
   font-size: clamp(2rem, 4vw, 5.625rem);
   font-family: Parisienne;
@@ -127,7 +129,7 @@
   color: rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1300px) {
   .middleBoxProc {
     top: 36%;
     right: 5%;

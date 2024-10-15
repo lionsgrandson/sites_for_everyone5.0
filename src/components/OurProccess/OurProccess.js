@@ -104,15 +104,15 @@ export default function OurProccess() {
           </svg>
         )}
 
-        {i18n.language === "en" && (
-          <div className="bottomBoxOuterBox">
-            <div className="bottomBoxProc">
-              <p className="procFir">{t("const")}</p>
-              <p className="procsec">{t("perfection")}</p>
-              <p className="procLast">{t("= planning + Meticulousness;")}</p>
-            </div>
+        <div className="bottomBoxOuterBox">
+          <div
+            className={`bottomBoxProc ${i18n.language === "he" && "heStyle"}`}
+          >
+            <p className="procFir">{t("const")}</p>
+            <p className="procsec">{t("perfection")}</p>
+            <p className="procLast">{t("= planning + Meticulousness;")}</p>
           </div>
-        )}
+        </div>
       </div>
       <div className="forceLeft">
         <PicXtext
