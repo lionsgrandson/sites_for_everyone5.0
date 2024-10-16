@@ -55,7 +55,7 @@ export default function ContactForm() {
     form.current.reset();
   };
   return (
-    <div>
+    <div className="divContact">
       <form
         ref={form}
         onSubmit={sendEmail}

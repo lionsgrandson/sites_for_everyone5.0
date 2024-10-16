@@ -1,3 +1,40 @@
+/* blob code */
+.contact-form {
+  position: relative; /* Enables the blob to be positioned behind the form */
+  padding: 2rem;
+  border-radius: 10px;
+  overflow: hidden; /* Ensures the blob stays within the div */
+}
+
+.namediv::before {
+  content: "";
+  position: absolute;
+  top: -65px;
+  left: 6px;
+  width: 63rem;
+  height: 27.5rem;
+  border-radius: 50%;
+  background: rgba(255, 186, 58, 0.3);
+  z-index: 0;
+  -webkit-filter: blur(85px);
+  filter: blur(85px);
+}
+
+.contact-form::before {
+  content: "";
+  position: absolute;
+  top: 182px;
+  left: 700px;
+  width: 57rem;
+  height: 27.5rem;
+  border-radius: 50%;
+  background: rgba(105, 174, 231, 0.5);
+  z-index: 0;
+  -webkit-filter: blur(85px);
+  filter: blur(85px);
+}
+
+/* end blob code */
 .contacth1 {
   font-family: Marcellus;
   font-size: 11rem;
@@ -6,6 +43,9 @@
   letter-spacing: 0.01em;
   text-align: center;
   margin: 0 auto;
+}
+.ctaContactForm::before {
+  background: rgba(105, 174, 231, 0);
 }
 .ctaContactForm {
   background: linear-gradient(90deg, #5c48ad 0%, #214ce7 100%);
@@ -34,14 +74,13 @@
   grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
   gap: 20px;
   padding: 2rem;
-  /* width: fit-content; */
   border-radius: 10px;
-  /* max-width: 600px; */
-  margin: auto;
-  /* margin-bottom: 10rem; */
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  z-index: 1; /* Ensures form content stays above the blob */
+  margin: auto; /* Centering form */
 }
-
+.namediv::before {
+  background: rgba(255, 186, 58, 0);
+}
 .namediv,
 .emailDiv {
   display: flex;
@@ -58,10 +97,12 @@ label {
   font-size: 14px;
   margin-bottom: 5px;
   color: #333;
+  z-index: 0;
 }
 
 .form-input,
 .form-textarea {
+  z-index: 1;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
