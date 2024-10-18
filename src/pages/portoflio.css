@@ -11,7 +11,7 @@
 }
 
 .protH3 {
-  font-family: Nunito, sans-serif;
+  font-family: var(--font-secondary);
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.2;
@@ -26,7 +26,7 @@
 
 .protH1 {
   margin: 0 auto 1rem;
-  font-family: Marcellus, serif;
+  font-family: var(--font-primary);
   font-size: 9rem;
   font-weight: 400;
   line-height: 1.25;
@@ -37,7 +37,7 @@
 }
 
 .portQuote {
-  font-family: Nunito, sans-serif;
+  font-family: var(--font-secondary);
   font-size: clamp(1.4rem, 1.5vw, 1.8rem); /* Responsive font size */
   font-weight: 700;
   line-height: 1.4;

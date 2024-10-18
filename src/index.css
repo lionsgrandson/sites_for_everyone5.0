@@ -8,11 +8,11 @@
   --gray: #2e2e2e;
 
   /* Font Settings */
-  --font-primary: "Marcellus", serif;
-  --font-secondary: "Nunito Sans", sans-serif;
-  --font-tertiary: "Exo 2", sans-serif;
-  --font-mono: "VT323", monospace;
-  --font-fallback: "Miriam Libre", sans-serif;
+  --font-primary: "Marcellus", "Papyrus";
+  --font-secondary: "Nunito Sans", "Papyrus";
+  --font-tertiary: "Exo 2", "Papyrus";
+  --font-mono: "VT323", "Papyrus";
+  --font-fallback: "Miriam Libre", "Papyrus";
 
   /* Font Size (1rem = 10px) */
   font-size: 62.5%; /* Converts 1rem to 10px */

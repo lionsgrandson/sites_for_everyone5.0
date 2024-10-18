@@ -36,7 +36,7 @@
 
 /* end blob code */
 .contacth1 {
-  font-family: Marcellus;
+  font-family: var(--font-primary);
   font-size: 11rem;
   font-weight: 400;
   line-height: 137.93px;
@@ -58,7 +58,7 @@
   color: var(--gray);
 }
 .contactH3 {
-  font-family: Nunito;
+  font-family: var(--font-secondary);
   font-size: 44px;
   font-weight: 700;
   line-height: 40px;
@@ -142,14 +142,14 @@ label {
 
 label span {
   color: red;
-  font-family: Marcellus;
+  font-family: var(--font-primary);
   font-size: 2rem;
   font-weight: 700;
   line-height: 45px;
 }
 
 label {
-  font-family: Marcellus;
+  font-family: var(--font-primary);
   font-size: 30px;
   font-weight: 700;
   line-height: 45px;

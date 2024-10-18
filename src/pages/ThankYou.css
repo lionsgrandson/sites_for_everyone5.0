@@ -22,7 +22,7 @@
 }
 
 .thankYouTitle {
-  font-family: Marcellus, serif;
+  font-family: var(--font-primary);
   font-size: clamp(4rem, 8vw, 10rem);
   font-weight: 400;
   line-height: 1.2;
@@ -33,7 +33,7 @@
 }
 
 .thankYouMessage {
-  font-family: Nunito, sans-serif;
+  font-family: var(--font-secondary);
   font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: 400;
   line-height: 1.5;
