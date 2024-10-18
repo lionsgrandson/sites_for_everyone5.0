@@ -12,7 +12,7 @@
   background: linear-gradient(263.41deg, #214ce7 0.75%, #5c48ad 97.9%);
 }
 .cta-h1 {
-  font-family: Marcellus, serif;
+  font-family: var(--font-primary);
   font-size: 3rem;
   font-weight: 400;
   line-height: 1.2;
@@ -31,7 +31,7 @@
 }
 
 .cta-p {
-  font-family: Nunito, sans-serif;
+  font-family: var(--font-secondar);
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.4;

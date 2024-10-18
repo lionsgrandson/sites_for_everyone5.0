@@ -28,7 +28,7 @@
 }
 
 .home-picXtext-h1 {
-  font-family: Marcellus;
+  font-family: var(--font-primary);
   font-size: 6rem;
   font-weight: 400;
   line-height: 125px;
@@ -37,20 +37,20 @@
 }
 .home-picXtext-h1.about {
   /* font-size: clamp(2rem, 5vw, 4rem); */
-  font-family: Marcellus;
+  font-family: var(--font-primary);
   font-size: 76px;
   font-weight: 400;
   line-height: 95.3px;
 }
 
 .home-picXtext-p {
-  font-family: Nunito;
+  font-family: var(--font-secondary);
   font-size: 2.5rem;
   line-height: 35px;
 }
 .home-picXtext-p.about {
   /* font-size: clamp(1.5rem, 3vw, 2rem); */
-  font-family: Nunito;
+  font-family: var(--font-secondary);
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 47px;
