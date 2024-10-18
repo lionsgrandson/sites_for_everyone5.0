@@ -12,6 +12,7 @@
   --font-secondary: "Nunito Sans", sans-serif;
   --font-tertiary: "Exo 2", sans-serif;
   --font-mono: "VT323", monospace;
+  --font-fallback: "Miriam Libre", sans-serif;
 
   /* Font Size (1rem = 10px) */
   font-size: 62.5%; /* Converts 1rem to 10px */
