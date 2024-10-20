@@ -7,6 +7,8 @@ import Ari from "../img/AriHeadshot.jpg";
 import Faina from "../img/fainaHeadshot.jpg";
 import Ofer from "../img/oferHeadshotjpg.jpg";
 import Nitzan from "../img/NitzanHeadshot.jpeg";
+import fullTeam from "../img/Team members.png";
+import fullTeammobile from "../img/Team members - mobile.png";
 import { useTranslation } from "react-i18next";
 import "./about.css";
 
@@ -25,7 +27,7 @@ export default function About() {
       <Menu />
       <h1 className="aboutH1Team">{t("Meet The Team")}</h1>
       <div className="imgDivTeam">
-        {teamMembers.map((member, index) => (
+        {/* {teamMembers.map((member, index) => (
           <div
             key={member.name}
             className="innderDivImg"
@@ -38,7 +40,17 @@ export default function About() {
             />
             <label>{member.role}</label>
           </div>
-        ))}
+        ))} */}
+        <img
+          src={fullTeam}
+          className={`AboutTeamHeadshotImg teamDesktop`}
+          loading="lazy"
+        />
+        <img
+          src={fullTeammobile}
+          className={`AboutTeamHeadshotImg mobileTeam`}
+          loading="lazy"
+        />
       </div>
       <div className="ourMissionAboutDiv">
         <CTA

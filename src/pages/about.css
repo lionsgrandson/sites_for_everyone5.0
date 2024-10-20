@@ -3,7 +3,9 @@
   margin: 0 auto;
   /* padding: 0 10px; */
 }
-
+.mobileTeam {
+  display: none;
+}
 .aboutH1Team {
   font-family: var(--font-primary);
   font-size: clamp(3rem, 6vw, 6rem);
@@ -33,7 +35,7 @@
 
 .AboutTeamHeadshotImg {
   width: 100%;
-  max-width: 25.5rem;
+  max-width: 75vw;
   height: auto;
   border-radius: 20px;
   transition: transform 0.3s ease;
@@ -67,7 +69,17 @@
     margin: 0;
   }
 }
-
+@media (max-width: 426px) {
+  .mobileTeam {
+    display: block;
+  }
+  .teamDesktop {
+    display: none;
+  }
+  .AboutTeamHeadshotImg {
+    max-width: 100vw;
+  }
+}
 @media screen and (max-width: 768px) {
   .innderDivImg {
     max-width: calc(50% - 1rem);
