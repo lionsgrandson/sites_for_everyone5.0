@@ -96,6 +96,9 @@
 @media (max-width: 768px) {
   .outerDiv-Menu {
     margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 80vw;
   }
   .menu-div {
     flex-wrap: nowrap; /* Prevent wrapping */
