@@ -14,13 +14,13 @@ import omniFood from "../../img/portfolio/Omnifood-neverCookgain.png";
 import shlomo from "../../img/portfolio/ShalomCarmel.jpg";
 import smokin from "../../img/portfolio/SmokinT's.jpg";
 import toraDojo from "../../img/portfolio/ToraDojoIsrael.jpg";
-import "./projects.css"
+import "./projects.css";
 export default function Projects(props) {
   const imgArr = [
-      omniFood,
-      ID1Img,
-      DYImg,
-      itaiImg,
+    omniFood,
+    ID1Img,
+    DYImg,
+    itaiImg,
     toraDojo,
     smokin,
     shlomo,
@@ -30,20 +30,42 @@ export default function Projects(props) {
     ID2Img,
     EPImg,
   ];
-
+  const linkArr = [
+    "/omnifood",
+    "/tene1",
+    "/dy",
+    "/aiPro",
+    "/toradojo",
+    "/smokin",
+    "/shalom",
+    "/maim",
+    "/lfz",
+    "/tene2",
+    "/mahogony",
+    "/ep",
+  ];
   return (
     <div>
       <h2 className="Projh2">{props.h2Proj}</h2>
       <h1 className="projh1">{props.h1Proj} </h1>
       <div className="img-arr-div">
-
-      {imgArr.map((arr, index) => {
-          if (index <= parseInt(props.exitNum)-1) {
-              return <img className="imgProj" src={arr} />;
-            }
+        {linkArr.map((arr, index) => {
+          if (index <= parseInt(props.exitNum) - 1) {
+            return (
+              <a
+                href={`${arr}`}
+                className="aimgProj"
+              >
+                <img
+                  className="imgProj"
+                  src={imgArr[index]}
+                />
+              </a>
+            );
+          }
         })}
-        </div>
+      </div>
     </div>
   );
 }
-// TODO edit this so this component is a title card, and you can use it in other places, not as a grid, but as a card with text 
+// TODO edit this so this component is a title card, and you can use it in other places, not as a grid, but as a card with text
