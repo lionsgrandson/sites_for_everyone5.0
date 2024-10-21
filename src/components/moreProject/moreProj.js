@@ -72,18 +72,24 @@ export default function MoreProj() {
     "'Shalom Carmel' was established to showcase the rich ethnic and cultural diversity of Haifa and Mount Carmel. Their tours provide groups with the opportunity to engage with various communities in the area and learn how they collaborate to foster a more unified society.",
     "This is the largest Tora Dojo branch outside the United States, founded by sixth-degree black belt Arthur Gribetz, along with a dedicated team of high-ranking expert instructors",
   ];
+  let rndImg = 0;
+
   return (
     <div className="headerDiv">
       <h1 className="headerH1">{t("See More Projects")}</h1>
       <div className="containerMoreProj">
         {imgArr.map((srcImg, index) => {
+          rndImg = Math.floor(Math.random() * imgArr.length);
+          if (index == 1 && rndImg < rndImg.length) {
+            rndImg += 1;
+          }
           if (index <= 1) {
             return (
               <ImgCard
-                linkHref={linkArr[index]}
-                imgSrc={srcImg}
-                imgTitle={textArr[index]}
-                fewWords={fewArr[index]}
+                linkHref={linkArr[rndImg]}
+                imgSrc={imgArr[rndImg]}
+                imgTitle={textArr[rndImg]}
+                fewWords={fewArr[rndImg]}
               />
             );
           }
