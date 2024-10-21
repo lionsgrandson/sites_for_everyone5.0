@@ -1,9 +1,9 @@
 /* blob code */
-.contact-form {
-  position: relative; /* Enables the blob to be positioned behind the form */
+/* .contact-form {
+  position: relative; 
   padding: 2rem;
   border-radius: 10px;
-  overflow: hidden; /* Ensures the blob stays within the div */
+  overflow: hidden; 
 }
 
 .namediv::before {
@@ -32,7 +32,7 @@
   z-index: 0;
   -webkit-filter: blur(85px);
   filter: blur(85px);
-}
+} */
 
 /* end blob code */
 .contacth1 {
