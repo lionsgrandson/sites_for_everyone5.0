@@ -136,4 +136,8 @@
   .projDetails li {
     font-size: 1.8rem;
   }
+  .projScreen1,
+  .projScreen2 {
+    width: 25rem;
+  }
 }

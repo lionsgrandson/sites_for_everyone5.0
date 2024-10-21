@@ -15,6 +15,7 @@ import shlomo from "../../img/portfolio/ShalomCarmel.jpg";
 import smokin from "../../img/portfolio/SmokinT's.jpg";
 import toraDojo from "../../img/portfolio/ToraDojoIsrael.jpg";
 import "./projects.css";
+
 export default function Projects(props) {
   const imgArr = [
     omniFood,

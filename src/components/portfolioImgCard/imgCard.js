@@ -11,6 +11,7 @@ export default function ImgCard(props) {
         />
       </a>
       <h4 className="imgCardTxt">{props.imgTitle}</h4>
+      {props.fewWords != null && <p>{props.fewWords}</p>}
     </div>
   );
 }

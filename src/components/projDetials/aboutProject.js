@@ -2,7 +2,7 @@ import "./aboutProject.css";
 import Menu from "../menu/menu";
 import Footer from "../footer/footer";
 import { useTranslation } from "react-i18next";
-
+import MoreProj from "../moreProject/moreProj";
 export default function AboutProject(props) {
   const { t } = useTranslation();
 
@@ -54,6 +54,7 @@ export default function AboutProject(props) {
           </ul>
         </div>
       </div>
+      <MoreProj />
       <Footer />
     </div>
   );
