@@ -38,6 +38,7 @@ a.aimgProj .imgProj {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 @media (max-width: 1400px) {
   .imgProj {
     width: 40%;

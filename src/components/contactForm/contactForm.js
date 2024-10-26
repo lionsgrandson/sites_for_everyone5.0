@@ -61,31 +61,33 @@ export default function ContactForm() {
         onSubmit={sendEmail}
         className="contact-form"
       >
-        <div className="namediv">
-          <label htmlFor="name">
-            {t("Name")}
-            <span> *</span>
-          </label>
-          <input
-            id="name"
-            type="text"
-            name="user_name"
-            className="form-input nameIn"
-            required
-          />
-        </div>
-        <div className="emailDiv">
-          <label htmlFor="email">
-            {t("Email")}
-            <span> *</span>
-          </label>
-          <input
-            id="email"
-            type="email"
-            name="user_email"
-            className="form-input emailIn"
-            required
-          />
+        <div className="firstRow">
+          <div className="namediv">
+            <label htmlFor="name">
+              {t("Name")}
+              <span> *</span>
+            </label>
+            <input
+              id="name"
+              type="text"
+              name="user_name"
+              className="form-input nameIn"
+              required
+            />
+          </div>
+          <div className="emailDiv">
+            <label htmlFor="email">
+              {t("Email")}
+              <span> *</span>
+            </label>
+            <input
+              id="email"
+              type="email"
+              name="user_email"
+              className="form-input emailIn"
+              required
+            />
+          </div>
         </div>
         <div className="messageDiv">
           <label htmlFor="message">

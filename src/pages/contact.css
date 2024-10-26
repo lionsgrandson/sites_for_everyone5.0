@@ -70,23 +70,31 @@
   -webkit-text-fill-color: transparent;
 }
 .contact-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
   gap: 20px;
   padding: 2rem;
   border-radius: 10px;
-  z-index: 1; /* Ensures form content stays above the blob */
-  margin: auto; /* Centering form */
+  z-index: 1;
+  margin: 0 25rem;
+  flex-direction: column;
 }
 .namediv::before {
   background: rgba(255, 186, 58, 0);
 }
 .namediv,
 .emailDiv {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
-
+.firstRow {
+  display: flex;
+  justify-content: space-between;
+}
+.namediv {
+  margin-right: 6rem;
+}
 .messageDiv {
   grid-column: span 2; /* Message textarea spans across both columns */
   display: flex;
@@ -157,12 +165,17 @@ label {
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .contacth1 {
     font-size: 6rem; /* Reduce font size on smaller screens */
     line-height: 8rem;
   }
-
+  .firstRow {
+    flex-wrap: wrap;
+  }
+  .namediv {
+    margin-right: 0;
+  }
   .contactH3 {
     font-size: 2.5rem; /* Reduce font size for smaller screens */
     line-height: 3rem;
