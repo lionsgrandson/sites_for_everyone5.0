@@ -44,15 +44,25 @@ a.aimgProj .imgProj {
   }
 }
 @media (max-width: 800px) {
-  .projh1 {
-    font-size: 20px;
-    line-height: 20px;
-  }
-  .Projh1 {
-    font-size: 50px;
-    font-weight: 400;
-    line-height: 80px;
+  .projh2 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 40px;
     letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .projh1 {
+    font-size: 51px;
+    font-weight: 400;
+    line-height: 63.95px;
+    letter-spacing: 0.01em;
+  }
+
+  .imgProj {
+    width: 100%;
+  }
+  a.aimgProj {
+    width: fit-content;
   }
 }
 @media (max-width: 520px) {
