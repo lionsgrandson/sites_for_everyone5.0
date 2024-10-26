@@ -59,39 +59,57 @@ export default function MoreProj() {
     "/toradojo",
   ];
   const fewArr = [
-    "Omnifood is a personalized meal subscription service that delivers healthy, chef-prepared meals to your door. Using AI, it creates tailored meal plans based on your dietary preferences, offering a variety of options to suit different diets. Enjoy the convenience of nutritious eating while supporting local and organic food sources.",
-    "Daniel Yehuda is a Jewish musician who connects young Jewish souls through uplifting music. He offers customized performances, workshops, and events worldwide, focusing on Judaism and Zionism. Daniel also serves as a cantor and provides entertainment for celebrations like weddings and bar mitzvahs.",
-    "Smokin T's is a barbecue and grill-style restaurant that offers a unique blend of delicious dishes, including house-made pastrami and corned beef sandwiches. With a focus on quality, their menu features mouthwatering appetizers, fresh desserts, and exemplary service in a relaxed atmosphere. The restaurant has evolved through various kitchens to perfect its recipes, ensuring a memorable dining experience.",
-    "AI Pro delivers comprehensive calibration, engineering, and validation services that prioritize customer needs in a holistic manner. By providing optimal, budget-compliant solutions, they eliminate the burden of additional tasks for clients. Utilizing a `Turn Key` method, they ensure that products and services are ready for immediate use, streamlining the process for a seamless experience.",
-    "Lions for Zion is a non-profit organization dedicated to supporting Israel and combating antisemitism. They focus on educating and empowering young adults to become advocates for Israel through leadership training, campus activism, and community engagement. The organization aims to strengthen the connection between Jewish youth and their heritage while promoting a positive image of Israel.",
-    "Maim Chaim is a Torah-based school in Jerusalem that provides a holistic education for boys and girls. It combines religious studies with core subjects, fostering joyful learning and personal growth through diverse activities like music, art, and life skills.",
-    "IDF Tene is a corps within the Israel Defense Forces focused on technological and operational innovation. This unit develops and implements cutting-edge solutions to enhance military capabilities across various domains. TENE combines expertise in technology, engineering, and combat to create advanced systems and strategies, ensuring Israel's military readiness in the face of evolving threats.",
-    "Mahagony Israel is a luxury furniture and interior design company specializing in high-end wooden furniture and custom-made pieces. They offer a range of exquisite mahogany products, including tables, chairs and cabinets. The company prides itself on craftsmanship, attention to detail, and using premium quality materials to create timeless and elegant furniture for discerning clients in Israel and beyond.",
-    "IDF Tene is a corps within the Israel Defense Forces focused on technological and operational innovation. This unit develops and implements cutting-edge solutions to enhance military capabilities across various domains. TENE combines expertise in technology, engineering, and combat to create advanced systems and strategies, ensuring Israel's military readiness in the face of evolving threats.",
-    "Enter Plus has created a life-saving bracelet that detects drowning by monitoring vital signs. When a drowning incident occurs, it automatically alerts lifeguards, parents, and emergency services like 911. This innovative device enhances pool safety and provides peace of mind for families.",
-    "'Shalom Carmel' was established to showcase the rich ethnic and cultural diversity of Haifa and Mount Carmel. Their tours provide groups with the opportunity to engage with various communities in the area and learn how they collaborate to foster a more unified society.",
-    "This is the largest Tora Dojo branch outside the United States, founded by sixth-degree black belt Arthur Gribetz, along with a dedicated team of high-ranking expert instructors",
+    "Omnifood: AI-driven personalized meal subscription service delivering healthy, chef-prepared meals.",
+    "Daniel Yehuda: Jewish musician connecting young souls through uplifting music, offering performances and events worldwide.",
+    "Smokin T's: Barbecue restaurant known for house-made pastrami and corned beef sandwiches.",
+    "AI Pro: Comprehensive calibration and engineering services using a 'Turn Key' method.",
+    "Lions for Zion: Non-profit supporting Israel and combating antisemitism through education and advocacy.",
+    "Maim Chaim: Torah-based school in Jerusalem providing holistic education for boys and girls.",
+    "IDF Tech & Maintenance Corps: IDF unit focused on technological and operational innovation.",
+    "Mahagony Israel: Luxury furniture company specializing in high-end wooden and custom-made pieces.",
+    "IDF Tech & Maintenance Corps: IDF unit focused on technological and operational innovation.",
+    "Enter Plus: Creator of a life-saving bracelet that detects drowning and alerts emergency services.",
+    "Shalom Carmel: Organization showcasing Haifa's ethnic and cultural diversity through tours.",
+    "Tora Dojo Israel: Largest Tora Dojo branch outside the US, founded by Arthur Gribetz.",
   ];
-  let rndImg = 0;
 
+  let rndImg = Math.floor(Math.random() * imgArr.length);
   return (
     <div className="headerDiv">
       <h1 className="headerH1">{t("See More Projects")}</h1>
       <div className="containerMoreProj">
         {imgArr.map((srcImg, index) => {
-          rndImg = Math.floor(Math.random() * imgArr.length);
-          if (index == 1 && rndImg < rndImg.length) {
-            rndImg += 1;
-          }
-          if (index <= 1) {
-            return (
-              <ImgCard
-                linkHref={linkArr[rndImg]}
-                imgSrc={imgArr[rndImg]}
-                imgTitle={textArr[rndImg]}
-                fewWords={fewArr[rndImg]}
-              />
-            );
+          if (index < 2) {
+            if (index == 1 && rndImg < imgArr.length - 1) {
+              rndImg++;
+              return (
+                <ImgCard
+                  linkHref={linkArr[rndImg]}
+                  imgSrc={imgArr[rndImg]}
+                  imgTitle={textArr[rndImg]}
+                  fewWords={fewArr[rndImg]}
+                />
+              );
+            } else if (index == 1) {
+              rndImg--;
+              return (
+                <ImgCard
+                  linkHref={linkArr[rndImg]}
+                  imgSrc={imgArr[rndImg]}
+                  imgTitle={textArr[rndImg]}
+                  fewWords={fewArr[rndImg]}
+                />
+              );
+            } else {
+              return (
+                <ImgCard
+                  linkHref={linkArr[rndImg]}
+                  imgSrc={imgArr[rndImg]}
+                  imgTitle={textArr[rndImg]}
+                  fewWords={fewArr[rndImg]}
+                />
+              );
+            }
           }
         })}
       </div>

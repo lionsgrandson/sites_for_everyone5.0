@@ -13,11 +13,9 @@
 }
 .headerH1 {
   color: rgba(255, 255, 255, 1);
-  font-size: 9rem;
+  font-size: 90px;
   font-weight: 400;
-  line-height: 100px;
-  letter-spacing: 0.01em;
-  margin: 0 4rem 2rem 4rem;
+  text-align: center;
   font-family: var(--font-primary);
 }
 .containerMoreProj p {
@@ -36,6 +34,7 @@
   text-align: unset;
   margin: 0 5rem;
 }
+
 .containerMoreProj p,
 .containerMoreProj h1,
 .containerMoreProj h2,
@@ -58,7 +57,21 @@
     width: 70vw;
   }
   .headerH1 {
-    font-size: 3rem;
-    margin: 0 2rem;
+    font-size: 4.2rem;
+    padding-top: 2.4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .containerMoreProj p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 17.73px;
+    letter-spacing: 0.01em;
+    /* max-width: fit-content(calc(10rem)); */
+    /* min-width: max-content; */
+    max-width: calc(100% + 10rem);
+    margin: 0;
+    padding: 0;
   }
 }

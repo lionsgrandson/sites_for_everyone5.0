@@ -35,6 +35,8 @@ export default function Portfolio() {
     Shalom,
     ToraDojo,
   ];
+  // TODO show only 4 and add a show more that'll load the rest
+  // add Shlomo
   const textArr = [
     t("Omnifood"),
     t("Daniel Yehuda"),
