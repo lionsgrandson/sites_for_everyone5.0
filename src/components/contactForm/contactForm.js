@@ -58,6 +58,9 @@ export default function ContactForm() {
 
   return (
     <div className="divContact">
+      <a href="mailto:mosheschwartzberg@gmail.com">
+        Email me at: mosheschwartzberg@gmail.com
+      </a>
       <form
         ref={form}
         onSubmit={sendEmail}
