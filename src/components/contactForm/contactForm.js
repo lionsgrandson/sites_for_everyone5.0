@@ -58,9 +58,6 @@ export default function ContactForm() {
 
   return (
     <div className="divContact">
-      <a href="mailto:mosheschwartzberg@gmail.com">
-        Email me at: mosheschwartzberg@gmail.com
-      </a>
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -113,6 +110,14 @@ export default function ContactForm() {
           {t(isSubmitting ? "Sending..." : "Send")}
         </button>
         {stateMessage && <p className="form-message">{stateMessage}</p>}
+        <label>
+          <a
+            href="mailto:mosheschwartzberg@gmail.com"
+            className="backupMail"
+          >
+            {t("Email: mosheschwartzberg@gmail.com")}
+          </a>
+        </label>
       </form>
       {messageWorked && (
         <Navigate

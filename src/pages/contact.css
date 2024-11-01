@@ -35,6 +35,16 @@
 } */
 
 /* end blob code */
+.backupMail {
+  color: #214ce7;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.backupMail:hover {
+  color: #214ce7;
+  text-decoration: none;
+}
 .contacth1 {
   font-family: var(--font-primary);
   font-size: 11rem;
@@ -50,6 +60,7 @@
 .ctaContactForm {
   background: linear-gradient(90deg, #5c48ad 0%, #214ce7 100%);
 }
+.ctaContactForm .backupMail,
 .ctaContactForm label {
   color: white;
 }
