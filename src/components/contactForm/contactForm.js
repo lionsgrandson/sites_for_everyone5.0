@@ -13,8 +13,8 @@ export default function ContactForm() {
 
   const API_URL =
     process.env.NODE_ENV === "production"
-      ? `${window.location.origin}/send-email`
-      : "http://localhost:3001/send-email";
+      ? `${window.location.origin}/send-email.php`
+      : "http://localhost/send-email.php";
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
