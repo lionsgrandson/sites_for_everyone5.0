@@ -1,7 +1,18 @@
 <?php
+// code added now
+// require __DIR__ . '/vendor/autoload.php';
+
+// $dotEnv = Dotenv\Dotenv::createImmutable(__DIR__);
+// $dotEnv->load();
+
+// $DB_EMAIL = $_ENV['EMAIL_USER'];
+// $DB_EMAIL_FROM = $_ENV['EMAIL_FROM'];
+
+//code added end
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
+
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Get the raw POST data
@@ -26,12 +37,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Set email parameters
-    $to = "mosheschwartzberg@gmail.com"; // Replace with your email
-    $subject = "New Contact Form Submission";
+    // $to = $DB_EMAIL;
+    $to = "mosheschwartzberg@gmail.com";
+    $subject = "New Contact Form Submission - $email";
     $body = "Name: $name\n";
     $body .= "Email: $email\n\n";
     $body .= "Message:\n$message";
-    $headers = "From: $email";
+
+    // $headers = "From: $DB_EMAIL_FROM";
+    $headers = "From: moshe.sch.idf@gmail.com";
 
     // Send email
     if (mail($to, $subject, $body, $headers)) {
