@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const getPost = require("../controllers/getPost");
-const delPost = require("../controllers/delPost");
-const editPost = require("../controllers/editPost");
-const newPost = require("../controllers/newPost");
+const getPost = require("../controllers/readBlog");
+const delPost = require("../controllers/deleteBlog");
+const editPost = require("../controllers/editBlog");
+const newPost = require("../controllers/writeBlog");
 
 router.use("/", getPost);
 router.use("/", delPost);

@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const router = express.Router();
-const Post = require("../mongoDB/mongoose");
+const Post = require("../config/mongoDBConfig");
 
 // Generic function to update a post field
 const updatePostField = async (filter, updateField, res) => {

@@ -20,6 +20,7 @@ import Mahogony from "./pages/projects/mahogony";
 import EnterPlus from "./pages/projects/enterPlus";
 import Shalom from "./pages/projects/shalom";
 import ToraDojo from "./pages/projects/ToraDojo";
+import FullBlogPostPage from "./components/blog/fullBlogPost";
 import "./App.css";
 
 function App() {
@@ -64,14 +65,14 @@ function App() {
           path="/privacyLOL"
           element={<Privacy />}
         />
-        {/*
-         <Route
-          path="/blog/new"
-          element={<CretePost />}
-        />
         <Route
           path="/full"
           element={<FullBlogPostPage />}
+        />
+        {/* 
+        <Route
+          path="/blog/new"
+          element={<CretePost />}
         />
         <Route
           path="/deadProj"

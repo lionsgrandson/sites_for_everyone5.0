@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const router = express.Router();
-const Post = require("../mongoDB/mongoose");
+const Post = require("../config/mongoDBConfig");
 
 // Filter by "POST TITLE"
 router.get("/get/:postTitle", async (req, res) => {

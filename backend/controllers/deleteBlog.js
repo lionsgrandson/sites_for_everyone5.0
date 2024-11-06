@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const router = express.Router();
-const Post = require("../mongoDB/mongoose");
+const Post = require("../config/mongoDBConfig");
 
 // Delete post by postTitle
 router.delete("/del/:postTitle", async (req, res) => {

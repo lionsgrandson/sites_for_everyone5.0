@@ -1,0 +1,17 @@
+.IndPost {
+  margin: 0.5rem 0.5rem;
+  max-width: 25rem;
+  border: 1px solid black;
+  padding: 1rem;
+}
+.IndPost h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+.IndPost h4 {
+  line-height: 0;
+  font-size: 1.2rem;
+}
+.IndPost p {
+  font-size: 1.6rem;
+}
