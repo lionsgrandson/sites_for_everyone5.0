@@ -21,6 +21,7 @@ import EnterPlus from "./pages/projects/enterPlus";
 import Shalom from "./pages/projects/shalom";
 import ToraDojo from "./pages/projects/ToraDojo";
 import FullBlogPostPage from "./components/blog/fullBlogPost";
+import PatentNY from "./pages/projects/patentNY";
 import "./App.css";
 
 function App() {
@@ -125,6 +126,10 @@ function App() {
         <Route
           path="/toradojo"
           element={<ToraDojo />}
+        />
+        <Route
+          path="/patNY"
+          element={<PatentNY />}
         />
       </Routes>
     </Router>
