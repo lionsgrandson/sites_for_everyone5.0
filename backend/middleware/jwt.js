@@ -11,8 +11,7 @@ const posts = [
 // Middleware to authenticate token
 function authenticateToken(req, res, next) {
   const authHeader =
-    req.headers["authorization"] ||
-    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTW9zaGUiLCJwYXNzIjoiMTExMSIsImlhdCI6MTcyMjEwODg5NX0.UAqaceOfcnyLwup8KCGZC4UyTpgulD6H8S53MuVINIQ";
+    req.headers["authorization"] || process.send.ACCESS_TOKEN_SECRET;
   // `Bearer ${accessToken}`; TODO find a way to get the var automaticlly sent to this fucntion
   const token = authHeader && authHeader.split(" ")[1]; //gives you the 2nd  elemnt in the string ("this is the string") you split it every space- you get the word 'is'
   if (token == null) return res.sendStatus(401); //unauthorized
