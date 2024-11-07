@@ -1,0 +1,74 @@
+.postContainer {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Header Image */
+.header-img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #cccccc;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Post Title */
+.post-title {
+  font-size: 2.4rem; /* 24px */
+  color: #0779e4;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Writer Info */
+.writer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.writer-info img {
+  border-radius: 50%;
+  width: 3rem; /* 30px */
+  height: 3rem; /* 30px */
+  margin-right: 1rem;
+}
+
+.writer-info .name {
+  font-size: 1.6rem; /* 16px */
+  color: #333333;
+}
+
+.writer-info .date {
+  font-size: 1.4rem; /* 14px */
+  color: #666666;
+}
+
+/* Post Content */
+.post-content {
+  font-size: 1.6rem; /* 16px */
+  line-height: 1.6;
+  color: #333333;
+}
+
+.post-content p {
+  margin-bottom: 1.6rem;
+}
+.back-button, .read-more-button {
+  background-color: #0779e4; /* Preferred color */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add some padding */
+  font-size: 1.8rrem; /* Adjusted font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.back-button:hover,
+.read-more-button:hover {
+  background-color: #005bb5; /* Darker shade for hover effect */
+}

@@ -1,9 +1,8 @@
+import React, { useState, useRef } from "react";
 import { Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import emailjs from "@emailjs/browser";
 import "../../pages/contact.css";
 import "../btn/btn.css";
-import React, { useState, useRef } from "react";
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -12,48 +11,51 @@ export default function ContactForm() {
   const { t } = useTranslation();
   const form = useRef();
 
+  const API_URL =
+    process.env.NODE_ENV === "production"
+      ? `${window.location.origin}/send-email.php`
+      : "http://localhost/send-email.php";
   const sendEmail = (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
     setIsSubmitting(true);
 
-    console.log("Sending email with:", {
-      serviceId: process.env.REACT_APP_SERVICE_ID,
-      templateId: process.env.REACT_APP_TEMPLATE_ID,
-      publicKey: process.env.REACT_APP_PUBLIC_KEY,
-      form: form.current,
-    });
+    const formData = new FormData(form.current);
+    const formDataObject = Object.fromEntries(formData.entries());
 
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log("SUCCESS!", result.text);
+    fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formDataObject),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          console.log("SUCCESS!", data.message);
           setStateMessage(t("Message sent!"));
           setIsSubmitting(false);
 
           setTimeout(() => {
             setStateMessage(null);
             setMessageWorked(true);
-          }, 1000); // hide message after 1 second
-        },
-        (error) => {
-          console.error("FAILED...", error.text);
-          setStateMessage(t("Something went wrong, please try again later!"));
-          setIsSubmitting(false);
-          setTimeout(() => {
-            setStateMessage(null);
-          }, 5000); // hide message after 5 seconds
-        }
-      );
+          }, 1000);
 
-    // Clears the form after sending the email
-    form.current.reset();
+          form.current.reset();
+        } else {
+          throw new Error(data.message || "Unknown error");
+        }
+      })
+      .catch((error) => {
+        console.error("FAILED...", error.message);
+        setStateMessage(t("Something went wrong, please try again later!"));
+        setIsSubmitting(false);
+        setTimeout(() => {
+          setStateMessage(null);
+        }, 5000);
+      });
   };
+
   return (
     <div className="divContact">
       <form
@@ -103,12 +105,19 @@ export default function ContactForm() {
         </div>
         <button
           type="submit"
-          // disabled={isSubmitting}
-          className="btn-btn "
+          className="btn-btn"
         >
           {t(isSubmitting ? "Sending..." : "Send")}
         </button>
         {stateMessage && <p className="form-message">{stateMessage}</p>}
+        <label>
+          <a
+            href="mailto:mosheschwartzberg@gmail.com"
+            className="backupMail"
+          >
+            {t("Email: mosheschwartzberg@gmail.com")}
+          </a>
+        </label>
       </form>
       {messageWorked && (
         <Navigate
