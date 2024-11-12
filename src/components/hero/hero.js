@@ -45,7 +45,7 @@ export default function Hero() {
             size="5rem"
           />
 
-          <p className="feat-home-text">Deployment + SEO</p>
+          <p className="feat-home-text">{t("Deployment + SEO")}</p>
         </div>
 
         <div>

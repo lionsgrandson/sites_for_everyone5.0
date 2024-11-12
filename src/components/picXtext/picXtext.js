@@ -22,9 +22,9 @@ export default function PicXtext(props) {
         </p>
         {props.WbtnQ ? (
           <Btn
-            bntTxt={t("Read More")}
+            bntTxt={t("Get a quote")}
             wAoN={true}
-            btnHref="/about"
+            btnHref="/contact"
           />
         ) : null}
       </div>
