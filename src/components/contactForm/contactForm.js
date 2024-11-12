@@ -78,6 +78,19 @@ export default function ContactForm() {
             />
           </div>
           <div className="emailDiv">
+            <label htmlFor="phone">
+              {t("Phone")}
+              <span> *</span>
+            </label>
+            <input
+              id="phone"
+              type="tel"
+              name="user_phone"
+              className="form-input emailIn"
+              required
+            />
+          </div>
+          <div className="emailDiv">
             <label htmlFor="email">
               {t("Email")}
               <span> *</span>

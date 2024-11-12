@@ -23,10 +23,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Extract form data
     $name = $data['user_name'] ?? '';
     $email = $data['user_email'] ?? '';
+    $phone = $data['user_phone'] ?? '';
     $message = $data['message'] ?? '';
 
     // Validate inputs
-    if (empty($name) || empty($email) || empty($message)) {
+    if (empty($name) || empty($email) || empty($message) || empty($phone)) {
         echo json_encode(['success' => false, 'message' => 'All fields are required']);
         exit;
     }
@@ -41,6 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $to = "mosheschwartzberg@gmail.com";
     $subject = "New Contact Form Submission - $email";
     $body = "Name: $name\n";
+    $body = "Phone: $phone\n";
     $body .= "Email: $email\n\n";
     $body .= "Message:\n$message";
 
