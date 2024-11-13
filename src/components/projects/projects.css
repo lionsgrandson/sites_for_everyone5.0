@@ -26,7 +26,7 @@ a.aimgProj .imgProj {
 .projh1 {
   text-align: center;
   font-family: var(--font-primary);
-  font-size: 85px;
+  font-size: 4.6rem;
   font-weight: 400;
   line-height: 150px;
   letter-spacing: 0.01em;
@@ -53,7 +53,7 @@ a.aimgProj .imgProj {
     text-align: left;
   }
   .projh1 {
-    font-size: 51px;
+    font-size: 3.5rem;
     font-weight: 400;
     line-height: 63.95px;
     letter-spacing: 0.01em;
@@ -69,5 +69,8 @@ a.aimgProj .imgProj {
 @media (max-width: 520px) {
   .imgProj {
     width: 85%;
+  }
+  .projh1 {
+    font-size: 2.4rem;
   }
 }
