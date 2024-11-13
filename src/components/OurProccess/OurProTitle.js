@@ -1,5 +1,5 @@
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
-
+import Btn from "../btn/btn";
 import "./OurProccess.css";
 import { useTranslation } from "react-i18next";
 
@@ -16,11 +16,18 @@ export default function OurProTitle() {
             "We specialize in delivering the complete package. see what our process consists of and what it’s like to work with us"
           )}
         </p>
+        <div className="btn-contact-proc">
+          <Btn
+            bntTxt={t("Get a quote")}
+            btnHref="/contact"
+          />
+        </div>
         {/* <HiOutlineDotsHorizontal
           color="rgba(92, 72, 173, 1)"
           size="212px"
         /> */}
         <p className="p-dots"> . . .</p>
+        <p>{t("how do we build the best website for you?")}</p>
       </div>
     </>
   );
