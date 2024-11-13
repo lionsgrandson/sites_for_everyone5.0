@@ -50,9 +50,7 @@ export default function Menu(props) {
           {/* <li>
             <a href="./blog">{t("Blog")}</a>
           </li> */}
-          <li>
-            <a href="./contact">{t("Contact")}</a>
-          </li>
+          <li>{/* <a href="./contact">{t("Contact")}</a> */}</li>
         </ul>
 
         <div className="menu-actions">
