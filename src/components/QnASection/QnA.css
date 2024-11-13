@@ -1,0 +1,20 @@
+.liQnA {
+  background-color: grey;
+  margin: 1rem 0;
+  border: 1px solid black;
+  font-size: 5rem;
+}
+.ulQnA {
+  width: fit-content;
+  margin: 0 auto;
+}
+.h1QnA {
+  font-size: 7rem;
+}
+.divQnA {
+  margin-bottom: 2rem;
+}
+.aQnA {
+  text-decoration: none;
+  color: inherit;
+}
