@@ -13,6 +13,7 @@ import ContactForm from "../components/contactForm/contactForm";
 
 import "./home.css";
 import { useTranslation } from "react-i18next";
+import QnA from "../components/QnASection/QnA";
 function Home() {
   const { t } = useTranslation();
   return (
@@ -39,7 +40,7 @@ function Home() {
           h1Proj={t("See What We Mean")}
           exitNum="4"
         />
-
+        <QnA />
         <div className="cta-contact-cta">
           <CTA
             ctaH1={t("Ready to Start Your Jorney?")}
