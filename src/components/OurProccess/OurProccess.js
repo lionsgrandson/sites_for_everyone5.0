@@ -138,6 +138,12 @@ export default function OurProccess() {
           LORImg={false}
         />
       </div>
+      <div className="btn-contact-proc">
+        <Btn
+          bntTxt={t("Get a quote")}
+          btnHref="/contact"
+        />
+      </div>
     </div>
   );
 }
