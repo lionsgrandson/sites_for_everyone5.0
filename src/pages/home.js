@@ -6,6 +6,7 @@ import PicXtext from "../components/picXtext/picXtext";
 import moseHeadshot from "../img/mosheHeadshot.png";
 import Projects from "../components/projects/projects";
 import CTA from "../components/cta/cta";
+import Btn from "../components/btn/btn";
 import "./contact.css";
 // import ContactForm from "..//contactForm/contactForm";
 import ContactForm from "../components/contactForm/contactForm";
@@ -39,14 +40,15 @@ function Home() {
           exitNum="4"
         />
 
-        <CTA
-          ctaH1={t("Ready to Start Your Jorney?")}
-          ctaP={t(
-            "Our expert team is eager to collaborate with you on creating a stunning, high-performing website. Whether you need a fresh design, improved functionality, or expert digital marketing strategies, we've got you covered. Contact us today for a free consultation and let's bring your vision to life"
-          )}
-          ctaBtn={t("Contact Us")}
-          btnOnBtn={true}
-        />
+        <div className="cta-contact-cta">
+          <CTA
+            ctaH1={t("Ready to Start Your Jorney?")}
+            // ctaP={t()}
+            ctaBtn={t("Contact Us")}
+            btnOnBtn={true}
+          />
+        </div>
+
         <div className="ctaContactForm">
           <ContactForm />
         </div>
