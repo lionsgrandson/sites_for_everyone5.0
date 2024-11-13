@@ -5,7 +5,7 @@ import imgXTextImg2 from "../../img/stepTwoImg.jpg";
 import imgXTextImg3 from "../../img/stepThreeImg.jpg";
 import OurProTitle from "./OurProTitle";
 import { useTranslation } from "react-i18next";
-
+import Btn from "../btn/btn";
 export default function OurProccess() {
   const { t } = useTranslation();
   const { i18n } = useTranslation();
@@ -25,6 +25,12 @@ export default function OurProccess() {
         WbtnQ={false}
         LORImg={false}
       />
+      <div className="btn-contact-proc">
+        <Btn
+          bntTxt={t("Get a quote")}
+          btnHref="/contact"
+        />
+      </div>
       <div style={{ position: "relative" }}>
         {i18n.language === "en" && (
           <svg
