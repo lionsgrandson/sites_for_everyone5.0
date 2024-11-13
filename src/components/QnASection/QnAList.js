@@ -6,11 +6,12 @@ export default function QnALis() {
   return (
     <div>
       <ul>
-        <li>What is the price of a website?</li>
-        <li>How long does the process take before the site is live?</li>
+        <li>{t("What is the price of a website?")}</li>
+        <li>{t("How long does the process take before the site is live?")}</li>
         <li>
-          Will there be support and maintenance available even after the project
-          is over?
+          {t(
+            "Will there be support and maintenance available even after the project is over?"
+          )}
         </li>
       </ul>
     </div>
