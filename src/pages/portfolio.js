@@ -13,6 +13,7 @@ import ToraDojo from "../img/portfolio/ToraDojoIsrael.jpg";
 import idfTene1 from "../img/portfolio/idftene.png";
 import idftene2 from "../img/portfolio/idftene2.0.png";
 import Maim from "../img/portfolio/maim-chaim.jpg";
+import ShlomoPAtenet from "../img/patentNY/patentNYpic1.png";
 import "./portoflio.css";
 import CTA from "../components/cta/cta";
 import { useTranslation } from "react-i18next";
@@ -25,7 +26,7 @@ export default function Portfolio() {
     DY,
     Smokin,
     Itai,
-
+    ShlomoPAtenet,
     LFZ,
     Maim,
     idftene2,
@@ -42,6 +43,8 @@ export default function Portfolio() {
     t("Daniel Yehuda"),
     t("Smokin t's"),
     t("AI pro"),
+    t("Shlomo Horowitz"),
+    t("IDF Tech & Maintenance corps v2.0"),
     t("Lions for Zion"),
     t("Maim Chaim"),
     t("IDF Tech & Maintenance corps v2.0"),
@@ -56,6 +59,7 @@ export default function Portfolio() {
     "/dy",
     "/smokin",
     "/aiPro",
+    "/patNY",
     "/lfz",
     "/maim",
     "/tene2",
