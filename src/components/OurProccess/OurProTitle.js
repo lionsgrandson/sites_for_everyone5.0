@@ -27,7 +27,9 @@ export default function OurProTitle() {
           size="212px"
         /> */}
         <p className="p-dots"> . . .</p>
-        <p>{t("how do we build the best website for you?")}</p>
+        <h2 className="h2-build-win-web">
+          {t("how do we build the best website for you?")}
+        </h2>
       </div>
     </>
   );

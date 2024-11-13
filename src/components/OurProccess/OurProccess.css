@@ -13,6 +13,9 @@
   margin: 0 auto;
   text-align: center;
 }
+.h2-build-win-web {
+  font-size: 6rem;
+}
 
 .titlel-h3-our {
   /* font-size: clamp(1.5rem, 2.5vw, 2.75rem); */
@@ -202,8 +205,15 @@
   .middleBoxProc {
     display: none !important; /* Hide these elements on smaller screens */
   }
+
+  .h2-build-win-web {
+    font-size: 3.5rem;
+  }
 }
 @media (max-width: 400px) {
+  .h2-build-win-web {
+    font-size: 3rem;
+  }
   .titlel-h1-our {
     font-size: 6rem;
   }
