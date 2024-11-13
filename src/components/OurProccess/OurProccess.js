@@ -77,6 +77,7 @@ export default function OurProccess() {
         WbtnQ={false}
         LORImg={true}
       />
+
       {/* second arrow */}
       <div style={{ position: "relative" }}>
         {i18n.language === "he" && (
