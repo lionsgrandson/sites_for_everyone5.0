@@ -77,7 +77,12 @@ export default function OurProccess() {
         WbtnQ={false}
         LORImg={true}
       />
-
+      <div className="btn-contact-proc">
+        <Btn
+          bntTxt={t("Get a quote")}
+          btnHref="/contact"
+        />
+      </div>
       {/* second arrow */}
       <div style={{ position: "relative" }}>
         {i18n.language === "he" && (
