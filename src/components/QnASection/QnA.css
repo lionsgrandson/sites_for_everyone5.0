@@ -1,8 +1,7 @@
 .liQnA {
-  background-color: grey;
   margin: 1rem 0;
+  background-color: grey;
   border: 1px solid black;
-  font-size: 5rem;
 }
 .ulQnA {
   width: fit-content;
@@ -15,6 +14,12 @@
   margin-bottom: 2rem;
 }
 .aQnA {
+  background-color: grey;
+  /*
+  border: 1px solid black; */
+  font-size: 5rem;
+  width: fit-content;
   text-decoration: none;
   color: inherit;
+  border: none;
 }
