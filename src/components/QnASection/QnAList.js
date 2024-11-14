@@ -25,8 +25,14 @@ export default function QnALis() {
           >
             {t("What is the price of a website?")}
           </button>
+          {openAnswer1 && (
+            <li className="QnAAnswer">
+              {t(
+                "Every project requires a unique approach; we build each website from scratch, so you won’t find templates or identical sites for different clients here. Each site also demands entirely different work based on the project’s requirements. Want a price quote? Contact us using the button below, and we’ll get back to you with all the answers."
+              )}
+            </li>
+          )}
         </li>
-        {openAnswer1 && <li className="QnAAnswer">Text Text Text</li>}
         <li className="liQnA">
           <button
             onClick={OnClickButton2}
@@ -34,8 +40,14 @@ export default function QnALis() {
           >
             {t("How long does the process take before the site is live?")}
           </button>
+          {openAnswer2 && (
+            <li className="QnAAnswer">
+              {t(
+                "We want to launch your website as soon as possible, without compromising on quality or attention to detail. Since each website has different requirements, the process can take anywhere from two weeks to six months. Want to know how long it will take for your website to go live? Leave your details, and we’ll get back to you with all the answers."
+              )}
+            </li>
+          )}
         </li>
-        {openAnswer2 && <li className="QnAAnswer">Text Text Text</li>}
         <li className="liQnA">
           <button
             onClick={OnClickButton3}
@@ -45,14 +57,14 @@ export default function QnALis() {
               "Will there be support and maintenance available even after the project is over?"
             )}
           </button>
+          {openAnswer3 && (
+            <li className="QnAAnswer">
+              {t(
+                "Even after the website is live, we stay with you and provide ongoing support to ensure that your site is maintained at the highest level, always looks up-to-date, and meets your long-term needs"
+              )}
+            </li>
+          )}
         </li>
-        {openAnswer3 && (
-          <li className="QnAAnswer">
-            {t(
-              "Even after the website is live, we stay with you and provide ongoing support to ensure that your site is maintained at the highest level, always looks up-to-date, and meets your long-term needs"
-            )}
-          </li>
-        )}
       </ul>
     </div>
   );

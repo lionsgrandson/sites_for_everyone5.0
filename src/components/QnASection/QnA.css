@@ -1,6 +1,6 @@
 .liQnA {
   margin: 1rem 0;
-  background-color: grey;
+  background-color: var(--off-white);
   border: 1px solid black;
 }
 .ulQnA {
@@ -8,18 +8,25 @@
   margin: 0 auto;
 }
 .h1QnA {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 .divQnA {
-  margin-bottom: 2rem;
+  margin: 2rem;
+  background-color: white;
+  border: 3px solid black;
+  padding: 3rem;
 }
 .aQnA {
-  background-color: grey;
-  /*
-  border: 1px solid black; */
+  background-color: var(--off-white);
   font-size: 5rem;
   width: fit-content;
   text-decoration: none;
   color: inherit;
   border: none;
+}
+.QnAAnswer {
+  background-color: var(--off-white);
+  font-size: 3rem;
+  margin: 0 auto;
+  width: fit-content;
 }
