@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <link
       rel="icon"
       href="%PUBLIC_URL%/favicon.ico"
@@ -73,11 +73,41 @@
       @import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
       @font-face {
         font-family: "Birzia_Family";
-        src: url("/font/Birzia_Family.eot") format("embedded-opentype"),
-          url("/font/Birzia_Family/Birzia_Family.woff") format("woff"),
-          url("/font/Birzia_Family/Birzia_Family.ttf") format("truetype"),
-          url("/font/Birzia_Family/Birzia_Family.svg") format("svg");
+        src: url("../src/font/Birzia_Family/Birzia_Family-Medium.woff2")
+            format("woff2"),
+          url("../src/font/Birzia_Family/Birzia_Family-Medium.woff")
+            format("woff");
         font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Birzia_Family";
+        src: url("../src/font/Birzia_Family/Birzia_Family-Bold.woff2")
+            format("woff2"),
+          url("../src/font/Birzia_Family/Birzia_Family-Bold.woff")
+            format("woff");
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Birzia_Family";
+        src: url("../src/font/Birzia_Family/Birzia_Family-Light.woff2")
+            format("woff2"),
+          url("../src/font/Birzia_Family/Birzia_Family-Light.woff")
+            format("woff");
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Birzia_Family";
+        src: url("../src/font/Birzia_Family/Birzia_Family-Black.woff2")
+            format("woff2"),
+          url("../src/font/Birzia_Family/Birzia_Family-Black.woff")
+            format("woff");
+        font-weight: 900;
         font-style: normal;
       }
     </style>
