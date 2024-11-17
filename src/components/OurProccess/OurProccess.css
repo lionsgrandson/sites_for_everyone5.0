@@ -142,6 +142,15 @@
     top: 34%;
     right: 12%;
   }
+  .titlel-h1-our {
+    font-size: 5rem;
+    line-height: 87.77px;
+  }
+  .titlel-p-our {
+    font-size: 3rem;
+    width: 65%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 1000px) {
   .bottomBoxProc {
@@ -172,12 +181,13 @@
   }
 
   .titlel-h1-our {
-    font-size: 7rem;
-    line-height: 87.77px;
+    font-size: 4.5rem;
+    line-height: 60px;
   }
 
   .titlel-p-our {
-    font-size: 1.9rem;
+    font-size: 2rem;
+    width: fit-content;
     line-height: 30px;
   }
 

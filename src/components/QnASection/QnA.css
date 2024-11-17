@@ -30,3 +30,26 @@
   margin: 0 auto;
   width: fit-content;
 }
+@media (max-width: 900px) {
+  .h1QnA {
+    font-size: 5rem;
+  }
+  .aQnA {
+    font-size: 3.8rem;
+  }
+  .QnAAnswer {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .h1QnA {
+    font-size: 5rem;
+  }
+  .aQnA {
+    font-size: 2.6rem;
+  }
+  .QnAAnswer {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+}
