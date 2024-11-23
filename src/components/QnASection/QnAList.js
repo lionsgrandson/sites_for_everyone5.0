@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./QnA.css";
 import { useState } from "react";
-import { FaPlus } from "react-icons/fa6";
+import { FaPlus, FaMinus } from "react-icons/fa6";
 
 export default function QnALis() {
   const { t } = useTranslation();
@@ -25,7 +25,8 @@ export default function QnALis() {
             onClick={OnClickButton1}
             className="aQnA"
           >
-            <FaPlus />
+            {!openAnswer1 && <FaPlus />}
+            {openAnswer1 && <FaMinus />}
             {t("What is the price of a website?")}
           </button>
           {openAnswer1 && (
@@ -41,7 +42,8 @@ export default function QnALis() {
             onClick={OnClickButton2}
             className="aQnA"
           >
-            <FaPlus />
+            {!openAnswer2 && <FaPlus />}
+            {openAnswer2 && <FaMinus />}
             {t("How long does the process take before the site is live?")}
           </button>
           {openAnswer2 && (
@@ -57,7 +59,8 @@ export default function QnALis() {
             onClick={OnClickButton3}
             className="aQnA"
           >
-            <FaPlus />
+            {!openAnswer3 && <FaPlus />}
+            {openAnswer3 && <FaMinus />}
             {t(
               "Will there be support and maintenance available even after the project is over?"
             )}
