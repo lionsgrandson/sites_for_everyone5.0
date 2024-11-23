@@ -23,12 +23,17 @@
   text-decoration: none;
   color: inherit;
   border: none;
+  text-align: inherit;
 }
 .QnAAnswer {
   background-color: var(--off-white);
   font-size: 3rem;
   margin: 0 auto;
   width: fit-content;
+}
+.mainContentDiv {
+  display: flex;
+  gap: 2rem;
 }
 @media (max-width: 900px) {
   .h1QnA {
