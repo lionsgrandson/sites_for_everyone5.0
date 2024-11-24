@@ -14,7 +14,7 @@ export default function NotFound() {
       <Menu />
       <div className="notFoundContent">
         <h1>{t("Oops! Page Not Found")}</h1>
-        <p>{t("The page you are looking for does not exist.")}</p>
+        <p>{t("The customer took down the website.")}</p>
         <Link to="/">
           <Btn bntTxt={t("Go Back")} />
         </Link>

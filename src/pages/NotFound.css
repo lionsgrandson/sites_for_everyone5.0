@@ -16,14 +16,14 @@
 }
 
 .notFoundContent h1 {
-  font-size: 6rem;
+  font-size: 6rem; /* Title size */
   margin-bottom: 1rem;
   color: #e74c3c; /* Bright red color */
   text-shadow: 2px 2px #ffcccb; /* Soft shadow effect */
 }
 
 .notFoundContent p {
-  font-size: 1.5rem;
+  font-size: 4rem; /* Increased font size for the message */
   margin-bottom: 2rem;
   color: #34495e; /* Dark gray color */
 }
@@ -70,7 +70,7 @@
   }
 
   .notFoundContent p {
-    font-size: 1.2rem; /* Smaller message on mobile */
+    font-size: 3.5rem; /* Adjusted size for mobile devices */
   }
 
   .notFoundContent .btn {
