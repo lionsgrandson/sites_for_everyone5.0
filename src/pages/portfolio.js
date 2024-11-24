@@ -44,7 +44,6 @@ export default function Portfolio() {
     t("Smokin t's"),
     t("AI pro"),
     t("Shlomo Horowitz"),
-    t("IDF Tech & Maintenance corps v2.0"),
     t("Lions for Zion"),
     t("Maim Chaim"),
     t("IDF Tech & Maintenance corps v2.0"),
