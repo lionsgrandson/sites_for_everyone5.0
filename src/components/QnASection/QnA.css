@@ -4,7 +4,7 @@
   border: 1px solid black;
 }
 .ulQnA {
-  width: fit-content;
+  width: 100%;
   margin: 0 auto;
 }
 .h1QnA {
@@ -18,10 +18,16 @@
   display: flex;
   justify-content: center;
 }
+.divMainList {
+  width: 100%;
+}
+.innder_div {
+  width: 100%;
+}
 .aQnA {
   background-color: var(--off-white);
   font-size: 5rem;
-  width: fit-content;
+  width: 100%;
   text-decoration: none;
   color: inherit;
   border: none;

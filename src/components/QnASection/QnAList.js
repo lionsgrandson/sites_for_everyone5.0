@@ -18,7 +18,7 @@ export default function QnALis() {
     setOpenAnswer3(!openAnswer3);
   };
   return (
-    <div>
+    <div className="divMainList">
       <ul className="ulQnA">
         <li className="liQnA">
           <button
