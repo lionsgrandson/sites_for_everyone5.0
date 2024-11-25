@@ -17,16 +17,26 @@ export default function AboutProject(props) {
             alt={`${props.projName} logo`}
           />
           <div className="projScreenshots">
-            <img
-              src={props.projimg1}
-              className="projScreen1"
-              alt={`A screenshot from the ${props.projName} website`}
-            />
-            <img
-              src={props.projimg2}
-              className="projScreen2"
-              alt={`A screenshot from the ${props.projName} website`}
-            />
+            <a
+              href={props.linkHref}
+              target="_blank"
+            >
+              <img
+                src={props.projimg1}
+                className="projScreen1"
+                alt={`A screenshot from the ${props.projName} website`}
+              />
+            </a>
+            <a
+              href={props.linkHref}
+              target="_blank"
+            >
+              <img
+                src={props.projimg2}
+                className="projScreen2"
+                alt={`A screenshot from the ${props.projName} website`}
+              />
+            </a>
           </div>
           <h3 className="aboutTag">/ {t("About The Project")}</h3>
           <p className="projTagline">{props.projText}</p>
