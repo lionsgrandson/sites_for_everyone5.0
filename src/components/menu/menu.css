@@ -98,7 +98,7 @@
     margin: auto;
     display: flex;
     align-items: center;
-    gap: 80vw;
+    gap: 70vw;
   }
   .menu-div {
     flex-wrap: nowrap; /* Prevent wrapping */
