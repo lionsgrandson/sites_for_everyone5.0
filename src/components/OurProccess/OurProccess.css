@@ -16,7 +16,9 @@
 .h2-build-win-web {
   font-size: 6rem;
 }
-
+.btn-contact-proc {
+  padding: 2rem;
+}
 .titlel-h3-our {
   /* font-size: clamp(1.5rem, 2.5vw, 2.75rem); */
   line-height: 1.2;
