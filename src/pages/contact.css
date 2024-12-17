@@ -102,7 +102,7 @@
 .firstRow {
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 1rem;
 }
 .messageDiv {
   grid-column: span 2; /* Message textarea spans across both columns */
