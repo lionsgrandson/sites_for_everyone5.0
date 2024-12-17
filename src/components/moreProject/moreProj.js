@@ -59,18 +59,42 @@ export default function MoreProj() {
     "/toradojo",
   ];
   const fewArr = [
-    "Omnifood: AI-driven personalized meal subscription service delivering healthy, chef-prepared meals.",
-    "Daniel Yehuda: Jewish musician connecting young souls through uplifting music, offering performances and events worldwide.",
-    "Smokin T's: Barbecue restaurant known for house-made pastrami and corned beef sandwiches.",
-    "AI Pro: Comprehensive calibration and engineering services using a 'Turn Key' method.",
-    "Lions for Zion: Non-profit supporting Israel and combating antisemitism through education and advocacy.",
-    "Maim Chaim: Torah-based school in Jerusalem providing holistic education for boys and girls.",
-    "IDF Tech & Maintenance Corps: IDF unit focused on technological and operational innovation.",
-    "Mahagony Israel: Luxury furniture company specializing in high-end wooden and custom-made pieces.",
-    "IDF Tech & Maintenance Corps: IDF unit focused on technological and operational innovation.",
-    "Enter Plus: Creator of a life-saving bracelet that detects drowning and alerts emergency services.",
-    "Shalom Carmel: Organization showcasing Haifa's ethnic and cultural diversity through tours.",
-    "Tora Dojo Israel: Largest Tora Dojo branch outside the US, founded by Arthur Gribetz.",
+    t(
+      "Omnifood: AI-driven personalized meal subscription service delivering healthy, chef-prepared meals."
+    ),
+    t(
+      "Daniel Yehuda: Jewish musician connecting young souls through uplifting music, offering performances and events worldwide."
+    ),
+    t(
+      "Smokin T's: Barbecue restaurant known for house-made pastrami and corned beef sandwiches."
+    ),
+    t(
+      "AI Pro: Comprehensive calibration and engineering services using a 'Turn Key' method."
+    ),
+    t(
+      "Lions for Zion: Non-profit supporting Israel and combating antisemitism through education and advocacy."
+    ),
+    t(
+      "Maim Chaim: Torah-based school in Jerusalem providing holistic education for boys and girls."
+    ),
+    t(
+      "IDF Tech & Maintenance Corps: IDF unit focused on technological and operational innovation."
+    ),
+    t(
+      "Mahagony Israel: Luxury furniture company specializing in high-end wooden and custom-made pieces."
+    ),
+    t(
+      "IDF Tech & Maintenance Corps: IDF unit focused on technological and operational innovation."
+    ),
+    t(
+      "Enter Plus: Creator of a life-saving bracelet that detects drowning and alerts emergency services."
+    ),
+    t(
+      "Shalom Carmel: Organization showcasing Haifa's ethnic and cultural diversity through tours."
+    ),
+    t(
+      "Tora Dojo Israel: Largest Tora Dojo branch outside the US, founded by Arthur Gribetz."
+    ),
   ];
 
   let rndImg = Math.floor(Math.random() * imgArr.length);
