@@ -40,7 +40,6 @@ function Home() {
           h1Proj={t("See What We Mean")}
           exitNum="4"
         />
-        <QnA />
         <div className="cta-contact-cta">
           <CTA
             ctaH1={t("Ready to Start Your Jorney?")}
@@ -49,7 +48,6 @@ function Home() {
             btnOnBtn={true}
           />
         </div>
-
         <div className="ctaContactForm">
           <ContactForm />
         </div>
