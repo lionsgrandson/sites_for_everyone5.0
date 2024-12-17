@@ -168,13 +168,13 @@
   }
   .menu-list {
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     margin-top: 1rem;
   }
 
   .menu-actions {
     flex-direction: column;
-    width: 50%;
+    /* width: 50%; */
     margin-top: 1rem;
   }
 
