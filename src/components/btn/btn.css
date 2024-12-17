@@ -29,8 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-}
+  width: max-content;}
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
