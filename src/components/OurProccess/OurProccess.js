@@ -25,9 +25,7 @@ export default function OurProccess() {
         WbtnQ={false}
         LORImg={false}
       />
-      <div className="btn-contact-proc">
-        <Btn bntTxt={t("Call me today!")} btnHref="/contact" />
-      </div>
+      <div className="btn-contact-proc"></div>
       <div style={{ position: "relative" }}>
         {i18n.language === "en" && (
           <svg
@@ -132,9 +130,7 @@ export default function OurProccess() {
           LORImg={false}
         />
       </div>
-      <div className="btn-contact-proc">
-        <Btn bntTxt={t("Get a quote")} btnHref="/contact" />
-      </div>
+      <div className="btn-contact-proc"></div>
     </div>
   );
 }
