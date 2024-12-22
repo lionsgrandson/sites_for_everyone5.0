@@ -26,10 +26,7 @@ export default function OurProccess() {
         LORImg={false}
       />
       <div className="btn-contact-proc">
-        <Btn
-          bntTxt={t("Get a quote")}
-          btnHref="/contact"
-        />
+        <Btn bntTxt={t("Call me today!")} btnHref="/contact" />
       </div>
       <div style={{ position: "relative" }}>
         {i18n.language === "en" && (
@@ -78,10 +75,7 @@ export default function OurProccess() {
         LORImg={true}
       />
       <div className="btn-contact-proc">
-        <Btn
-          bntTxt={t("Get a quote")}
-          btnHref="/contact"
-        />
+        <Btn bntTxt={t("Get a quote")} btnHref="/contact" />
       </div>
       {/* second arrow */}
       <div style={{ position: "relative" }}>
@@ -139,10 +133,7 @@ export default function OurProccess() {
         />
       </div>
       <div className="btn-contact-proc">
-        <Btn
-          bntTxt={t("Get a quote")}
-          btnHref="/contact"
-        />
+        <Btn bntTxt={t("Get a quote")} btnHref="/contact" />
       </div>
     </div>
   );
