@@ -1,0 +1,80 @@
+.notFoundContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.notFoundContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.notFoundContent h1 {
+  font-size: 6rem; /* Title size */
+  margin-bottom: 1rem;
+  color: #e74c3c; /* Bright red color */
+  text-shadow: 2px 2px #ffcccb; /* Soft shadow effect */
+}
+
+.notFoundContent p {
+  font-size: 4rem; /* Increased font size for the message */
+  margin-bottom: 2rem;
+  color: #34495e; /* Dark gray color */
+}
+
+.notFoundContent a {
+  text-decoration: none;
+}
+
+/* Button styles */
+.notFoundContent .btn {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #3498db; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform for hover effect */
+}
+
+.notFoundContent .btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Fun animation for the title */
+@keyframes bounce {
+  from,
+  to {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.notFoundContent h1 {
+  animation: bounce 1s infinite; /* Bounce animation */
+}
+
+@media (max-width: 768px) {
+  .notFoundContent h1 {
+    font-size: 4rem; /* Smaller title on mobile */
+  }
+
+  .notFoundContent p {
+    font-size: 3.5rem; /* Adjusted size for mobile devices */
+  }
+
+  .notFoundContent .btn {
+    font-size: 1rem; /* Smaller button text on mobile */
+    padding: 0.6rem 1.2rem; /* Smaller button padding on mobile */
+  }
+}

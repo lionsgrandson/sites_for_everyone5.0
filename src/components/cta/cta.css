@@ -3,10 +3,11 @@
   background: linear-gradient(263.41deg, #214ce7 0.75%, #5c48ad 97.9%);
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   padding: 2rem;
-  width: 100%;
-  box-sizing: border-box;
+  /* width: 100%; */
+  /* box-sizing: border-box; */
+  align-items: center;
 }
 .bigdiv {
   background: linear-gradient(263.41deg, #214ce7 0.75%, #5c48ad 97.9%);
@@ -70,16 +71,17 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
   .cta-div {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 @media (min-width: 800px) {
   .cta-h1 {
     font-size: 7rem;
+    width: fit-content;
+    margin: auto;
   }
 
   .cta-p {

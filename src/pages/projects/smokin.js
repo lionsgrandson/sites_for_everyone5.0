@@ -15,7 +15,7 @@ export default function Smokin() {
         client={t("Smokin T's")}
         year="2017"
         services={t("Design, Web Development, SEO")}
-        linkHref="https://smokin-t.com/"
+        linkHref="/404not"
         projimg1={screen1}
         projimg2={screen2}
         projLogo={projLogo}

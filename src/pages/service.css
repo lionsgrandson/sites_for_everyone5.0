@@ -1,5 +1,5 @@
 .servicesDiv {
-  max-width: 55%;
+  max-width: max-content;
   margin: auto;
   padding: 2rem;
   border-radius: 52px;
@@ -23,15 +23,15 @@
 .servicesDiv h1 {
   color: rgba(255, 255, 255, 1);
   font-family: var(--font-primary);
-  font-size: clamp(2.5rem, 5vw, 8.2rem);
+  font-size: 9rem;
   font-weight: 400;
-  line-height: 102.82px;
+  line-height: normal;
   letter-spacing: 0.01em;
 }
 
 .servicesDiv p {
   font-family: var(--font-primary);
-  font-size: clamp(2.3rem, 2vw, 2.6rem);
+  font-size: 4rem;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.01em;
@@ -46,19 +46,50 @@
 }
 /* TODO menu text color changed on service page  */
 
+@media (max-width: 1400px) {
+  .servicesDiv {
+    max-width: max-content;
+  }
+  .servicesDiv h1 {
+    font-size: 6rem;
+  }
+
+  .servicesDiv p {
+    font-size: 3rem;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .servicesDiv {
+    max-width: 80%;
+  }
+  .servicesDiv h1 {
+    font-size: 5rem;
+  }
+
+  .servicesDiv p {
+    font-size: 2.6rem;
+    /* width: 90%; */
+  }
+}
 @media (max-width: 768px) {
   .servicesDiv {
     padding: 1.5rem;
   }
 
   .servicesDiv h1 {
-    font-size: 6rem;
-    font-weight: 400;
-    line-height: 75.23px;
+    font-size: 4.2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
   }
 
   .servicesDiv p {
     font-size: 2rem;
+    max-width: 70%;
     font-weight: 400;
     line-height: 25.08px;
     letter-spacing: 0.01em;
@@ -68,14 +99,18 @@
 @media (max-width: 480px) {
   .servicesDiv {
     padding: 1rem;
-    margin-top: 1rem;
+    margin-top: 20vh;
+    /* margin-top: 1rem; */
   }
 
   .servicesDiv h1 {
-    /* font-size: 5rem; */
+    font-size: 2.5rem;
+    max-width: fit-content;
+    font-weight: 600;
   }
 
   .servicesDiv p {
-    /* font-size: clamp(0.75rem, 4vw, 1.25rem); / */
+    font-size: 1.5rem;
+    max-width: fit-content;
   }
 }

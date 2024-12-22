@@ -90,8 +90,8 @@
   .toBeshown {
     /* visibility: hidden; */
     display: block !important;
-    width: 50%;
-    margin: 5rem auto;
+    /* width: 50%; */
+    margin: 5rem 2rem;
   }
 }
 @media (max-width: 320px) {

@@ -22,8 +22,8 @@ import Shalom from "./pages/projects/shalom";
 import ToraDojo from "./pages/projects/ToraDojo";
 import FullBlogPostPage from "./components/blog/fullBlogPost";
 import PatentNY from "./pages/projects/patentNY";
+import NotFound from "./pages/notFound";
 import "./App.css";
-
 function App() {
   return (
     <Router>
@@ -130,6 +130,10 @@ function App() {
         <Route
           path="/patNY"
           element={<PatentNY />}
+        />
+        <Route
+          path="/404Not"
+          element={<NotFound />}
         />
       </Routes>
     </Router>
