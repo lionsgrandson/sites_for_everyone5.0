@@ -8,17 +8,17 @@
   --gray: #2e2e2e;
 
   /* Font Settings */
-  /* --font-primary: "Marcellus", "Papyrus";
-  --font-secondary: "Nunito Sans", "Papyrus";
-  --font-tertiary: "Exo 2", "Papyrus";
-  --font-mono: "VT323", "Papyrus";
-  --font-fallback: "Miriam Libre", "Papyrus"; */
-
+  --font-primary: "Marcellus", "Varela Round";
+  --font-secondary: "Nunito Sans", "Varela Round";
+  --font-tertiary: "Exo 2", "Varela Round";
+  --font-mono: "VT323", "Varela Round";
+  --font-fallback: "Miriam Libre", "Varela Round";
+  /* 
   --font-primary: "Birzia_Family";
   --font-secondary: "Birzia_Family";
   --font-tertiary: "Birzia_Family";
   --font-mono: "Birzia_Family";
-  --font-fallback: "Birzia_Family";
+  --font-fallback: "Birzia_Family"; */
 
   /* Font Size (1rem = 10px) */
   font-size: 62.5%; /* Converts 1rem to 10px */

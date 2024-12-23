@@ -14,6 +14,8 @@ import ContactForm from "../components/contactForm/contactForm";
 import "./home.css";
 import { useTranslation } from "react-i18next";
 import QnA from "../components/QnASection/QnA";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 function Home() {
   const { t } = useTranslation();
   return (
@@ -22,6 +24,21 @@ function Home() {
         <div className="home-hero">
           <Menu />
           <Hero />
+          <Popup
+            trigger={
+              <a>
+                <Btn className="button" bntTxt="Open Modal"></Btn>
+              </a>
+            }
+            modal
+          >
+            <span>
+              <h1>
+                {t("Leave your details and I will get back to you today!")}
+              </h1>
+              <ContactForm />
+            </span>
+          </Popup>
           <PicXtext
             imgXTextImg={moseHeadshot}
             picXtexth1={t("Hi, I’m Moshe, CEO of Sites for Everyone")}
