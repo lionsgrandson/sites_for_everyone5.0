@@ -58,11 +58,7 @@ export default function ContactForm() {
 
   return (
     <div className="divContact">
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className="contact-form"
-      >
+      <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="firstRow">
           <div className="namediv">
             <label htmlFor="name">
@@ -116,28 +112,19 @@ export default function ContactForm() {
             required
           />
         </div>
-        <button
-          type="submit"
-          className="btn-btn"
-        >
+        <button type="submit" className="btn-btn">
           {t(isSubmitting ? "Sending..." : "Send")}
         </button>
         {stateMessage && <p className="form-message">{stateMessage}</p>}
-        <label>
-          <a
-            href="mailto:mosheschwartzberg@gmail.com"
-            className="backupMail"
-          >
-            {t("Email: mosheschwartzberg@gmail.com")}
-          </a>
-        </label>
       </form>
-      {messageWorked && (
-        <Navigate
-          to="../thankyou"
-          replace={true}
-        />
-      )}
+      {messageWorked && <Navigate to="../thankyou" replace={true} />}
     </div>
   );
+  // <label>
+  //   <a
+  //     href="mailto:mosheschwartzberg@gmail.com"
+  //     className="backupMail">
+  //     {t("Email: mosheschwartzberg@gmail.com")}
+  //   </a>
+  // </label>
 }

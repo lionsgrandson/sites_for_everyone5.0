@@ -34,7 +34,7 @@ function Home() {
       window.removeEventListener("load", handlePageLoad);
     };
   }, []);
-
+  // TODO make it only once per user session
   return (
     <div className="App">
       <header className="App-header">
