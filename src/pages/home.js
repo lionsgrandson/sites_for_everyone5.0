@@ -16,28 +16,38 @@ import { useTranslation } from "react-i18next";
 import QnA from "../components/QnASection/QnA";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import { useEffect, useState } from "react";
 function Home() {
   const { t } = useTranslation();
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  useEffect(() => {
+    // Open the popup when the page loads
+    const handlePageLoad = () => {
+      setIsPopupOpen(true);
+    };
+
+    window.addEventListener("load", handlePageLoad);
+
+    // Cleanup the event listener
+    return () => {
+      window.removeEventListener("load", handlePageLoad);
+    };
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
         <div className="home-hero">
           <Menu />
           <Hero />
-          <Popup
-            trigger={
-              <a>
-                <Btn className="button" bntTxt="Open Modal"></Btn>
-              </a>
-            }
-            modal
-          >
-            <span>
+          <Popup open={isPopupOpen} onClose={() => setIsPopupOpen(false)} modal>
+            <div>
               <h1>
                 {t("Leave your details and I will get back to you today!")}
               </h1>
               <ContactForm />
-            </span>
+            </div>
           </Popup>
           <PicXtext
             imgXTextImg={moseHeadshot}
