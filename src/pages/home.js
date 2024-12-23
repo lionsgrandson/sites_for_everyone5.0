@@ -43,7 +43,7 @@ function Home() {
           <Hero />
           <Popup open={isPopupOpen} onClose={() => setIsPopupOpen(false)} modal>
             <div>
-              <h1>
+              <h1 className="popUpHeader">
                 {t("Leave your details and I will get back to you today!")}
               </h1>
               <ContactForm />
