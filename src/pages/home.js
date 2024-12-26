@@ -34,6 +34,16 @@ function Home() {
       window.removeEventListener("load", handlePageLoad);
     };
   }, []);
+  {
+    /* <Popup open={isPopupOpen} onClose={() => setIsPopupOpen(false)} modal>
+            <div>
+              <h1 className="popUpHeader">
+                {t("Leave your details and I will get back to you today!")}
+              </h1>
+              <ContactForm />
+            </div>
+          </Popup> */
+  }
   // TODO make it only once per user session
   return (
     <div className="App">
@@ -41,14 +51,7 @@ function Home() {
         <div className="home-hero">
           <Menu />
           <Hero />
-          <Popup open={isPopupOpen} onClose={() => setIsPopupOpen(false)} modal>
-            <div>
-              <h1 className="popUpHeader">
-                {t("Leave your details and I will get back to you today!")}
-              </h1>
-              <ContactForm />
-            </div>
-          </Popup>
+
           <PicXtext
             imgXTextImg={moseHeadshot}
             picXtexth1={t("Hi, I’m Moshe, CEO of Sites for Everyone")}
