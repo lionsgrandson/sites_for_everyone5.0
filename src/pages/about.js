@@ -45,11 +45,13 @@ export default function About() {
           src={fullTeam}
           className={`AboutTeamHeadshotImg teamDesktop`}
           loading="lazy"
+          alt="pictures of the team members for desktop view"
         />
         <img
           src={fullTeammobile}
           className={`AboutTeamHeadshotImg mobileTeam`}
           loading="lazy"
+          alt="pictures of the team members for mobile view"
         />
       </div>
       <div className="ourMissionAboutDiv">
