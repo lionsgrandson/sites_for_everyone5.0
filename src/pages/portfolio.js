@@ -14,6 +14,8 @@ import idfTene1 from "../img/portfolio/idftene.png";
 import idftene2 from "../img/portfolio/idftene2.0.png";
 import Maim from "../img/portfolio/maim-chaim.jpg";
 import ShlomoPAtenet from "../img/patentNY/patentNYpic1.png";
+import Nezila from "../img/nezila/welcome_client_page.png";
+
 import "./portoflio.css";
 import CTA from "../components/cta/cta";
 import { useTranslation } from "react-i18next";
@@ -35,6 +37,7 @@ export default function Portfolio() {
     EP,
     Shalom,
     ToraDojo,
+    Nezila,
   ];
   // TODO show only 4 and add a show more that'll load the rest
   // add Shlomo
@@ -52,6 +55,7 @@ export default function Portfolio() {
     t("Enter Plus"),
     t("Shalom Carmel"),
     t("Tora Dojo Israel"),
+    t("Nezila"),
   ];
   const linkArr = [
     "/omnifood",
@@ -67,6 +71,7 @@ export default function Portfolio() {
     "/ep",
     "/shalom",
     "/toradojo",
+    "/niz",
   ];
   return (
     <div>

@@ -27,4 +27,3 @@ export default function AiPro() {
     </div>
   );
 }
-//               <FigmaDes linkHref={linkArr[index]} imgTitle={textArr[index]} />
