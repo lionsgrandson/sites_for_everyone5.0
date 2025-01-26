@@ -6,7 +6,6 @@ import Moshe from "../img/Schwartzberg_Moshe.jpg";
 import Ari from "../img/AriHeadshot.jpg";
 import Faina from "../img/fainaHeadshot.jpg";
 import Ofer from "../img/oferHeadshotjpg.jpg";
-import Nitzan from "../img/NitzanHeadshot.jpeg";
 import fullTeam from "../img/Team members.png";
 import fullTeammobile from "../img/Team members - mobile.png";
 import { useTranslation } from "react-i18next";

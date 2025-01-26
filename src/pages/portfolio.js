@@ -76,11 +76,13 @@ export default function Portfolio() {
       <div className="imgArrdiv">
         {imgArr.map((srcImg, index) => {
           return (
-            <ImgCard
-              linkHref={linkArr[index]}
-              imgSrc={srcImg}
-              imgTitle={textArr[index]}
-            />
+            <>
+              <ImgCard
+                linkHref={linkArr[index]}
+                imgSrc={srcImg}
+                imgTitle={textArr[index]}
+              />
+            </>
           );
         })}
       </div>

@@ -17,20 +17,14 @@ export default function AboutProject(props) {
             alt={`${props.projName} logo`}
           />
           <div className="projScreenshots">
-            <a
-              href={props.linkHref}
-              target="_blank"
-            >
+            <a href={props.linkHref} target="_blank">
               <img
                 src={props.projimg1}
                 className="projScreen1"
                 alt={`A screenshot from the ${props.projName} website`}
               />
             </a>
-            <a
-              href={props.linkHref}
-              target="_blank"
-            >
+            <a href={props.linkHref} target="_blank">
               <img
                 src={props.projimg2}
                 className="projScreen2"
@@ -43,10 +37,7 @@ export default function AboutProject(props) {
         </div>
 
         <div className="projDetialsA">
-          <a
-            href={props.linkHref}
-            target="_blank"
-          >
+          <a href={props.linkHref} target="_blank">
             {t("Visit the website")}
           </a>
         </div>
