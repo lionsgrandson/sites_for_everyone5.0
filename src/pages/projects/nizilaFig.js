@@ -21,7 +21,7 @@ export default function AiPro() {
         services={t("Design, Android App")}
         linkHref="https://www.figma.com/proto/Ioo1yDs8auboCdnoh4dCwF/Untitled?node-id=0-1&t=TD3GOI9RM1hmbwff-1"
         projText={t(
-          "Nezila was a started that hired me to build then an app, it was meant to connect blue colored workers to customers, in the end the project failed, but we're left with a stunning design"
+          "Nezila was a start-up that hired me to build then an app, it was meant to connect blue colored workers to customers, in the end the project failed, but we're left with a stunning design"
         )}
       />
     </div>
