@@ -13,6 +13,7 @@ import ToraDojo from "../../img/portfolio/ToraDojoIsrael.jpg";
 import idfTene1 from "../../img/portfolio/idftene.png";
 import idftene2 from "../../img/portfolio/idftene2.0.png";
 import Maim from "../../img/portfolio/maim-chaim.jpg";
+import Nezila from "../../img/portfolio/welcome_client_page.png";
 import "./moreProj.css";
 export default function MoreProj() {
   const { t } = useTranslation();
@@ -29,6 +30,7 @@ export default function MoreProj() {
     EP,
     Shalom,
     ToraDojo,
+    Nezila,
   ];
   const textArr = [
     t("Omnifood"),
@@ -43,6 +45,7 @@ export default function MoreProj() {
     t("Enter Plus"),
     t("Shalom Carmel"),
     t("Tora Dojo Israel"),
+    t("Nezila"),
   ];
   const linkArr = [
     "/omnifood",
@@ -57,6 +60,7 @@ export default function MoreProj() {
     "/ep",
     "/shalom",
     "/toradojo",
+    "/niz",
   ];
   const fewArr = [
     t(
@@ -95,6 +99,7 @@ export default function MoreProj() {
     t(
       "Tora Dojo Israel: Largest Tora Dojo branch outside the US, founded by Arthur Gribetz."
     ),
+    t("Nezila: A started-up that connects blue colored workers to customers"),
   ];
 
   let rndImg = Math.floor(Math.random() * imgArr.length);

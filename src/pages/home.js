@@ -14,14 +14,44 @@ import ContactForm from "../components/contactForm/contactForm";
 import "./home.css";
 import { useTranslation } from "react-i18next";
 import QnA from "../components/QnASection/QnA";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+import { useEffect, useState } from "react";
 function Home() {
   const { t } = useTranslation();
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  useEffect(() => {
+    // Open the popup when the page loads
+    const handlePageLoad = () => {
+      setIsPopupOpen(true);
+    };
+
+    window.addEventListener("load", handlePageLoad);
+
+    // Cleanup the event listener
+    return () => {
+      window.removeEventListener("load", handlePageLoad);
+    };
+  }, []);
+  {
+    /* <Popup open={isPopupOpen} onClose={() => setIsPopupOpen(false)} modal>
+            <div>
+              <h1 className="popUpHeader">
+                {t("Leave your details and I will get back to you today!")}
+              </h1>
+              <ContactForm />
+            </div>
+          </Popup> */
+  }
+  // TODO make it only once per user session
   return (
     <div className="App">
       <header className="App-header">
         <div className="home-hero">
           <Menu />
           <Hero />
+
           <PicXtext
             imgXTextImg={moseHeadshot}
             picXtexth1={t("Hi, I’m Moshe, CEO of Sites for Everyone")}

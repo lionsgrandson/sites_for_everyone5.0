@@ -6,7 +6,6 @@ import Moshe from "../img/Schwartzberg_Moshe.jpg";
 import Ari from "../img/AriHeadshot.jpg";
 import Faina from "../img/fainaHeadshot.jpg";
 import Ofer from "../img/oferHeadshotjpg.jpg";
-import Nitzan from "../img/NitzanHeadshot.jpeg";
 import fullTeam from "../img/Team members.png";
 import fullTeammobile from "../img/Team members - mobile.png";
 import { useTranslation } from "react-i18next";
@@ -45,11 +44,13 @@ export default function About() {
           src={fullTeam}
           className={`AboutTeamHeadshotImg teamDesktop`}
           loading="lazy"
+          alt="pictures of the team members for desktop view"
         />
         <img
           src={fullTeammobile}
           className={`AboutTeamHeadshotImg mobileTeam`}
           loading="lazy"
+          alt="pictures of the team members for mobile view"
         />
       </div>
       <div className="ourMissionAboutDiv">

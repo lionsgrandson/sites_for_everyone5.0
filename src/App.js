@@ -23,53 +23,24 @@ import ToraDojo from "./pages/projects/ToraDojo";
 import FullBlogPostPage from "./components/blog/fullBlogPost";
 import PatentNY from "./pages/projects/patentNY";
 import NotFound from "./pages/notFound";
+import NezilaFig from "./pages/projects/nizilaFig";
 import "./App.css";
 function App() {
   return (
     <Router>
       <Routes>
-        <Route
-          path="/"
-          element={<Home />}
-        />
+        <Route path="/" element={<Home />} />
 
-        <Route
-          path="/about"
-          element={<About />}
-        />
-        <Route
-          path="/service"
-          element={<Service />}
-        />
-        <Route
-          path="/portfolio"
-          element={<Portfolio />}
-        />
-        <Route
-          path="/blog"
-          element={<Blog />}
-        />
-        <Route
-          path="/contact"
-          element={<Contact />}
-        />
+        <Route path="/about" element={<About />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
 
-        <Route
-          path="/thankyou"
-          element={<Thankyou />}
-        />
-        <Route
-          path="/terms"
-          element={<TermnCond />}
-        />
-        <Route
-          path="/privacyLOL"
-          element={<Privacy />}
-        />
-        <Route
-          path="/full"
-          element={<FullBlogPostPage />}
-        />
+        <Route path="/thankyou" element={<Thankyou />} />
+        <Route path="/terms" element={<TermnCond />} />
+        <Route path="/privacyLOL" element={<Privacy />} />
+        <Route path="/full" element={<FullBlogPostPage />} />
         {/* 
         <Route
           path="/blog/new"
@@ -79,62 +50,21 @@ function App() {
           path="/deadProj"
           element={<DeadProject />}
         /> */}
-        <Route
-          path="/omnifood"
-          element={<Omnifood />}
-        />
-        <Route
-          path="/dy"
-          element={<DY />}
-        />
-        <Route
-          path="/smokin"
-          element={<Smokin />}
-        />
-        <Route
-          path="/aiPro"
-          element={<AIpro />}
-        />
-        <Route
-          path="/lfz"
-          element={<LFZ />}
-        />
-        <Route
-          path="/maim"
-          element={<Maim />}
-        />
-        <Route
-          path="/tene2"
-          element={<TENE2 />}
-        />
-        <Route
-          path="/tene1"
-          element={<TENE />}
-        />
-        <Route
-          path="/mahogony"
-          element={<Mahogony />}
-        />
-        <Route
-          path="/ep"
-          element={<EnterPlus />}
-        />
-        <Route
-          path="/shalom"
-          element={<Shalom />}
-        />
-        <Route
-          path="/toradojo"
-          element={<ToraDojo />}
-        />
-        <Route
-          path="/patNY"
-          element={<PatentNY />}
-        />
-        <Route
-          path="/404Not"
-          element={<NotFound />}
-        />
+        <Route path="/omnifood" element={<Omnifood />} />
+        <Route path="/dy" element={<DY />} />
+        <Route path="/smokin" element={<Smokin />} />
+        <Route path="/aiPro" element={<AIpro />} />
+        <Route path="/lfz" element={<LFZ />} />
+        <Route path="/maim" element={<Maim />} />
+        <Route path="/tene2" element={<TENE2 />} />
+        <Route path="/tene1" element={<TENE />} />
+        <Route path="/mahogony" element={<Mahogony />} />
+        <Route path="/ep" element={<EnterPlus />} />
+        <Route path="/shalom" element={<Shalom />} />
+        <Route path="/toradojo" element={<ToraDojo />} />
+        <Route path="/patNY" element={<PatentNY />} />
+        <Route path="/404Not" element={<NotFound />} />
+        <Route path="/niz" element={<NezilaFig />} />
       </Routes>
     </Router>
   );

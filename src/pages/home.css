@@ -7,3 +7,27 @@
     rgba(111, 72, 173, 0.128) 85.66%
   );
 }
+.popUpHeader {
+  font-family: var(--font-primary);
+  font-size: 5rem;
+  text-align: center;
+}
+@media (max-width: 1500px) {
+  .popUpHeader {
+    font-size: 4rem;
+  }
+  .contact-form {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .popUpHeader {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  .popUpHeader {
+    font-size: 1.8rem;
+  }
+}

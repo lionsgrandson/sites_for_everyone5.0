@@ -25,6 +25,7 @@ export default function OurProccess() {
         WbtnQ={false}
         LORImg={false}
       />
+      <div className="btn-contact-proc"></div>
       <div style={{ position: "relative" }}>
         <div className="middleBoxProc">
           {t("Let people see the")} <span>{t("real")}</span>
@@ -68,9 +69,7 @@ export default function OurProccess() {
           LORImg={false}
         />
       </div>
-      <div className="btn-contact-proc">
-        <Btn bntTxt={t("Get a quote")} btnHref="/contact" />
-      </div>
+      <div className="btn-contact-proc"></div>
     </div>
   );
 }
