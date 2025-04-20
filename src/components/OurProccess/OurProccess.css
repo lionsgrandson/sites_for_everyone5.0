@@ -79,7 +79,7 @@
   line-height: 94.04px;
   letter-spacing: 0.01em;
   border-radius: 6.4rem;
-  position: absolute;
+  /* position: absolute; */
   top: 40%;
   right: 15%;
 }
@@ -107,7 +107,7 @@
   justify-content: center;
   max-width: 1200px;
   margin: 1rem auto;
-  position: absolute;
+  /* position: absolute; */
   top: 40%;
   right: 26%;
 }
