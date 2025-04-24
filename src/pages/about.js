@@ -10,6 +10,7 @@ import fullTeam from "../img/Team members.png";
 import fullTeammobile from "../img/Team members - mobile.png";
 import { useTranslation } from "react-i18next";
 import "./about.css";
+import { Helmet } from "react-helmet-async";
 
 export default function About() {
   const { t } = useTranslation();
@@ -23,6 +24,60 @@ export default function About() {
 
   return (
     <div className="about-div">
+      <Helmet>
+        <title>About Moshe Schwartzberg | Full-Stack Developer</title>
+        <meta
+          name="description"
+          content="Meet Moshe Schwartzberg, a full-stack developer crafting custom apps and CRMs in Israel. Learn about our mission and team!"
+        />
+        <meta
+          name="keywords"
+          content="full-stack developer, custom code Israel, Moshe Schwartzberg, web development, app development"
+        />
+        <meta
+          property="og:title"
+          content="About Moshe Schwartzberg | Full-Stack Developer"
+        />
+        <meta
+          property="og:description"
+          content="Code crafted, dreams delivered. Discover Moshe Schwartzberg’s mission to empower clients with custom web solutions."
+        />
+        <meta
+          property="og:image"
+          content="https://mosheschwartzberg.com/logo192.png"
+        />
+        <meta property="og:url" content="https://mosheschwartzberg.com/about" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="About Moshe Schwartzberg | Full-Stack Developer"
+        />
+        <meta
+          name="twitter:description"
+          content="Code crafted, dreams delivered. Discover Moshe Schwartzberg’s mission to empower clients with custom web solutions."
+        />
+        <meta
+          name="twitter:image"
+          content="https://mosheschwartzberg.com/logo192.png"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "About Moshe Schwartzberg",
+            description:
+              "Learn about Moshe Schwartzberg, a full-stack developer in Israel, and his team’s mission to deliver custom web and app solutions.",
+            publisher: {
+              "@type": "Person",
+              name: "Moshe Schwartzberg",
+              email: "mosheschwartzberg@gmail.com",
+              telephone: "+972587076077",
+            },
+            url: "https://mosheschwartzberg.com/about",
+          })}
+        </script>
+      </Helmet>
       <Menu />
       <h1 className="aboutH1Team">{t("Meet The Team")}</h1>
       <div className="imgDivTeam">

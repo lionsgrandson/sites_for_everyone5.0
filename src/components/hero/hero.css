@@ -18,7 +18,10 @@
   background: rgba(255, 186, 58, 0.77);
   margin: 0 auto;
 }
-
+.feat-hero div:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
 .bitTextHero {
   font-family: var(--font-secondary);
   font-size: 3.6rem;
