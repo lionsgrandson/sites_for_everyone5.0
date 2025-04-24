@@ -24,6 +24,7 @@ import FullBlogPostPage from "./components/blog/fullBlogPost";
 import PatentNY from "./pages/projects/patentNY";
 import NotFound from "./pages/notFound";
 import NezilaFig from "./pages/projects/nizilaFig";
+import Prices from "./components/prices/prices";
 import "./App.css";
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/terms" element={<TermnCond />} />
         <Route path="/privacyLOL" element={<Privacy />} />
         <Route path="/full" element={<FullBlogPostPage />} />
+        <Route path="/prices" element={<Prices />} />
         {/* 
         <Route
           path="/blog/new"

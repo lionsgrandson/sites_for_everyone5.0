@@ -69,7 +69,7 @@
 
 .middleBoxProc {
   border-radius: 20px;
-  margin: 2rem 15rem;
+  margin: 2rem 25rem;
   font-size: clamp(1.5rem, 3vw, 3.8125rem);
   padding: 0 10rem;
   text-align: center;
@@ -107,7 +107,6 @@
   justify-content: center;
   max-width: 1200px;
   margin: 1rem auto;
-  /* position: absolute; */
   top: 40%;
   right: 26%;
 }
