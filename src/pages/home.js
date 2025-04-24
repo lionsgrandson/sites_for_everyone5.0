@@ -56,9 +56,9 @@ function Home() {
             imgXTextImg={moseHeadshot}
             picXtexth1={t("Hi, I’m Moshe, CEO of Sites for Everyone")}
             textP={t(
-              "Running a business is hard enough... let us help you take the load off. Our team of experiences developers, designers and Dev-Ops engineers is always ready to provide our client with the most sophisticated final product and the guidance throughout the building process."
+              "Running a business is tough—let us lighten the load with custom web solutions. Our expert full-stack developers in Israel specialize in building custom CRMs, CMSs, and Shopify features, delivering scalable websites and guiding you every step of the way."
             )}
-            imgAlt="image of the CEO of the company - Moshe"
+            imgAlt="Moshe Schwartzberg, full-stack developer in Israel, specializing in custom CRM, CMS, and Shopify development"
             WbtnQ={true}
             LORImg={false}
             aboutCls={true}
