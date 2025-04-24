@@ -15,10 +15,7 @@ export default function Menu(props) {
   return (
     <nav className={`menu-div ${isMenuOpen ? "open" : ""} ${props.ser}`}>
       <div className="outerDiv-Menu">
-        <a
-          href="/"
-          className="logo-link"
-        >
+        <a href="/" className="logo-link">
           <h1 className="menu_header">
             S<span>fE</span>
           </h1>
@@ -60,9 +57,9 @@ export default function Menu(props) {
             WoBcls={false}
             wAoN={false}
           />
-          <LanguageSwitcher />
         </div>
       </div>
     </nav>
   );
+  // <LanguageSwitcher />
 }
