@@ -3,7 +3,7 @@ import projLogo from "../../img/toraDojo/toradojoLogo.jpg";
 import screen1 from "../../img/portfolio/ToraDojoIsrael.jpg";
 import screen2 from "../../img/toraDojo/screen2.png";
 import { useTranslation } from "react-i18next";
-
+import { Helmet } from "react-helmet-async";
 export default function ToraDojo() {
   const { t } = useTranslation();
 

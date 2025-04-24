@@ -5,7 +5,7 @@ import screen1 from "../../img/nezila/welcome_client_page.png";
 import screen2 from "../../img/nezila/Login_worker.png";
 // import bothScreens from "../../img/nezila/screen1AIProBoth.png";
 import { useTranslation } from "react-i18next";
-
+import { Helmet } from "react-helmet-async";
 export default function AiPro() {
   const { t } = useTranslation();
 

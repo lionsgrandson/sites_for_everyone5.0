@@ -3,7 +3,7 @@ import projLogo from "../../img/tene/idfteneLogo.png";
 import screen1 from "../../img/portfolio/idftene.png";
 import screen2 from "../../img/tene/screen3.png";
 import { useTranslation } from "react-i18next";
-
+import { Helmet } from "react-helmet-async";
 export default function TENE1() {
   const { t } = useTranslation();
 

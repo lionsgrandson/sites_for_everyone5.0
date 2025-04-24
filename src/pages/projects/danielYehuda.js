@@ -4,7 +4,7 @@ import projLogo from "../../img/danielYehuda/dyLogo.png";
 import OmnifoodScreen1 from "../../img/portfolio/DanielYehuda.jpg";
 import OmnifoodScreen2 from "../../img/danielYehuda/DanielYehuda2.jpg";
 import { useTranslation } from "react-i18next";
-
+import { Helmet } from "react-helmet-async";
 export default function DanielYehuda() {
   const { t } = useTranslation();
 

@@ -3,7 +3,7 @@ import projLogo from "../../img/mahogony/mahogonyLogo.png";
 import screen1 from "../../img/portfolio/MahogonyIsrael.png";
 import screen2 from "../../img/mahogony/screen2.jpg";
 import { useTranslation } from "react-i18next";
-
+import { Helmet } from "react-helmet-async";
 export default function Mahogony() {
   const { t } = useTranslation();
 

@@ -4,7 +4,7 @@ import projLogo from "../../img/smokin/smokinLogo.png";
 import screen1 from "../../img/portfolio/SmokinT's.jpg";
 import screen2 from "../../img/smokin/smokin.jpg";
 import { useTranslation } from "react-i18next";
-
+import { Helmet } from "react-helmet-async";
 export default function Smokin() {
   const { t } = useTranslation();
 

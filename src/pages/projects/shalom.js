@@ -3,7 +3,7 @@ import projLogo from "../../img/shalom/logoShalom.png";
 import screen1 from "../../img/portfolio/ShalomCarmel.jpg";
 import screen2 from "../../img/shalom/screen2.png";
 import { useTranslation } from "react-i18next";
-
+import { Helmet } from "react-helmet-async";
 export default function ShalomCarmel() {
   const { t } = useTranslation();
 

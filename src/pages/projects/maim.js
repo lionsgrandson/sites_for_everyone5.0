@@ -3,7 +3,7 @@ import projLogo from "../../img/maim/maimLogo.png";
 import screen1 from "../../img/portfolio/maim-chaim.jpg";
 import screen2 from "../../img/maim/screen2.jpg";
 import { useTranslation } from "react-i18next";
-
+import { Helmet } from "react-helmet-async";
 export default function LFZ() {
   const { t } = useTranslation();
 

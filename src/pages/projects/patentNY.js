@@ -4,6 +4,7 @@ import projLogo from "../../img/patentNY/patNYLogo.png";
 import screen1 from "../../img/patentNY/patentNYpic2.png";
 import screen2 from "../../img/patentNY/patentNYpic1.png";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 export default function PatentNY() {
   const { t } = useTranslation();
 
