@@ -19,8 +19,9 @@ i18n
         translation: translationHE,
       },
     },
-    lng: localStorage.getItem("i18nextLng") || "he", // Set the default language from localStorage or English
-    fallbackLng: "he", // Set the fallback language to Hebrew
+    // lng: localStorage.getItem("i18nextLng") || "en", // Set the default language from localStorage or English
+    lng: "en", // Set the default language from localStorage or English
+    fallbackLng: "en", // Set the fallback language to Hebrew
     supportedLngs: ["en", "he"],
     interpolation: {
       escapeValue: false, // React already escapes values
