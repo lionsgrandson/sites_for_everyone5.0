@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flyer - Sites for Everyone</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Marcellus&family=Exo+2:wght@600&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 210mm;
+        height: 297mm;
+        font-family: "Nunito Sans", sans-serif;
+        background: #fff;
+      }
+
+      body {
+        box-sizing: border-box;
+        padding: 15mm 20mm;
+      }
+
+      .flyer {
+        background: #fff;
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        font-size: 1.4rem;
+        color: #2e2e2e;
+      }
+
+      h1 {
+        font-family: "Marcellus", serif;
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 0.5rem;
+      }
+
+      h2.section-title {
+        font-family: "Exo 2", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #0f172a;
+        border-bottom: 2px solid #214ce7;
+        padding-bottom: 0.5rem;
+        margin: 2rem 0 1rem;
+      }
+
+      h3.tier-title {
+        font-family: "Exo 2", sans-serif;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #0f172a;
+      }
+
+      .price {
+        font-family: "VT323", monospace;
+        font-size: 2rem;
+        color: #5c48ad;
+        font-weight: bold;
+        margin: 0.5rem 0;
+        white-space: nowrap;
+      }
+
+      .section {
+        margin-bottom: 1.5rem;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #214ce7, #5c48ad);
+        color: #fff;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 0.8rem;
+      }
+
+      .subtitles {
+        font-size: 1.5rem;
+      }
+
+      .tiers {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      .tier {
+        flex: 1;
+        background: #fff;
+        border: 1px solid #f1f5fd;
+        padding: 1.5rem;
+        border-radius: 0.8rem;
+      }
+
+      .tier ul {
+        list-style: none;
+        padding: 0;
+        margin: 0.5rem 0 0;
+      }
+
+      .tier li::before {
+        content: "✓ ";
+        color: #214ce7;
+        margin-right: 0.4rem;
+      }
+
+      .section-bg {
+        background-color: rgba(241, 245, 253, 0.2);
+        padding: 1rem;
+        border-radius: 0.8rem;
+      }
+
+      .more-services {
+        background: #f1f5fd;
+        padding: 2rem;
+        border-radius: 0.8rem;
+      }
+
+      .cta {
+        background: linear-gradient(135deg, #214ce7, #5c48ad);
+        color: #fff;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 0.8rem;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 1.3rem;
+        color: #2e2e2e;
+        margin-top: 2rem;
+      }
+
+      @media print {
+        body {
+          margin: 0 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flyer">
+      <div class="header">
+        <!-- <img src="logo-placeholder.png" alt="Logo" style="max-width:160px; display: block; margin: 0 auto;" /> -->
+        <h1>Moshe Schwartzberg</h1>
+        <div class="subtitles">
+          Affordable, High-Quality Website Solutions<br />For Small Businesses,
+          Creatives, and Professionals
+        </div>
+      </div>
+
+      <div class="section section-bg">
+        <h2 class="section-title">Website Development Pricing</h2>
+        <div class="tiers">
+          <div class="tier">
+            <h3 class="tier-title">Landing Page</h3>
+            <div class="price">3,000₪</div>
+            <ul>
+              <li>Single landing page</li>
+              <li>SEO optimization</li>
+              <li>Responsive design</li>
+              <li>1 revision included</li>
+            </ul>
+          </div>
+          <div class="tier">
+            <h3 class="tier-title">Additional Pages</h3>
+            <div class="price">500₪/page</div>
+            <ul>
+              <li>Extend your site</li>
+              <li>Consistent styling</li>
+              <li>SEO per page</li>
+              <li>Fast delivery</li>
+            </ul>
+          </div>
+          <div class="tier">
+            <h3 class="tier-title">Custom Systems</h3>
+            <div class="price">Get a Quote</div>
+            <ul>
+              <li>CRM/CMS integration</li>
+              <li>Shopify, Monday.com</li>
+              <li>Custom features</li>
+              <li>Tailored solutions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-bg">
+        <h2 class="section-title">Website Maintenance Plans</h2>
+        <div class="tiers">
+          <div class="tier">
+            <h3 class="tier-title">Basic Tier</h3>
+            <div class="price">500₪/mo</div>
+            <ul>
+              <li>Server maintenance</li>
+              <li>Security updates</li>
+              <li>Basic support</li>
+            </ul>
+          </div>
+          <div class="tier">
+            <h3 class="tier-title">Mid Tier</h3>
+            <div class="price">700₪/mo</div>
+            <ul>
+              <li>Server maintenance</li>
+              <li>3 hours design updates</li>
+              <li>Content updates</li>
+            </ul>
+          </div>
+          <div class="tier">
+            <h3 class="tier-title">High Tier</h3>
+            <div class="price">1,200₪/mo</div>
+            <ul>
+              <li>Server maintenance</li>
+              <li>10 hours design updates</li>
+              <li>Frequent updates</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="more-services">
+        <h3 class="tier-title">More Services</h3>
+        <p>
+          Advanced SEO, Branding, Analytics, E-commerce Setup, General Tech
+          Support
+        </p>
+      </div>
+
+      <div class="cta">
+        <p><strong>Launch Your Website Today!</strong></p>
+        <p>Email: mosheschwartzberg@gmail.com | Phone: 0587076077</p>
+        <p>Visit: mosheschwartzberg.com</p>
+      </div>
+
+      <div class="footer">Sites for Everyone © 2025</div>
+    </div>
+  </body>
+</html>
