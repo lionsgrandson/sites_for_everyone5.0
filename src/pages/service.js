@@ -15,11 +15,68 @@ import cloud from "../img/service/image 28.png";
 import teamworking from "../img/service/Dev team working on a project.png";
 import { Masonry } from "@mui/lab";
 import { Paper } from "@mui/material";
-
+import { Helmet } from "react-helmet-async";
 export default function Services() {
   const { t } = useTranslation();
   return (
     <>
+      <Helmet>
+        <title>Services | Moshe Schwartzberg Full-Stack Developer</title>
+        <meta
+          name="description"
+          content="Custom apps, CRMs, and Shopify solutions by Moshe Schwartzberg. Starting at 3000₪ for landing pages!"
+        />
+        <meta
+          name="keywords"
+          content="custom CRM development, Shopify solutions Israel, full-stack development, accessible web development"
+        />
+        <meta
+          property="og:title"
+          content="Services | Moshe Schwartzberg Full-Stack Developer"
+        />
+        <meta
+          property="og:description"
+          content="Need a custom app or CRM? Moshe Schwartzberg delivers scalable, accessible solutions tailored to you."
+        />
+        <meta
+          property="og:image"
+          content="https://mosheschwartzberg.com/logo192.png"
+        />
+        <meta
+          property="og:url"
+          content="https://mosheschwartzberg.com/services"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Services | Moshe Schwartzberg Full-Stack Developer"
+        />
+        <meta
+          name="twitter:description"
+          content="Need a custom app or CRM? Moshe Schwartzberg delivers scalable, accessible solutions tailored to you."
+        />
+        <meta
+          name="twitter:image"
+          content="https://mosheschwartzberg.com/logo192.png"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            serviceType: "Custom Code Development",
+            provider: {
+              "@type": "Person",
+              name: "Moshe Schwartzberg",
+              email: "mosheschwartzberg@gmail.com",
+              telephone: "+972587076077",
+            },
+            description:
+              "Custom app design, responsive code solutions, SEO-driven deployment, accessible development, and tailored CRM creation.",
+            url: "https://mosheschwartzberg.com/services",
+          })}
+        </script>
+      </Helmet>
       <div className="heroSection">
         <Menu ser={"whitebg"} />
         <div className="servicesDiv">
@@ -30,10 +87,7 @@ export default function Services() {
             )}
           </p>
           <div className="btn-div">
-            <Btn
-              btnHref="/contact"
-              bntTxt={t("Get Started")}
-            />
+            <Btn btnHref="/contact" bntTxt={t("Get Started")} />
           </div>
         </div>
       </div>
@@ -86,10 +140,7 @@ export default function Services() {
             boxShadow: "0px 0px 30px 0px rgba(105, 174, 231, 0.2)",
           }}
         >
-          <ServiceCard
-            h1ServiceCard={t("16 / 6 Support")}
-            classCard="six16"
-          />
+          <ServiceCard h1ServiceCard={t("16 / 6 Support")} classCard="six16" />
         </Paper>
         <Paper
           sx={{
