@@ -3,12 +3,69 @@ import projLogo from "../../img/tene/idfteneLogo.png";
 import screen1 from "../../img/portfolio/idftene.png";
 import screen2 from "../../img/tene/screen3.png";
 import { useTranslation } from "react-i18next";
-
+import { Helmet } from "react-helmet-async";
 export default function TENE1() {
   const { t } = useTranslation();
 
   return (
     <div>
+      <Helmet>
+        <title>IDF Tene v1.0 | Moshe Schwartzberg Portfolio</title>
+        <meta
+          name="description"
+          content="IDF Tene v1.0 site by Moshe Schwartzberg, built for military tech solutions."
+        />
+        <meta
+          name="keywords"
+          content="military tech website, custom web development, Moshe Schwartzberg, IDF Tene"
+        />
+        <meta
+          property="og:title"
+          content="IDF Tene v1.0 | Moshe Schwartzberg Portfolio"
+        />
+        <meta
+          property="og:description"
+          content="IDF Tene v1.0, a military tech site by Moshe Schwartzberg for innovative solutions."
+        />
+        <meta
+          property="og:image"
+          content="https://mosheschwartzberg.com/logo192.png"
+        />
+        <meta
+          property="og:url"
+          content="https://mosheschwartzberg.com/projects/idf-tene-v1"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="IDF Tene v1.0 | Moshe Schwartzberg Portfolio"
+        />
+        <meta
+          name="twitter:description"
+          content="IDF Tene v1.0, a military tech site by Moshe Schwartzberg for innovative solutions."
+        />
+        <meta
+          name="twitter:image"
+          content="https://mosheschwartzberg.com/logo192.png"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            name: "IDF Tech & Maintenance Corps v1.0",
+            description:
+              "IDF Tene is a corps within the Israel Defense Forces focused on technological and operational innovation, developing advanced systems and strategies.",
+            url: "https://web.archive.org/web/20221213173104/https://idftene.com",
+            creator: {
+              "@type": "Person",
+              name: "Moshe Schwartzberg",
+              email: "mosheschwartzberg@gmail.com",
+              telephone: "+972587076077",
+            },
+          })}
+        </script>
+      </Helmet>
       <AboutProject
         projName={t("IDF Tech & Maintenance corps v1.0")}
         client={t("IDF Tech & Maintenance corps v1.0")}

@@ -15,7 +15,7 @@ import idftene2 from "../img/portfolio/idftene2.0.png";
 import Maim from "../img/portfolio/maim-chaim.jpg";
 import ShlomoPAtenet from "../img/patentNY/patentNYpic1.png";
 import Nezila from "../img/nezila/welcome_client_page.png";
-
+import { Helmet } from "react-helmet-async";
 import "./portoflio.css";
 import CTA from "../components/cta/cta";
 import { useTranslation } from "react-i18next";
@@ -75,6 +75,63 @@ export default function Portfolio() {
   ];
   return (
     <div>
+      <Helmet>
+        <title>Portfolio | Moshe Schwartzberg Full-Stack Developer</title>
+        <meta
+          name="description"
+          content="Explore Moshe Schwartzberg’s portfolio of custom apps, CRMs, and websites built for clients worldwide."
+        />
+        <meta
+          name="keywords"
+          content="developer portfolio Israel, Moshe Schwartzberg portfolio, custom app development, CRM development"
+        />
+        <meta
+          property="og:title"
+          content="Portfolio | Moshe Schwartzberg Full-Stack Developer"
+        />
+        <meta
+          property="og:description"
+          content="See Moshe Schwartzberg’s full-stack projects, from AI-powered apps to luxury furniture sites."
+        />
+        <meta
+          property="og:image"
+          content="https://mosheschwartzberg.com/logo192.png"
+        />
+        <meta
+          property="og:url"
+          content="https://mosheschwartzberg.com/portfolio"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Portfolio | Moshe Schwartzberg Full-Stack Developer"
+        />
+        <meta
+          name="twitter:description"
+          content="See Moshe Schwartzberg’s full-stack projects, from AI-powered apps to luxury furniture sites."
+        />
+        <meta
+          name="twitter:image"
+          content="https://mosheschwartzberg.com/logo192.png"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Moshe Schwartzberg Portfolio",
+            description:
+              "A showcase of Moshe Schwartzberg’s full-stack development projects, including custom apps, CRMs, and websites.",
+            publisher: {
+              "@type": "Person",
+              name: "Moshe Schwartzberg",
+              email: "mosheschwartzberg@gmail.com",
+              telephone: "+972587076077",
+            },
+            url: "https://mosheschwartzberg.com/portfolio",
+          })}
+        </script>
+      </Helmet>
       <Menu />
       <h3 className="protH3">{t("Not convinced yet?")}</h3>
       <h1 className="protH1">{t("See Our Work")}</h1>

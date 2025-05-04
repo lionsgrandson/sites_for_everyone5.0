@@ -3,12 +3,69 @@ import projLogo from "../../img/enterplus/enterplusLogo.png";
 import screen1 from "../../img/portfolio/EnterPlus.png";
 import screen2 from "../../img/enterplus/screen2.jpg";
 import { useTranslation } from "react-i18next";
-
+import { Helmet } from "react-helmet-async";
 export default function EnterPlus() {
   const { t } = useTranslation();
 
   return (
     <div>
+      <Helmet>
+        <title>Enter Plus | Moshe Schwartzberg Portfolio</title>
+        <meta
+          name="description"
+          content="Enter Plus’s drowning detection bracelet site by Moshe Schwartzberg, built for safety."
+        />
+        <meta
+          name="keywords"
+          content="safety device website, custom web development, Moshe Schwartzberg, drowning detection"
+        />
+        <meta
+          property="og:title"
+          content="Enter Plus | Moshe Schwartzberg Portfolio"
+        />
+        <meta
+          property="og:description"
+          content="Enter Plus, a life-saving bracelet site by Moshe Schwartzberg for pool safety."
+        />
+        <meta
+          property="og:image"
+          content="https://mosheschwartzberg.com/logo192.png"
+        />
+        <meta
+          property="og:url"
+          content="https://mosheschwartzberg.com/projects/enter-plus"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Enter Plus | Moshe Schwartzberg Portfolio"
+        />
+        <meta
+          name="twitter:description"
+          content="Enter Plus, a life-saving bracelet site by Moshe Schwartzberg for pool safety."
+        />
+        <meta
+          name="twitter:image"
+          content="https://mosheschwartzberg.com/logo192.png"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            name: "Enter Plus",
+            description:
+              "Enter Plus created a life-saving bracelet that detects drowning by monitoring vital signs, alerting lifeguards and emergency services.",
+            url: "https://enterplusco.com",
+            creator: {
+              "@type": "Person",
+              name: "Moshe Schwartzberg",
+              email: "mosheschwartzberg@gmail.com",
+              telephone: "+972587076077",
+            },
+          })}
+        </script>
+      </Helmet>
       <AboutProject
         projName={t("Enter Plus")}
         client={t("Enter Plus")}
