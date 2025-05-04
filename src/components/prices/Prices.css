@@ -6,6 +6,11 @@
   --purple: #5c48ad;
   --gray: #2e2e2e;
   --font-size-base: 1.6rem;
+  --font-primary: "Marcellus", "Varela Round";
+  --font-secondary: "Nunito Sans", "Varela Round";
+  --font-tertiary: "Exo 2", "Varela Round";
+  --font-mono: "VT323", "Varela Round";
+  --font-fallback: "Miriam Libre", "Varela Round";
 }
 
 * {
@@ -15,8 +20,7 @@
 }
 
 body {
-  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Arial, sans-serif;
+  font-family: var(--font-primary), var(--font-secondary);
   background-color: var(--off-white);
   display: flex;
   justify-content: center;
@@ -50,7 +54,7 @@ body {
 }
 
 .header-section h1 {
-  font-family: "Marcellus", serif;
+  font-family: var(--font-primary);
   font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -62,7 +66,7 @@ body {
 }
 
 .section-title {
-  font-family: "Exo 2", sans-serif;
+  font-family: var(--font-tertiary);
   color: var(--dark-blue);
   font-size: 2.4rem;
   font-weight: 600;
@@ -95,7 +99,7 @@ body {
 
 .pricing-tier h3,
 .maintenance-tier h3 {
-  font-family: "Exo 2", sans-serif;
+  font-family: var(--font-tertiary);
   color: var(--dark-blue);
   font-size: 2rem;
   font-weight: 600;
@@ -128,7 +132,7 @@ body {
 
 .pricing-tier .price,
 .maintenance-tier .price {
-  font-family: "VT323", monospace;
+  font-family: var(--font-tertiary);
   font-size: 2.2rem;
   color: var(--purple);
   margin: 1.5rem 0;
@@ -144,7 +148,7 @@ body {
 }
 
 .additional-services-section h3 {
-  font-family: "Exo 2", sans-serif;
+  font-family: var(--font-tertiary);
   color: var(--dark-blue);
   font-size: 2rem;
   margin-bottom: 1.2rem;
@@ -250,7 +254,6 @@ body {
 @media (max-width: 480px) {
   body {
     font-size: 1.4rem;
-    padding: 1.5rem;
   }
 
   .flyer-container {
