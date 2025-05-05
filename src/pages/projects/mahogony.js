@@ -10,22 +10,22 @@ export default function Mahogony() {
   return (
     <div>
       <Helmet>
-        <title>Mahogony Israel | Moshe Schwartzberg Portfolio</title>
+        <title>Mahogony Israel | CodeCrafter Portfolio</title>
         <meta
           name="description"
-          content="Mahogony Israel’s luxury furniture site by Moshe Schwartzberg, showcasing craftsmanship."
+          content="Crafting code, creating solutions. CodeCrafter built Mahogony Israel’s furniture site."
         />
         <meta
           name="keywords"
-          content="luxury furniture website, custom web development, Moshe Schwartzberg, mahogany furniture"
+          content="CodeCrafter furniture site, custom web development, Mahogony Israel, luxury design"
         />
         <meta
           property="og:title"
-          content="Mahogony Israel | Moshe Schwartzberg Portfolio"
+          content="Mahogony Israel | CodeCrafter Portfolio"
         />
         <meta
           property="og:description"
-          content="Mahogony Israel, a luxury furniture site by Moshe Schwartzberg, crafted with elegance."
+          content="Mahogony Israel’s luxury furniture site, crafted by CodeCrafter with elegance."
         />
         <meta
           property="og:image"
@@ -39,11 +39,11 @@ export default function Mahogony() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Mahogony Israel | Moshe Schwartzberg Portfolio"
+          content="Mahogony Israel | CodeCrafter Portfolio"
         />
         <meta
           name="twitter:description"
-          content="Mahogony Israel, a luxury furniture site by Moshe Schwartzberg, crafted with elegance."
+          content="Mahogony Israel’s luxury furniture site, crafted by CodeCrafter with elegance."
         />
         <meta
           name="twitter:image"
@@ -55,13 +55,16 @@ export default function Mahogony() {
             "@type": "CreativeWork",
             name: "Mahogony Israel",
             description:
-              "Mahogony Israel is a luxury furniture and interior design company specializing in high-end wooden furniture and custom-made pieces.",
+              "Crafting code, creating solutions. Mahogony Israel’s site, built by CodeCrafter, showcases luxury wooden furniture and custom designs.",
             url: "https://mahagonyisrael.netlify.app",
             creator: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
           })}
         </script>
