@@ -10,22 +10,22 @@ export default function TENE1() {
   return (
     <div>
       <Helmet>
-        <title>IDF Tene v1.0 | Moshe Schwartzberg Portfolio</title>
+        <title>IDF Tene v1.0 | CodeCrafter Portfolio</title>
         <meta
           name="description"
-          content="IDF Tene v1.0 site by Moshe Schwartzberg, built for military tech solutions."
+          content="Crafting code, creating solutions. CodeCrafter built IDF Tene v1.0’s military tech site."
         />
         <meta
           name="keywords"
-          content="military tech website, custom web development, Moshe Schwartzberg, IDF Tene"
+          content="CodeCrafter military tech site, custom web development, IDF Tene, innovation"
         />
         <meta
           property="og:title"
-          content="IDF Tene v1.0 | Moshe Schwartzberg Portfolio"
+          content="IDF Tene v1.0 | CodeCrafter Portfolio"
         />
         <meta
           property="og:description"
-          content="IDF Tene v1.0, a military tech site by Moshe Schwartzberg for innovative solutions."
+          content="IDF Tene v1.0’s military tech site, crafted by CodeCrafter for innovative solutions."
         />
         <meta
           property="og:image"
@@ -39,11 +39,11 @@ export default function TENE1() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="IDF Tene v1.0 | Moshe Schwartzberg Portfolio"
+          content="IDF Tene v1.0 | CodeCrafter Portfolio"
         />
         <meta
           name="twitter:description"
-          content="IDF Tene v1.0, a military tech site by Moshe Schwartzberg for innovative solutions."
+          content="IDF Tene v1.0’s military tech site, crafted by CodeCrafter for innovative solutions."
         />
         <meta
           name="twitter:image"
@@ -55,13 +55,16 @@ export default function TENE1() {
             "@type": "CreativeWork",
             name: "IDF Tech & Maintenance Corps v1.0",
             description:
-              "IDF Tene is a corps within the Israel Defense Forces focused on technological and operational innovation, developing advanced systems and strategies.",
+              "Crafting code, creating solutions. IDF Tene v1.0’s site, built by CodeCrafter, showcases military tech innovation.",
             url: "https://web.archive.org/web/20221213173104/https://idftene.com",
             creator: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
           })}
         </script>

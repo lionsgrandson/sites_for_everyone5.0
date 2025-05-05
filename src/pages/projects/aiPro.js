@@ -3,7 +3,6 @@ import AboutProject from "../../components/projDetials/aboutProject";
 import projLogo from "../../img/aiPRo/aiProLogo.jpeg";
 import screen1 from "../../img/portfolio/ItaiArenFeld.png";
 import screen2 from "../../img/aiPRo/screen1AIPro.jpg";
-import bothScreens from "../../img/aiPRo/screen1AIProBoth.png";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 export default function AiPro() {
