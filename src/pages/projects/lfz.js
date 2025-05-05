@@ -11,22 +11,22 @@ export default function LFZ() {
   return (
     <div>
       <Helmet>
-        <title>Lions for Zion | Moshe Schwartzberg Portfolio</title>
+        <title>Lions for Zion | CodeCrafter Portfolio</title>
         <meta
           name="description"
-          content="Lions for Zion’s advocacy site by Moshe Schwartzberg, empowering Jewish youth."
+          content="Crafting code, creating solutions. CodeCrafter built Lions for Zion’s advocacy site."
         />
         <meta
           name="keywords"
-          content="non-profit website, custom web development, Moshe Schwartzberg, Israel advocacy site"
+          content="CodeCrafter non-profit site, custom web development, Lions for Zion, Israel advocacy"
         />
         <meta
           property="og:title"
-          content="Lions for Zion | Moshe Schwartzberg Portfolio"
+          content="Lions for Zion | CodeCrafter Portfolio"
         />
         <meta
           property="og:description"
-          content="Lions for Zion, a non-profit site by Moshe Schwartzberg, supports Israel advocacy."
+          content="Lions for Zion’s advocacy site, crafted by CodeCrafter for Israel support."
         />
         <meta
           property="og:image"
@@ -40,11 +40,11 @@ export default function LFZ() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Lions for Zion | Moshe Schwartzberg Portfolio"
+          content="Lions for Zion | CodeCrafter Portfolio"
         />
         <meta
           name="twitter:description"
-          content="Lions for Zion, a non-profit site by Moshe Schwartzberg, supports Israel advocacy."
+          content="Lions for Zion’s advocacy site, crafted by CodeCrafter for Israel support."
         />
         <meta
           name="twitter:image"
@@ -56,13 +56,16 @@ export default function LFZ() {
             "@type": "CreativeWork",
             name: "Lions for Zion",
             description:
-              "Lions for Zion is a non-profit organization supporting Israel and combating antisemitism through education and leadership training.",
+              "Crafting code, creating solutions. Lions for Zion’s site, built by CodeCrafter, supports Israel through education and advocacy.",
             url: "https://web.archive.org/web/20230308123826/https://lionsforzion.com/",
             creator: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
           })}
         </script>
