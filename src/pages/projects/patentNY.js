@@ -11,22 +11,22 @@ export default function PatentNY() {
   return (
     <div>
       <Helmet>
-        <title>Shlomo Horowitz | Moshe Schwartzberg Portfolio</title>
+        <title>Shlomo Horowitz | CodeCrafter Portfolio</title>
         <meta
           name="description"
-          content="Shlomo Horowitz’s IP law site by Moshe Schwartzberg, built for global patent services."
+          content="Crafting code, creating solutions. CodeCrafter built Shlomo Horowitz’s IP law site."
         />
         <meta
           name="keywords"
-          content="intellectual property website, custom web development, Moshe Schwartzberg, patent attorney site"
+          content="CodeCrafter IP law site, custom web development, Shlomo Horowitz, patent attorney"
         />
         <meta
           property="og:title"
-          content="Shlomo Horowitz | Moshe Schwartzberg Portfolio"
+          content="Shlomo Horowitz | CodeCrafter Portfolio"
         />
         <meta
           property="og:description"
-          content="Shlomo Horowitz’s patent law site, a custom project by Moshe Schwartzberg for IP services."
+          content="Shlomo Horowitz’s IP law site, crafted by CodeCrafter for global patent services."
         />
         <meta
           property="og:image"
@@ -40,11 +40,11 @@ export default function PatentNY() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Shlomo Horowitz | Moshe Schwartzberg Portfolio"
+          content="Shlomo Horowitz | CodeCrafter Portfolio"
         />
         <meta
           name="twitter:description"
-          content="Shlomo Horowitz’s patent law site, a custom project by Moshe Schwartzberg for IP services."
+          content="Shlomo Horowitz’s IP law site, crafted by CodeCrafter for global patent services."
         />
         <meta
           name="twitter:image"
@@ -56,13 +56,16 @@ export default function PatentNY() {
             "@type": "CreativeWork",
             name: "Shlomo Horowitz",
             description:
-              "Shlomo Horowitz, an intellectual property attorney, offers patent, trademark, and copyright services with global expertise.",
+              "Crafting code, creating solutions. Shlomo Horowitz’s site, built by CodeCrafter, supports global patent and IP law services.",
             url: "https://patentny.com/en/",
             creator: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
           })}
         </script>
