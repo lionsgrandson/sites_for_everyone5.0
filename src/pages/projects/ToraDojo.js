@@ -10,22 +10,22 @@ export default function ToraDojo() {
   return (
     <div>
       <Helmet>
-        <title>Tora Dojo Israel | Moshe Schwartzberg Portfolio</title>
+        <title>Tora Dojo Israel | CodeCrafter Portfolio</title>
         <meta
           name="description"
-          content="Tora Dojo Israel’s martial arts site by Moshe Schwartzberg, built for global training excellence."
+          content="Crafting code, creating solutions. CodeCrafter built Tora Dojo Israel’s martial arts site."
         />
         <meta
           name="keywords"
-          content="martial arts website, custom web development, Moshe Schwartzberg, Tora Dojo Israel"
+          content="CodeCrafter martial arts site, custom web development, Tora Dojo Israel, fitness training"
         />
         <meta
           property="og:title"
-          content="Tora Dojo Israel | Moshe Schwartzberg Portfolio"
+          content="Tora Dojo Israel | CodeCrafter Portfolio"
         />
         <meta
           property="og:description"
-          content="Explore Tora Dojo Israel, a custom martial arts site by Moshe Schwartzberg for expert training."
+          content="Tora Dojo Israel’s martial arts site, crafted by CodeCrafter for global training."
         />
         <meta
           property="og:image"
@@ -39,11 +39,11 @@ export default function ToraDojo() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Tora Dojo Israel | Moshe Schwartzberg Portfolio"
+          content="Tora Dojo Israel | CodeCrafter Portfolio"
         />
         <meta
           name="twitter:description"
-          content="Explore Tora Dojo Israel, a custom martial arts site by Moshe Schwartzberg for expert training."
+          content="Tora Dojo Israel’s martial arts site, crafted by CodeCrafter for global training."
         />
         <meta
           name="twitter:image"
@@ -55,13 +55,16 @@ export default function ToraDojo() {
             "@type": "CreativeWork",
             name: "Tora Dojo Israel",
             description:
-              "Tora Dojo Israel is the largest Tora Dojo branch outside the United States, founded by sixth-degree black belt Arthur Gribetz, offering expert martial arts training.",
+              "Crafting code, creating solutions. Tora Dojo Israel’s site, built by CodeCrafter, supports the largest Tora Dojo branch outside the US, founded by Arthur Gribetz.",
             url: "https://toradojo.co.il",
             creator: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
           })}
         </script>
