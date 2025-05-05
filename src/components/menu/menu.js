@@ -17,7 +17,7 @@ export default function Menu(props) {
       <div className="outerDiv-Menu">
         <a href="/" className="logo-link">
           <h1 className="menu_header">
-            S<span>fE</span>
+            C<span>C</span>
           </h1>
         </a>
 
