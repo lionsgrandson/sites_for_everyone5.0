@@ -248,11 +248,6 @@ body {
   }
 }
 @media (max-width: 480px) {
-  body {
-    font-size: 1.4rem;
-    padding: 1.5rem;
-  }
-
   .flyer-container {
     padding: 1.5rem;
   }
