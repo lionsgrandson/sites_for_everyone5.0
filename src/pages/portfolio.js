@@ -76,22 +76,22 @@ export default function Portfolio() {
   return (
     <div>
       <Helmet>
-        <title>Portfolio | Moshe Schwartzberg Full-Stack Developer</title>
+        <title>Portfolio | CodeCrafter Custom Code</title>
         <meta
           name="description"
-          content="Explore Moshe Schwartzberg’s portfolio of custom apps, CRMs, and websites built for clients worldwide."
+          content="Crafting code, creating solutions. Explore CodeCrafter’s portfolio of custom apps and CRMs."
         />
         <meta
           name="keywords"
-          content="developer portfolio Israel, Moshe Schwartzberg portfolio, custom app development, CRM development"
+          content="CodeCrafter portfolio, custom code portfolio Israel, app development, CRM development"
         />
         <meta
           property="og:title"
-          content="Portfolio | Moshe Schwartzberg Full-Stack Developer"
+          content="Portfolio | CodeCrafter Custom Code"
         />
         <meta
           property="og:description"
-          content="See Moshe Schwartzberg’s full-stack projects, from AI-powered apps to luxury furniture sites."
+          content="See CodeCrafter’s custom projects, from AI apps to luxury furniture sites."
         />
         <meta
           property="og:image"
@@ -105,11 +105,11 @@ export default function Portfolio() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Portfolio | Moshe Schwartzberg Full-Stack Developer"
+          content="Portfolio | CodeCrafter Custom Code"
         />
         <meta
           name="twitter:description"
-          content="See Moshe Schwartzberg’s full-stack projects, from AI-powered apps to luxury furniture sites."
+          content="See CodeCrafter’s custom projects, from AI apps to luxury furniture sites."
         />
         <meta
           name="twitter:image"
@@ -119,14 +119,17 @@ export default function Portfolio() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            name: "Moshe Schwartzberg Portfolio",
+            name: "CodeCrafter Portfolio",
             description:
-              "A showcase of Moshe Schwartzberg’s full-stack development projects, including custom apps, CRMs, and websites.",
+              "Crafting code, creating solutions. A showcase of CodeCrafter’s custom development projects, including apps, CRMs, and websites.",
             publisher: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
             url: "https://mosheschwartzberg.com/portfolio",
           })}
