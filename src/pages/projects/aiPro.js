@@ -12,22 +12,19 @@ export default function AiPro() {
   return (
     <div>
       <Helmet>
-        <title>AI Pro | Moshe Schwartzberg Portfolio</title>
+        <title>AI Pro | CodeCrafter Portfolio</title>
         <meta
           name="description"
-          content="AI Pro’s calibration and validation site by Moshe Schwartzberg, built for seamless solutions."
+          content="Crafting code, creating solutions. CodeCrafter built AI Pro’s calibration services site."
         />
         <meta
           name="keywords"
-          content="calibration services website, custom web development, Moshe Schwartzberg, turn key solutions"
+          content="CodeCrafter calibration site, custom web development, AI Pro, turn key solutions"
         />
-        <meta
-          property="og:title"
-          content="AI Pro | Moshe Schwartzberg Portfolio"
-        />
+        <meta property="og:title" content="AI Pro | CodeCrafter Portfolio" />
         <meta
           property="og:description"
-          content="AI Pro’s custom site by Moshe Schwartzberg delivers turn-key calibration and engineering solutions."
+          content="AI Pro’s calibration site, crafted by CodeCrafter for seamless engineering solutions."
         />
         <meta
           property="og:image"
@@ -39,13 +36,10 @@ export default function AiPro() {
         />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="AI Pro | Moshe Schwartzberg Portfolio"
-        />
+        <meta name="twitter:title" content="AI Pro | CodeCrafter Portfolio" />
         <meta
           name="twitter:description"
-          content="AI Pro’s custom site by Moshe Schwartzberg delivers turn-key calibration and engineering solutions."
+          content="AI Pro’s calibration site, crafted by CodeCrafter for seamless engineering solutions."
         />
         <meta
           name="twitter:image"
@@ -57,13 +51,16 @@ export default function AiPro() {
             "@type": "CreativeWork",
             name: "AI Pro",
             description:
-              "AI Pro delivers comprehensive calibration, engineering, and validation services using a Turn Key method for seamless client experiences.",
+              "Crafting code, creating solutions. AI Pro’s site, built by CodeCrafter, delivers turn-key calibration and engineering services.",
             url: "https://ai-pro.co.il/",
             creator: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
           })}
         </script>
