@@ -11,6 +11,60 @@ export default function AiPro() {
 
   return (
     <div>
+      <Helmet>
+        <title>Nezila | CodeCrafter Portfolio</title>
+        <meta
+          name="description"
+          content="Crafting code, creating solutions. CodeCrafter designed Nezila’s blue-collar app."
+        />
+        <meta
+          name="keywords"
+          content="CodeCrafter app design, custom app development, Nezila app, UI/UX design"
+        />
+        <meta property="og:title" content="Nezila | CodeCrafter Portfolio" />
+        <meta
+          property="og:description"
+          content="Nezila’s app design, crafted by CodeCrafter for blue-collar connections."
+        />
+        <meta
+          property="og:image"
+          content="https://mosheschwartzberg.com/logo192.png"
+        />
+        <meta
+          property="og:url"
+          content="https://mosheschwartzberg.com/projects/nezila"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nezila | CodeCrafter Portfolio" />
+        <meta
+          name="twitter:description"
+          content="Nezila’s app design, crafted by CodeCrafter for blue-collar connections."
+        />
+        <meta
+          name="twitter:image"
+          content="https://mosheschwartzberg.com/logo192.png"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            name: "Nezila",
+            description:
+              "Crafting code, creating solutions. Nezila’s app, designed by CodeCrafter, connected blue-collar workers to customers with stunning UI/UX.",
+            url: "https://www.figma.com/proto/Ioo1yDs8auboCdnoh4dCwF/Untitled?node-id=0-1&t=TD3GOI9RM1hmbwff-1",
+            creator: {
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
+            },
+          })}
+        </script>
+      </Helmet>
       <AboutProject
         projName={t("Nezila")}
         client={t("Nezila")}
