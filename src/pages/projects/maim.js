@@ -10,22 +10,22 @@ export default function LFZ() {
   return (
     <div>
       <Helmet>
-        <title>Maim Chaim | Moshe Schwartzberg Portfolio</title>
+        <title>Maim Chaim | CodeCrafter Portfolio</title>
         <meta
           name="description"
-          content="Maim Chaim’s Torah school site by Moshe Schwartzberg, blending education and faith."
+          content="Crafting code, creating solutions. CodeCrafter built Maim Chaim’s Torah school site."
         />
         <meta
           name="keywords"
-          content="Torah school website, custom web development, Moshe Schwartzberg, religious education site"
+          content="CodeCrafter Torah school site, custom web development, Maim Chaim, religious education"
         />
         <meta
           property="og:title"
-          content="Maim Chaim | Moshe Schwartzberg Portfolio"
+          content="Maim Chaim | CodeCrafter Portfolio"
         />
         <meta
           property="og:description"
-          content="Maim Chaim, a Torah school site by Moshe Schwartzberg, fosters joyful learning."
+          content="Maim Chaim’s Torah school site, crafted by CodeCrafter for holistic education."
         />
         <meta
           property="og:image"
@@ -39,11 +39,11 @@ export default function LFZ() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Maim Chaim | Moshe Schwartzberg Portfolio"
+          content="Maim Chaim | CodeCrafter Portfolio"
         />
         <meta
           name="twitter:description"
-          content="Maim Chaim, a Torah school site by Moshe Schwartzberg, fosters joyful learning."
+          content="Maim Chaim’s Torah school site, crafted by CodeCrafter for holistic education."
         />
         <meta
           name="twitter:image"
@@ -55,13 +55,16 @@ export default function LFZ() {
             "@type": "CreativeWork",
             name: "Maim Chaim",
             description:
-              "Maim Chaim is a Torah-based school in Jerusalem providing holistic education for boys and girls, combining religious studies with core subjects.",
+              "Crafting code, creating solutions. Maim Chaim’s site, built by CodeCrafter, supports a Torah-based school in Jerusalem.",
             url: "https://maimchaim.org.il/",
             creator: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
           })}
         </script>
