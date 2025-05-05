@@ -25,22 +25,22 @@ export default function About() {
   return (
     <div className="about-div">
       <Helmet>
-        <title>About Moshe Schwartzberg | Full-Stack Developer</title>
+        <title>About CodeCrafter | Custom Code Solutions</title>
         <meta
           name="description"
-          content="Meet Moshe Schwartzberg, a full-stack developer crafting custom apps and CRMs in Israel. Learn about our mission and team!"
+          content="Crafting code, creating solutions. Meet CodeCrafter, your team for custom apps and CRMs in Israel!"
         />
         <meta
           name="keywords"
-          content="full-stack developer, custom code Israel, Moshe Schwartzberg, web development, app development"
+          content="CodeCrafter, custom code Israel, full-stack development, app development, CRM solutions"
         />
         <meta
           property="og:title"
-          content="About Moshe Schwartzberg | Full-Stack Developer"
+          content="About CodeCrafter | Custom Code Solutions"
         />
         <meta
           property="og:description"
-          content="Code crafted, dreams delivered. Discover Moshe Schwartzberg’s mission to empower clients with custom web solutions."
+          content="Crafting code, creating solutions. Discover CodeCrafter’s mission to build tailored tech for you."
         />
         <meta
           property="og:image"
@@ -51,11 +51,11 @@ export default function About() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="About Moshe Schwartzberg | Full-Stack Developer"
+          content="About CodeCrafter | Custom Code Solutions"
         />
         <meta
           name="twitter:description"
-          content="Code crafted, dreams delivered. Discover Moshe Schwartzberg’s mission to empower clients with custom web solutions."
+          content="Crafting code, creating solutions. Discover CodeCrafter’s mission to build tailored tech for you."
         />
         <meta
           name="twitter:image"
@@ -65,14 +65,17 @@ export default function About() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            name: "About Moshe Schwartzberg",
+            name: "About CodeCrafter",
             description:
-              "Learn about Moshe Schwartzberg, a full-stack developer in Israel, and his team’s mission to deliver custom web and app solutions.",
+              "Crafting code, creating solutions. Learn about CodeCrafter’s mission to deliver custom web and app solutions in Israel.",
             publisher: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
             url: "https://mosheschwartzberg.com/about",
           })}
