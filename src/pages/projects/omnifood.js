@@ -11,22 +11,19 @@ export default function Omnifood() {
   return (
     <div>
       <Helmet>
-        <title>Omnifood | Moshe Schwartzberg Portfolio</title>
+        <title>Omnifood | CodeCrafter Portfolio</title>
         <meta
           name="description"
-          content="Omnifood: AI-powered meal subscription app by Moshe Schwartzberg. Healthy, tailored meals delivered to you."
+          content="Crafting code, creating solutions. CodeCrafter built Omnifood’s AI meal subscription app."
         />
         <meta
           name="keywords"
-          content=" AI meal planning app, custom app development, Moshe Schwartzberg, healthy meal delivery"
+          content="CodeCrafter AI app, custom app development, Omnifood, healthy meal delivery"
         />
-        <meta
-          property="og:title"
-          content="Omnifood | Moshe Schwartzberg Portfolio"
-        />
+        <meta property="og:title" content="Omnifood | CodeCrafter Portfolio" />
         <meta
           property="og:description"
-          content="Discover Omnifood, a custom app by Moshe Schwartzberg delivering AI-tailored, healthy meals."
+          content="Omnifood’s AI meal app, crafted by CodeCrafter for healthy, tailored dining."
         />
         <meta
           property="og:image"
@@ -38,13 +35,10 @@ export default function Omnifood() {
         />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Omnifood | Moshe Schwartzberg Portfolio"
-        />
+        <meta name="twitter:title" content="Omnifood | CodeCrafter Portfolio" />
         <meta
           name="twitter:description"
-          content="Discover Omnifood, a custom app by Moshe Schwartzberg delivering AI-tailored, healthy meals."
+          content="Omnifood’s AI meal app, crafted by CodeCrafter for healthy, tailored dining."
         />
         <meta
           name="twitter:image"
@@ -56,13 +50,16 @@ export default function Omnifood() {
             "@type": "CreativeWork",
             name: "Omnifood",
             description:
-              "Omnifood is a personalized meal subscription service that delivers healthy, chef-prepared meals to your door. Using AI, it creates tailored meal plans based on dietary preferences.",
+              "Crafting code, creating solutions. Omnifood is a personalized meal subscription service with AI-tailored meal plans, built by CodeCrafter.",
             url: "https://omnifood.dev",
             creator: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
           })}
         </script>
