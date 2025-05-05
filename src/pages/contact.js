@@ -14,22 +14,22 @@ export default function Contact() {
   return (
     <div className="contactContainer">
       <Helmet>
-        <title>Contact Moshe Schwartzberg | Full-Stack Developer</title>
+        <title>Contact CodeCrafter | Custom Code Solutions</title>
         <meta
           name="description"
-          content="Get in touch with Moshe Schwartzberg for custom app and CRM solutions. Email or call to start your project today!"
+          content="Crafting code, creating solutions. Contact CodeCrafter for custom apps and CRMs today!"
         />
         <meta
           name="keywords"
-          content="contact developer Israel, Moshe Schwartzberg contact, custom app development, CRM solutions"
+          content="CodeCrafter contact, custom code developer Israel, app development, CRM solutions"
         />
         <meta
           property="og:title"
-          content="Contact Moshe Schwartzberg | Full-Stack Developer"
+          content="Contact CodeCrafter | Custom Code Solutions"
         />
         <meta
           property="og:description"
-          content="Ready to craft your dream app? Contact Moshe Schwartzberg for expert full-stack development."
+          content="Ready for custom tech? Contact CodeCrafter to craft your app or CRM solution."
         />
         <meta
           property="og:image"
@@ -43,11 +43,11 @@ export default function Contact() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Contact Moshe Schwartzberg | Full-Stack Developer"
+          content="Contact CodeCrafter | Custom Code Solutions"
         />
         <meta
           name="twitter:description"
-          content="Ready to craft your dream app? Contact Moshe Schwartzberg for expert full-stack development."
+          content="Ready for custom tech? Contact CodeCrafter to craft your app or CRM solution."
         />
         <meta
           name="twitter:image"
@@ -57,14 +57,17 @@ export default function Contact() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            name: "Contact Moshe Schwartzberg",
+            name: "Contact CodeCrafter",
             description:
-              "Contact Moshe Schwartzberg for custom web and app development services in Israel.",
+              "Crafting code, creating solutions. Contact CodeCrafter for custom web and app development services in Israel.",
             publisher: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
             url: "https://mosheschwartzberg.com/contact",
           })}
