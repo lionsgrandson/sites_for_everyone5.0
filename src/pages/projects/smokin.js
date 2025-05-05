@@ -11,22 +11,22 @@ export default function Smokin() {
   return (
     <div>
       <Helmet>
-        <title>Smokin T’s | Moshe Schwartzberg Portfolio</title>
+        <title>Smokin T’s | CodeCrafter Portfolio</title>
         <meta
           name="description"
-          content="Smokin T’s restaurant site by Moshe Schwartzberg, showcasing BBQ and grill menus."
+          content="Crafting code, creating solutions. CodeCrafter built Smokin T’s BBQ restaurant site."
         />
         <meta
           name="keywords"
-          content="restaurant website, custom web development, Moshe Schwartzberg, BBQ menu site"
+          content="CodeCrafter restaurant site, custom web development, Smokin T’s, BBQ menu"
         />
         <meta
           property="og:title"
-          content="Smokin T’s | Moshe Schwartzberg Portfolio"
+          content="Smokin T’s | CodeCrafter Portfolio"
         />
         <meta
           property="og:description"
-          content="Smokin T’s, a BBQ restaurant site crafted by Moshe Schwartzberg for a tasty experience."
+          content="Smokin T’s BBQ site, crafted by CodeCrafter for a delicious digital experience."
         />
         <meta
           property="og:image"
@@ -40,11 +40,11 @@ export default function Smokin() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Smokin T’s | Moshe Schwartzberg Portfolio"
+          content="Smokin T’s | CodeCrafter Portfolio"
         />
         <meta
           name="twitter:description"
-          content="Smokin T’s, a BBQ restaurant site crafted by Moshe Schwartzberg for a tasty experience."
+          content="Smokin T’s BBQ site, crafted by CodeCrafter for a delicious digital experience."
         />
         <meta
           name="twitter:image"
@@ -56,13 +56,16 @@ export default function Smokin() {
             "@type": "CreativeWork",
             name: "Smokin T’s",
             description:
-              "Smokin T’s is a barbecue and grill-style restaurant offering house-made pastrami and corned beef sandwiches with exemplary service.",
+              "Crafting code, creating solutions. Smokin T’s BBQ restaurant site, built by CodeCrafter, showcases house-made pastrami and corned beef.",
             url: "https://mosheschwartzberg.com/projects/smokin-ts",
             creator: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
           })}
         </script>
