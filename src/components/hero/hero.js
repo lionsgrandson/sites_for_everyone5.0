@@ -11,9 +11,9 @@ export default function Hero() {
   return (
     <div className="heroSectionHome">
       <h1 className="siteTitleHero">
-        Sites for <span className="highlight bigTextEv">Everyone</span>
+        Code<span className="highlight bigTextEv">Crafter</span>
       </h1>
-      <p className="bitTextHero">{t("Code Crafted, Dreams Delivered")}</p>
+      <p className="bitTextHero">{t("Crafting code, creating solutions")}</p>
       <div className="toBeshown">
         <Btn
           btnHref="/contact"
