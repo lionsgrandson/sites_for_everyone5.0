@@ -10,22 +10,22 @@ export default function EnterPlus() {
   return (
     <div>
       <Helmet>
-        <title>Enter Plus | Moshe Schwartzberg Portfolio</title>
+        <title>Enter Plus | CodeCrafter Portfolio</title>
         <meta
           name="description"
-          content="Enter Plus’s drowning detection bracelet site by Moshe Schwartzberg, built for safety."
+          content="Crafting code, creating solutions. CodeCrafter built Enter Plus’s safety bracelet site."
         />
         <meta
           name="keywords"
-          content="safety device website, custom web development, Moshe Schwartzberg, drowning detection"
+          content="CodeCrafter safety device site, custom web development, Enter Plus, drowning detection"
         />
         <meta
           property="og:title"
-          content="Enter Plus | Moshe Schwartzberg Portfolio"
+          content="Enter Plus | CodeCrafter Portfolio"
         />
         <meta
           property="og:description"
-          content="Enter Plus, a life-saving bracelet site by Moshe Schwartzberg for pool safety."
+          content="Enter Plus’s drowning detection site, crafted by CodeCrafter for pool safety."
         />
         <meta
           property="og:image"
@@ -39,11 +39,11 @@ export default function EnterPlus() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Enter Plus | Moshe Schwartzberg Portfolio"
+          content="Enter Plus | CodeCrafter Portfolio"
         />
         <meta
           name="twitter:description"
-          content="Enter Plus, a life-saving bracelet site by Moshe Schwartzberg for pool safety."
+          content="Enter Plus’s drowning detection site, crafted by CodeCrafter for pool safety."
         />
         <meta
           name="twitter:image"
@@ -55,13 +55,16 @@ export default function EnterPlus() {
             "@type": "CreativeWork",
             name: "Enter Plus",
             description:
-              "Enter Plus created a life-saving bracelet that detects drowning by monitoring vital signs, alerting lifeguards and emergency services.",
-            url: "https://enterplusco.com",
+              "Crafting code, creating solutions. Enter Plus’s site, built by CodeCrafter, promotes a drowning detection safety bracelet for pools.",
+            url: "https://www.enter-plus.com/",
             creator: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
           })}
         </script>
