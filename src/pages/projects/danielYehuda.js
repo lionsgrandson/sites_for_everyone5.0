@@ -11,22 +11,22 @@ export default function DanielYehuda() {
   return (
     <div>
       <Helmet>
-        <title>Daniel Yehuda | Moshe Schwartzberg Portfolio</title>
+        <title>Daniel Yehuda | CodeCrafter Portfolio</title>
         <meta
           name="description"
-          content="Daniel Yehuda’s site by Moshe Schwartzberg connects Jewish youth through music and events."
+          content="Crafting code, creating solutions. CodeCrafter built Daniel Yehuda’s Jewish music site."
         />
         <meta
           name="keywords"
-          content="Jewish music website, custom web development, Moshe Schwartzberg, event performance site"
+          content="CodeCrafter music site, custom web development, Daniel Yehuda, Jewish events"
         />
         <meta
           property="og:title"
-          content="Daniel Yehuda | Moshe Schwartzberg Portfolio"
+          content="Daniel Yehuda | CodeCrafter Portfolio"
         />
         <meta
           property="og:description"
-          content="Explore Daniel Yehuda’s music site, a custom project by Moshe Schwartzberg for Jewish events."
+          content="Daniel Yehuda’s music site, crafted by CodeCrafter for Jewish performances."
         />
         <meta
           property="og:image"
@@ -40,11 +40,11 @@ export default function DanielYehuda() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Daniel Yehuda | Moshe Schwartzberg Portfolio"
+          content="Daniel Yehuda | CodeCrafter Portfolio"
         />
         <meta
           name="twitter:description"
-          content="Explore Daniel Yehuda’s music site, a custom project by Moshe Schwartzberg for Jewish events."
+          content="Daniel Yehuda’s music site, crafted by CodeCrafter for Jewish performances."
         />
         <meta
           name="twitter:image"
@@ -56,13 +56,16 @@ export default function DanielYehuda() {
             "@type": "CreativeWork",
             name: "Daniel Yehuda",
             description:
-              "Daniel Yehuda is a Jewish musician who connects young Jewish souls through uplifting music, offering customized performances and workshops worldwide.",
+              "Crafting code, creating solutions. Daniel Yehuda’s site, built by CodeCrafter, connects Jewish youth through music and events.",
             url: "https://www.danielyehuda.co.il/",
             creator: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
           })}
         </script>
