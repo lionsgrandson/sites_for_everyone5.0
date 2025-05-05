@@ -21,22 +21,22 @@ export default function Services() {
   return (
     <>
       <Helmet>
-        <title>Services | Moshe Schwartzberg Full-Stack Developer</title>
+        <title>Services | CodeCrafter Custom Code</title>
         <meta
           name="description"
-          content="Custom apps, CRMs, and Shopify solutions by Moshe Schwartzberg. Starting at 3000₪ for landing pages!"
+          content="Crafting code, creating solutions. CodeCrafter offers custom apps and CRMs from 3000₪!"
         />
         <meta
           name="keywords"
-          content="custom CRM development, Shopify solutions Israel, full-stack development, accessible web development"
+          content="CodeCrafter custom code, Shopify solutions Israel, full-stack development, accessible code"
         />
         <meta
           property="og:title"
-          content="Services | Moshe Schwartzberg Full-Stack Developer"
+          content="Services | CodeCrafter Custom Code"
         />
         <meta
           property="og:description"
-          content="Need a custom app or CRM? Moshe Schwartzberg delivers scalable, accessible solutions tailored to you."
+          content="Need custom code? CodeCrafter crafts apps, CRMs, and Shopify solutions tailored to you."
         />
         <meta
           property="og:image"
@@ -50,11 +50,11 @@ export default function Services() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Services | Moshe Schwartzberg Full-Stack Developer"
+          content="Services | CodeCrafter Custom Code"
         />
         <meta
           name="twitter:description"
-          content="Need a custom app or CRM? Moshe Schwartzberg delivers scalable, accessible solutions tailored to you."
+          content="Need custom code? CodeCrafter crafts apps, CRMs, and Shopify solutions tailored to you."
         />
         <meta
           name="twitter:image"
@@ -66,13 +66,16 @@ export default function Services() {
             "@type": "Service",
             serviceType: "Custom Code Development",
             provider: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
             description:
-              "Custom app design, responsive code solutions, SEO-driven deployment, accessible development, and tailored CRM creation.",
+              "Crafting code, creating solutions. CodeCrafter offers custom app design, responsive solutions, SEO-driven deployment, accessible development, and tailored CRMs.",
             url: "https://mosheschwartzberg.com/services",
           })}
         </script>
