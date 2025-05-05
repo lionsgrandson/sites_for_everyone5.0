@@ -10,22 +10,22 @@ export default function ShalomCarmel() {
   return (
     <div>
       <Helmet>
-        <title>Shalom Carmel | Moshe Schwartzberg Portfolio</title>
+        <title>Shalom Carmel | CodeCrafter Portfolio</title>
         <meta
           name="description"
-          content="Shalom Carmel’s cultural tour site by Moshe Schwartzberg, showcasing Haifa’s diversity."
+          content="Crafting code, creating solutions. CodeCrafter built Shalom Carmel’s jewelry site."
         />
         <meta
           name="keywords"
-          content="cultural tour website, custom web development, Moshe Schwartzberg, Haifa tours"
+          content="CodeCrafter e-commerce, custom Shopify development, Shalom Carmel, luxury jewelry"
         />
         <meta
           property="og:title"
-          content="Shalom Carmel | Moshe Schwartzberg Portfolio"
+          content="Shalom Carmel | CodeCrafter Portfolio"
         />
         <meta
           property="og:description"
-          content="Shalom Carmel, a cultural tour site by Moshe Schwartzberg, celebrates Haifa’s unity."
+          content="Shalom Carmel’s jewelry site, crafted by CodeCrafter for luxury e-commerce."
         />
         <meta
           property="og:image"
@@ -39,11 +39,11 @@ export default function ShalomCarmel() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Shalom Carmel | Moshe Schwartzberg Portfolio"
+          content="Shalom Carmel | CodeCrafter Portfolio"
         />
         <meta
           name="twitter:description"
-          content="Shalom Carmel, a cultural tour site by Moshe Schwartzberg, celebrates Haifa’s unity."
+          content="Shalom Carmel’s jewelry site, crafted by CodeCrafter for luxury e-commerce."
         />
         <meta
           name="twitter:image"
@@ -55,13 +55,16 @@ export default function ShalomCarmel() {
             "@type": "CreativeWork",
             name: "Shalom Carmel",
             description:
-              "Shalom Carmel showcases the ethnic and cultural diversity of Haifa and Mount Carmel through community engagement tours.",
-            url: "https://shalom1.ussl.co/",
+              "Crafting code, creating solutions. Shalom Carmel’s e-commerce site, built by CodeCrafter, showcases luxury jewelry with Shopify integration.",
+            url: "https://shalomcarmel.com/",
             creator: {
-              "@type": "Person",
-              name: "Moshe Schwartzberg",
-              email: "mosheschwartzberg@gmail.com",
-              telephone: "+972587076077",
+              "@type": "Organization",
+              name: "CodeCrafter",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "mosheschwartzberg@gmail.com",
+                telephone: "+972587076077",
+              },
             },
           })}
         </script>
