@@ -99,9 +99,9 @@ function Home() {
 
           <PicXtext
             imgXTextImg={moseHeadshot}
-            picXtexth1={t("Hi, I’m Moshe, CEO of Sites for Everyone")}
+            picXtexth1={t("Hi, I’m Moshe, CEO of CodeCrafter")}
             textP={t(
-              "Running a business is tough—let us lighten the load with custom web solutions. Our expert full-stack developers in Israel specialize in building custom CRMs, CMSs, and Shopify features, delivering scalable websites and guiding you every step of the way."
+              "Running a business is hard—let us simplify it with custom web solutions. For over 9 years, our skilled full-stack developers in Israel have built tailored CRMs, CMSs, and Shopify features, creating scalable websites. With many thrilled clients and our finest work displayed on our site, we support you every step to success."
             )}
             imgAlt="Moshe Schwartzberg, full-stack developer in Israel, specializing in custom CRM, CMS, and Shopify development"
             WbtnQ={true}

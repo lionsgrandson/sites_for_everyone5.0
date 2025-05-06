@@ -38,7 +38,7 @@
 .home-picXtext-h1.about {
   /* font-size: clamp(2rem, 5vw, 4rem); */
   font-family: var(--font-primary);
-  font-size: 76px;
+  font-size: 6rem;
   font-weight: 400;
   line-height: 95.3px;
 }
@@ -51,7 +51,7 @@
 .home-picXtext-p.about {
   /* font-size: clamp(1.5rem, 3vw, 2rem); */
   font-family: var(--font-secondary);
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: 400;
   line-height: 47px;
   letter-spacing: 0.01em;
@@ -80,6 +80,10 @@
   .home-picXtext-p {
     font-size: 1.8rem;
     width: 90%;
+  }
+  .home-picXtext-h1.about {
+    font-size: 5.1rem;
+    line-height: 5.8rem;
   }
 }
 @media (max-width: 786px) {
