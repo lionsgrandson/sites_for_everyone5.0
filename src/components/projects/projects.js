@@ -53,14 +53,8 @@ export default function Projects(props) {
         {linkArr.map((arr, index) => {
           if (index <= parseInt(props.exitNum) - 1) {
             return (
-              <a
-                href={`${arr}`}
-                className="aimgProj"
-              >
-                <img
-                  className="imgProj"
-                  src={imgArr[index]}
-                />
+              <a href={`${arr}`} className="aimgProj">
+                <img className="imgProj" src={imgArr[index]} />
               </a>
             );
           }

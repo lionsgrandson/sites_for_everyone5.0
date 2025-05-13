@@ -9,7 +9,7 @@ import CTA from "../components/cta/cta";
 import Btn from "../components/btn/btn";
 import "./contact.css";
 import { Helmet } from "react-helmet-async";
-// import ContactForm from "..//contactForm/contactForm";
+import GReviews from "../components/gReviwes/GReviews";
 import ContactForm from "../components/contactForm/contactForm";
 
 import "./home.css";
@@ -108,6 +108,8 @@ function Home() {
             LORImg={false}
             aboutCls={true}
           />
+          <GReviews />
+
           <OurProccess />
         </div>
         <Projects
@@ -126,6 +128,7 @@ function Home() {
         <div className="ctaContactForm">
           <ContactForm />
         </div>
+
         <Footer />
       </header>
     </div>
