@@ -111,6 +111,8 @@ function Home() {
           <GReviews />
 
           <OurProccess />
+
+          <QnA />
         </div>
         <Projects
           h2Proj={t("Results matter.")}
